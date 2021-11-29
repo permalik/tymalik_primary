@@ -67,14 +67,6 @@ export default function Article({
   );
 }
 
-// markedProvider.setOptions({
-//   gfm: true,
-//   pedantic: false,
-//   sanitize: true
-// });
-
-// {timestamp}
-
 export async function getStaticPaths() {
   const files = fs.readdirSync(path.join('articles'));
   const paths = files.map((filename) => ({
