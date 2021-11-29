@@ -2,8 +2,6 @@ import fs from 'fs';
 import { sortByDate } from '../../utils';
 import matter from 'gray-matter';
 import path from 'path';
-// import Image from 'next/image';
-// import Link from 'next/link';
 
 import ArticleCard from '../components/ArticleCard';
 import PrimarySection from '../components/PrimarySection';
@@ -46,23 +44,3 @@ export async function getStaticProps() {
     }
   };
 }
-
-// export const getStaticProps = async () => {
-//   const files = fs.readdirSync(path.join('articles'));
-
-//   const articles = files.map((filename) => {
-//     const markdownAndMeta = fs.readFileSync(path.join('articles', filename));
-//     const { data: frontMatter } = matter(markdownAndMeta);
-
-//     return {
-//       frontMatter,
-//       slug: filename.split('.')[0]
-//     };
-//   });
-
-//   return {
-//     props: {
-//       articles
-//     }
-//   };
-// };
