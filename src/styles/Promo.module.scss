@@ -1,0 +1,15 @@
+.promoSection {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  height: 100vh;
+}
+
+.promoHeading {
+  font-size: clamp(3.5em, 4.5vw, 5em);
+}
+
+.promoDescription {
+  font-size: clamp(1.5em, 2vw, 2.5em);
+}

@@ -1,0 +1,37 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
+import SiteHeaderStyles from '../../styles/SiteHeader.module.scss';
+
+const SiteHeader = () => {
+  return (
+    <header className={SiteHeaderStyles.siteHeader}>
+      <Link href='/'>
+        <a className={SiteHeaderStyles.logo}>
+          <Image
+            alt='Ty Malik logo'
+            height='200px'
+            src='/logo.svg'
+            width='200px'
+          />
+        </a>
+      </Link>
+      <nav className={SiteHeaderStyles.nav}>
+        <Link href='/#about'>
+          <a className={SiteHeaderStyles.navLink}>about</a>
+        </Link>
+        <Link href='/allArticles'>
+          <a className={SiteHeaderStyles.navLink}>articles</a>
+        </Link>
+        <Link href='/#contact'>
+          <a className={SiteHeaderStyles.navLink}>contact</a>
+        </Link>
+        <Link href='/portfolio'>
+          <a className={SiteHeaderStyles.navLink}>portfolio</a>
+        </Link>
+      </nav>
+    </header>
+  );
+};
+
+export default SiteHeader;
