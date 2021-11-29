@@ -5,5 +5,6 @@ module.exports = {
   images: {
     domains: ['res.cloudinary.com']
   },
-  reactStrictMode: true
+  reactStrictMode: true,
+  target: 'serverless'
 };
