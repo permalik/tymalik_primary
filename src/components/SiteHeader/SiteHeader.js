@@ -20,7 +20,7 @@ export default function SiteHeader() {
         <Link href='/#about'>
           <a className={SiteHeaderStyles.navLink}>about</a>
         </Link>
-        <Link href='/allArticles'>
+        <Link href='/'>
           <a className={SiteHeaderStyles.navLink}>articles</a>
         </Link>
         <Link href='/#contact'>
