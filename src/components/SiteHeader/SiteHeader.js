@@ -26,9 +26,6 @@ export default function SiteHeader() {
         <Link href={`/portfolio`}>
           <a className={SiteHeaderStyles.navLink}>portfolio</a>
         </Link>
-        <Link href={`/trials`}>
-          <a className={SiteHeaderStyles.navLink}>trials</a>
-        </Link>
       </nav>
     </header>
   );
