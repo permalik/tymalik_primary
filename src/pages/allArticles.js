@@ -1,6 +1,6 @@
 import fs from 'fs';
 import { sortByDate } from '../../utils';
-import matter from 'gray-matter';
+import { matter } from 'gray-matter';
 import path from 'path';
 
 import ArticleCard from '../components/ArticleCard';
