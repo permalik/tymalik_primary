@@ -11,10 +11,12 @@ import ArticlesStyles from '../styles/Articles.module.scss';
 export default function AllArticles({ articles }) {
   return (
     <PrimarySection>
-      all articles
-      {articles.map((article, index) => (
-        <ArticleCard key={index} article={article} />
-      ))}
+      <h1 className={ArticlesStyles.headingOne}>All articles</h1>
+      <ul className={ArticlesStyles.articleList}>
+        {articles.map((article, index) => (
+          <ArticleCard key={index} article={article} />
+        ))}
+      </ul>
     </PrimarySection>
   );
 }

@@ -46,7 +46,7 @@ export default function Article({
           <h1 className={ArticleStyles.title}>{title}</h1>
           <p className={ArticleStyles.description}>{description}</p>
           <div className={ArticleStyles.creditWrapper}>
-            <Link href='/malik' passHref>
+            <Link href={`/malik`} passHref>
               <span className={ArticleStyles.credit}>Written by {author}</span>
             </Link>
           </div>

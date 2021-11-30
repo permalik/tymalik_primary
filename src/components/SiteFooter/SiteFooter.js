@@ -19,9 +19,6 @@ export default function SiteFooter() {
           <li>
             <a href='https://github.com/permalik/tymalik_primary.git'>source</a>
           </li>
-          <li>
-            <a href='https://strapi.io/'>strapi</a>
-          </li>
         </ul>
       </nav>
       <nav className={SiteFooterStyles.socialNav}>

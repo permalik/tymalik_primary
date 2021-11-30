@@ -1,0 +1,33 @@
+.article {
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  padding: 2vw;
+}
+
+.description {
+  margin: 0.25rem 0 0;
+}
+
+.tagList {
+  display: grid;
+  gap: 2vw;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.tag {
+  border: black solid 1px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.excerpt {
+  margin: 0;
+}
+
+.timestamp {
+  display: inline-block;
+  margin-top: 1rem;
+}

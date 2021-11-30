@@ -1,4 +1,5 @@
 .primarySection {
   font-size: var(--primaryFontSize);
+  margin: clamp(15rem, 10vw, 20rem) 0 3rem;
   width: 100%;
 }

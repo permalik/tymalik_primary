@@ -6,7 +6,7 @@ import SiteHeaderStyles from '../../styles/SiteHeader.module.scss';
 export default function SiteHeader() {
   return (
     <header className={SiteHeaderStyles.siteHeader}>
-      <Link href='/'>
+      <Link href={`/`}>
         <a className={SiteHeaderStyles.logo}>
           <Image
             alt='Ty Malik logo'
@@ -17,17 +17,17 @@ export default function SiteHeader() {
         </a>
       </Link>
       <nav className={SiteHeaderStyles.nav}>
-        <Link href='/#about'>
-          <a className={SiteHeaderStyles.navLink}>about</a>
-        </Link>
-        <Link href='/allArticles'>
+        <Link href={`/allArticles`}>
           <a className={SiteHeaderStyles.navLink}>articles</a>
         </Link>
-        <Link href='/#contact'>
+        <Link href={`/contact`}>
           <a className={SiteHeaderStyles.navLink}>contact</a>
         </Link>
-        <Link href='/portfolio'>
+        <Link href={`/portfolio`}>
           <a className={SiteHeaderStyles.navLink}>portfolio</a>
+        </Link>
+        <Link href={`/trials`}>
+          <a className={SiteHeaderStyles.navLink}>trials</a>
         </Link>
       </nav>
     </header>

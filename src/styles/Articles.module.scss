@@ -1,4 +1,9 @@
-.articlesWrapper {
+.articleList {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px));
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  margin-top: 3rem;
+}
+
+.articleList {
 }
