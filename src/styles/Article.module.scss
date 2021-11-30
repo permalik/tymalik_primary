@@ -21,6 +21,7 @@
 
 .coverImage {
   border-radius: 5px;
+  height: 50vmin;
   object-fit: cover;
   width: 100%;
 }
@@ -35,6 +36,11 @@
 }
 
 .creditWrapper {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+  font-style: italic;
+  justify-content: center;
   margin-top: 2rem;
   position: relative;
 
@@ -46,10 +52,6 @@
     top: -0.5rem;
     width: 50%;
   }
-}
-
-.credit {
-  font-style: italic;
 }
 
 .tagList {

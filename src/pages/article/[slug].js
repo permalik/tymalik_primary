@@ -2,7 +2,6 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import { marked } from 'marked';
-import Image from 'next/image';
 import Link from 'next/link';
 import path from 'path';
 
@@ -10,16 +9,9 @@ import PrimarySection from '../../components/PrimarySection';
 
 import ArticleStyles from '../../styles/Article.module.scss';
 
-function createMarkup(markup) {
-  return { __html: marked(`${markup}`) };
-}
 marked.setOptions({
   breaks: true
 });
-
-function MyComponent() {
-  return <div dangerouslySetInnerHTML={createMarkup()} />;
-}
 
 export default function Article({
   content,
@@ -49,14 +41,15 @@ export default function Article({
             <Link href={`/malik`} passHref>
               <span className={ArticleStyles.credit}>Written by {author}</span>
             </Link>
+            <time className={ArticleStyles.timestamp}>{timestamp}</time>
           </div>
-          <ul className={ArticleStyles.tagList}>
+          {/* <ul className={ArticleStyles.tagList}>
             {tags.map((tag, index) => (
               <li className={ArticleStyles.tag} key={index}>
                 #{tag}
               </li>
             ))}
-          </ul>
+          </ul> */}
         </header>
         <div
           className={ArticleStyles.bodySection}

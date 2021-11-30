@@ -14,10 +14,13 @@ export default function SiteFooter() {
       <nav className={SiteFooterStyles.buildNav}>
         <ul>
           <li>
-            <a href='https://nextjs.org/'>nextjs</a>
+            <a href='https://netlify.com/'>netlify</a>
           </li>
           <li>
             <a href='https://github.com/permalik/tymalik_primary.git'>source</a>
+          </li>
+          <li>
+            <a href='https://nextjs.org/'>nextjs</a>
           </li>
         </ul>
       </nav>

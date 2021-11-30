@@ -1,7 +1,12 @@
+.skillsetHeading {
+  font-size: clamp(2.1em, 8vw, 2.5em);
+}
+
 .skillsetList {
   display: grid;
   gap: clamp(0.5rem, 4vw, 1rem);
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 1rem;
 }
 
 .skillsetCard {

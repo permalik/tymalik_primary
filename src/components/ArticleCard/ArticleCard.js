@@ -10,7 +10,7 @@ export default function ArticleCard({ article }) {
         <p className={ArticleCardStyles.description}>
           {article.frontmatter.description}
         </p>
-        <ul className={ArticleCardStyles.tagList}>
+        {/* <ul className={ArticleCardStyles.tagList}>
           {article.frontmatter.tags.map((tag, index) => (
             <li className={ArticleCardStyles.tag} key={index}>
               <Link href={`/${tag}`}>
@@ -18,7 +18,7 @@ export default function ArticleCard({ article }) {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
         <p className={ArticleCardStyles.excerpt}>
           {article.frontmatter.excerpt}
         </p>

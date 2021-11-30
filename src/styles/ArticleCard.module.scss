@@ -2,6 +2,7 @@
   border: none;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  cursor: pointer;
   padding: 2vw;
 }
 
@@ -24,7 +25,7 @@
 }
 
 .excerpt {
-  margin: 0;
+  margin: 1rem 0 0;
 }
 
 .timestamp {
