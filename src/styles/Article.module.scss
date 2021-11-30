@@ -1,0 +1,144 @@
+.article {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.headerContent {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%;
+  // @media (min-width: 460px) {
+  //   justify-content: center;
+  //   position: absolute;
+  // }
+}
+
+.coverImage {
+  object-fit: cover;
+  width: 100%;
+}
+
+.title {
+  margin-top: 3rem;
+}
+
+.description {
+  font-size: 1.2em;
+  margin: 0.5rem 0 0;
+}
+
+.creditWrapper {
+  align-self: center;
+  margin-top: 3rem;
+  position: relative;
+
+  &::before {
+    background: black;
+    top: -0.5rem;
+    content: '';
+    left: 50%;
+    transform: translate((-50%, -50%));
+    padding: 1px;
+    position: absolute;
+    width: 75%;
+  }
+}
+
+.credit {
+  font-style: italic;
+}
+
+.tagList {
+  display: flex;
+}
+
+.tag {
+}
+
+.headerContentContainer {
+  background: hsla(255, 255, 255, 0.6);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  @media (min-width: 460px) {
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+      rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    padding: 1rem 1.5rem;
+  }
+}
+
+.headingOne {
+  font-size: 1.3rem;
+  font-weight: 700;
+  @media (min-width: 460px) {
+    font-size: 1.6rem;
+  }
+  // @media (min-width: 620px) {
+  //   font-size: 2.5rem;
+  // }
+}
+
+.author,
+.timeStamp {
+  font-size: 0.8rem;
+  font-style: italic;
+  @media (min-width: 460px) {
+    font-size: 0.9rem;
+  }
+}
+
+.imageWrapper {
+  border-radius: 5px;
+  object-fit: cover;
+  height: 60vmin;
+  width: 100%;
+}
+
+.markdown {
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 3rem 0 0.5rem;
+  }
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 600;
+    margin: 1rem 0 3rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p {
+    line-height: 1.75rem;
+    margin-bottom: 2rem;
+  }
+  a {
+    text-decoration: underline;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

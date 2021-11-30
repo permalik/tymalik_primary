@@ -1,0 +1,45 @@
+.siteHeader {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 2vh 5vw 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  width: 6em;
+  height: 6em;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav {
+  align-items: flex-end;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  & > *:not(:last-child) {
+    margin-bottom: 1.25em;
+  }
+
+  @media (min-width: 570px) {
+    flex-flow: row nowrap;
+
+    & > *:not(:last-child) {
+      margin: 0 6vw 0 0;
+      transition: margin-right 0.07s linear;
+    }
+  }
+}
+
+.navLink {
+  font-size: clamp(1.35em, 3vw, 1.5em);
+  font-weight: 600;
+  text-transform: uppercase;
+}
