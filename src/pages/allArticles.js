@@ -8,7 +8,7 @@ import PrimarySection from '../components/PrimarySection';
 
 import ArticlesStyles from '../styles/Articles.module.scss';
 
-export default function allArticles({ articles }) {
+export default function AllArticles({ articles }) {
   return (
     <PrimarySection>
       all articles
