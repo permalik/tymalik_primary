@@ -24,7 +24,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  list-style: none;
+  list-style: disc;
   margin: 0;
   padding: 0;
 }
@@ -65,5 +65,11 @@ a {
 }
 
 p {
+  line-height: 1.5;
   margin-bottom: 3rem;
+}
+
+ol,
+ul {
+  margin-left: 2rem;
 }
