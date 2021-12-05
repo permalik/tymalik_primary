@@ -1,3 +1,4 @@
+import React from 'react';
 import SectionTwo from '../SectionTwo';
 
 import SkillsetStyles from '../../styles/Skillset.module.scss';

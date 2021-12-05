@@ -1,0 +1,19 @@
+.header {
+  margin-bottom: 25vmin;
+}
+
+.headingOne {
+  margin: 0 0 0.5rem;
+}
+
+.type {
+  font-size: 1.25em;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.title {
+  margin: 10vmin 0 1vmin;
+}

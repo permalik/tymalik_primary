@@ -1,0 +1,35 @@
+.aboutHeading {
+  font-size: clamp(2.5em, 4vw, 4em);
+  margin-bottom: 3rem;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+
+  @media (min-width: 850px) {
+    flex-flow: row nowrap;
+  }
+}
+
+.profileImage {
+  border-radius: 5px;
+  width: 235px;
+}
+
+.aboutDescription {
+  font-size: 1.8em;
+  margin: 1rem 0;
+
+  & > * {
+    display: table;
+  }
+
+  & > *:not(:first-child) {
+    margin: 1rem 0 0;
+  }
+
+  @media (min-width: 850px) {
+    margin: 0 0 0 2rem;
+  }
+}

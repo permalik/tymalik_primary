@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "codemirror": "^5.64.0",
     "file-system": "^2.2.2",
     "gray-matter": "^4.0.3",
@@ -17,6 +18,7 @@
     "react": "17.0.2",
     "react-codemirror2": "^7.2.1",
     "react-dom": "17.0.2",
+    "rxjs": "^7.4.0",
     "sass": "^1.43.5",
     "webpack": "^5.64.4"
   },

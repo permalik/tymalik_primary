@@ -1,3 +1,4 @@
+import React from 'react';
 import PromoStyles from '../../styles/Promo.module.scss';
 
 export default function Promo() {

@@ -1,12 +1,17 @@
 .siteHeader {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.contentWrapper {
   align-items: center;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  padding: 2vh 5vw 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4vmin clamp(0.8rem, 8vw, 3rem);
 }
 
 .logo {

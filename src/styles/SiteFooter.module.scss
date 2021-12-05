@@ -1,10 +1,10 @@
 .siteFooter {
   align-items: center;
+  bottom: 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   position: relative;
-  bottom: 0;
   padding-bottom: 2vh;
   width: 100%;
 
@@ -22,7 +22,7 @@
     align-items: center;
     display: flex;
     flex-flow: row nowrap;
-    font-size: 1.65em;
+    font-size: 1.8em;
     justify-content: center;
     margin-bottom: 0;
 
@@ -39,6 +39,11 @@
     flex-flow: row nowrap;
     font-size: 1.65em;
     justify-content: center;
+    margin-left: 0;
+
+    & > li {
+      list-style: none;
+    }
 
     & > li:not(:last-child)::after {
       background: black;
@@ -60,6 +65,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    margin-left: 0;
 
     & > a:not(:last-child) {
       margin-right: 2em;

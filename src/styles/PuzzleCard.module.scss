@@ -1,0 +1,39 @@
+.article {
+  align-items: baseline;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  cursor: pointer;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: baseline;
+  padding: 0.5rem 1rem;
+
+  @media (min-width: 750px) {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}
+
+.title {
+  font-size: 1.3em;
+  margin: 0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 1em;
+  margin: 0.5rem 0 0 0;
+  text-align: center;
+  white-space: nowrap;
+
+  @media (min-width: 750px) {
+    margin: 0;
+  }
+}
+
+.timestamp {
+  margin-top: 0.5rem;
+  text-align: right;
+}

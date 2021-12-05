@@ -1,3 +1,26 @@
 .indexSection {
+  margin-bottom: clamp(15rem, 10vw, 20rem);
   width: 100%;
+}
+
+.articleFeed {
+}
+
+.feedHeading {
+  font-size: clamp(2.5em, 4vw, 4em);
+  margin-bottom: 3rem;
+}
+
+.feedList {
+  display: grid;
+  gap: 2rem;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr;
+  margin: 0;
+  width: 100%;
+
+  @media (min-width: 850px) {
+    gap: 2vw;
+    grid-template-columns: repeat(3, calc(33.3% - 1.33vw));
+  }
 }

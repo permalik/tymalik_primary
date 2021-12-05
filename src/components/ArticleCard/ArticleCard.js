@@ -10,6 +10,9 @@ export default function ArticleCard({ article }) {
         <p className={ArticleCardStyles.description}>
           {article.frontmatter.description}
         </p>
+        <time className={ArticleCardStyles.timestamp}>
+          {article.frontmatter.timestamp}
+        </time>
         {/* <ul className={ArticleCardStyles.tagList}>
           {article.frontmatter.tags.map((tag, index) => (
             <li className={ArticleCardStyles.tag} key={index}>
@@ -20,11 +23,8 @@ export default function ArticleCard({ article }) {
           ))}
         </ul> */}
         <p className={ArticleCardStyles.excerpt}>
-          {article.frontmatter.excerpt}
+          {article.frontmatter.excerpt} [...]
         </p>
-        <time className={ArticleCardStyles.timestamp}>
-          {article.frontmatter.timestamp}
-        </time>
       </article>
     </Link>
   );

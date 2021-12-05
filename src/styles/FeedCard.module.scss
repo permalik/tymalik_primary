@@ -1,0 +1,48 @@
+.articleCard {
+  background: hsla(248, 3%, 97%, 0.8);
+  // border-left: hsl(248, 30%, 44%) solid 2px;
+  border-radius: 5px;
+  box-shadow: hsla(0, 0%, 0%, 0.1) 0px 1px 2px 0px;
+  font-size: 1.6em;
+  list-style: none;
+  position: relative;
+  top: 0;
+  transition: top ease 0.1s;
+
+  &:hover {
+    cursor: pointer;
+    top: -2px;
+  }
+}
+
+.articleImage {
+  border-radius: 5px 5px 0 0;
+  // height: 45%;
+  width: 100%;
+}
+
+.contentWrapper {
+  padding: 2rem 1rem 3rem;
+
+  & > * {
+    line-height: initial;
+  }
+}
+
+.articleHeading {
+  margin: 0;
+}
+
+.articleDescription {
+  font-weight: 600;
+  margin: 0.25rem 0 0;
+}
+
+.timestamp {
+  display: block;
+  font-style: italic;
+}
+
+.articleExcerpt {
+  margin: 0.5rem 0 0;
+}

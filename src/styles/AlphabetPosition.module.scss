@@ -1,0 +1,82 @@
+@import './variables.scss';
+
+.demoSection {
+  margin: 15vmin 0;
+}
+
+.demoParameters {
+  color: $orange-accent-color;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.demoButton {
+  background: transparent;
+  border: 2px solid $green-accent-color;
+  border-radius: 5px;
+  color: $green-accent-color;
+  font-size: 1.25rem;
+  margin: 5vmin 0 25vmin;
+  padding: 0.25rem 0.5rem;
+  transition: background linear 0.75s;
+  transition: color linear 0.9s;
+
+  &:hover {
+    background: $green-accent-color;
+    color: white;
+    cursor: pointer;
+    transition: background linear 0.75s;
+    transition: color linear 0.9s;
+  }
+}
+
+.report {
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  margin-bottom: 15vmin;
+  padding: 5vmin 1rem 0;
+}
+
+.headingTwo {
+  font-weight: 400;
+  margin-bottom: 2vmin;
+  text-decoration: underline;
+}
+
+.description,
+.strategy,
+.tactics,
+.results {
+  padding-bottom: 5vmin;
+  & > * {
+    display: table;
+    margin-bottom: 2rem;
+  }
+  & :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.step {
+  display: table;
+  margin: 0.5rem 0 0 2.5rem;
+  position: relative;
+
+  &::before {
+    background: black;
+    border-radius: 50%;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    position: absolute;
+    width: 5px;
+    left: -20px;
+    top: 0.5em;
+  }
+}
+
+.stepSpan {
+  display: table;
+  margin-top: 0.5rem;
+}

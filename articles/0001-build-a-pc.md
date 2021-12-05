@@ -1,7 +1,7 @@
 ---
 alt_text: 'close-up angle of CPU'
 author: 'Ty Malik'
-cover_image: 'https://res.cloudinary.com/permalik/image/upload/v1637733844/article_003_build_a_pc.jpg'
+cover_image: 'https://res.cloudinary.com/permalik/image/upload/v1638646106/article_0001_build_a_pc.png'
 description: 'Assembling a desktop computer'
 excerpt: 'With a small time investment, the assembly of a working PC is not beyond the capabilities'
 tags: ['hardware', 'pc', 'technology']
@@ -13,9 +13,7 @@ title: 'Build a PC'
 
 Putting together a computer is really no trouble.
 
-Throughout the process are plenty of potential issues that can be tough to resolve.
-
-And sure this is true.
+Throughout the process are plenty of potential issues which may be tough to resolve; and sure, this is true.
 
 But as long as the hardware is in fair (enough) condition, much frustration may be avoided.
 
@@ -25,19 +23,19 @@ With a small time investment, the assembly of a working PC is not beyond the cap
 
 Computers complete tasks by leveraging individual components, each with differing functionality.
 
-The list looks like this...
+**The list looks like this...**
 
 ### Central Processing Unit (CPU)
 
 Responsible for getting things done.
 
-Referred to interchangably as a processors or microprocessors, CPUs are responsible for completing various tasks.
+Referred to interchangably as a processor or microprocessor, the CPU is responsible for completing various tasks.
 
 CPUs are fragile, thin silicon wafers armed with billions of transistors (switches).
 
-A shell provides each CPU an exterior point of contact. As the operations of computing release heat, this shell allows cooling of the processor.
+An exterior shell provides the CPU an intermediate point of contact. As computing operations release heat, this shell allows improved cooling of the processor.
 
-A CPU's performance may be quanitified using standard units. These units are based on segments of time. Each of those segments represents a task being accomplished.
+CPU performance can be quanitified using standard units. These units are based on segments of time. Each of those segments represents a task being accomplished.
 
 Such segments are referred to commonly as cycles. The measurement of these cycles follows an established metric.
 
@@ -59,30 +57,29 @@ Despite variation among models, motherboards are circuit boards (produced varied
 
 For every motherboard there is a particular flavor of CPU. Such relations are established by number of processor pins, processor manufacturer, etc.
 
-A standalone program, namely firmware, exists on every motherboard. This type of software can present as one,
-a Unified Extensible Firmware Interface (UEFI) or a Basic Input Output System (BIOS).
+A standalone program, namely firmware, exists on every motherboard. This type of software can present as one, a Unified Extensible Firmware Interface (UEFI) or a Basic Input Output System (BIOS).
 
 ### Random Access Memory (RAM)
 
 Short-term system recollection.
 
-Currently executing operations and sections of memory are stored within a solid-state component.
+Actively executing operations and sections of memory are stored within a solid-state component.
 
-The computer system must be receiving power and booted.
+In order to store such information, computer system must be receiving power and booted.
 
-A table is used by this component to organize what data is retained and where.
+A table is then used by this component to organize what data is retained and where.
 
-"Sticks" of RAM present as long, thin circuit boards called Dual Inline Memory Modules (DIMMs), which run parallel to one another and perpendicular to the motherboard onto which they are mounted.
+"Sticks" of RAM present as long, thin circuit boards called Dual Inline Memory Modules (DIMMs) which run parallel to one another and perpendicular to the motherboard onto which they are mounted.
 
 Standard PCs maintain this structure, whereas laptop computers use a varied type of RAM called Small Outline Dual Inline Memory Modules (SODIMMs). These alternative RAM entities are angled nearly parallel the motherboard.
 
 Single Data Rate (SDR) is near obsolete insofar as RAM speed is considered. This metric would operate once per clock instance in respect to the motherboard’s system timer.
 
-Double Data Rate (DDR), alternatively, can both send and receive data twice per each motherboard clock tick.
+Double Data Rate (DDR) alternatively, can both send and receive data twice per each motherboard clock tick.
 
 DDR is classified by four separate speed ratings: DDR, DDR2, DDR3 and DDR4. Each iteration of DDR transfers data successively faster.
 
-Dynamic Random Access Memory (DRAM) will only retain its memory while the computer is receiving power; and thus, it must constantly be refreshed.
+Dynamic Random Access Memory (DRAM) will only retain its memory while the computer is receiving power; thus it must constantly be refreshed.
 
 ### Storage Device
 
@@ -114,7 +111,7 @@ Video output processing.
 
 These processors accept video or graphic signals and output them to the display.
 
-Models perform at differing rates. Some allow less video capability, while others gradually display greater and greater quality.
+Models perform at differing rates. Some allow base-level video capability, while others gradually display greater and greater quality.
 
 A GPU is a circuit board with its own chipset and cooling fan. Each card will have a dedicated number of connections into which output devices may be plugged.
 
@@ -136,10 +133,10 @@ Ratings signify how much AC is capable of being converted to DC. They reveal how
 
 **Tools:**
 
-- flathead/philips screwdriver
+- flathead & philips screwdriver
 - flashlight
+- various tools if installing extra functionality
 - organized, well-lit workspace (optional)
-- various tools for extra functionality
 
 #### Mount Motherboard
 
@@ -149,13 +146,13 @@ Line up and fasten screws.
 
 #### Attach CPU
 
-Gloves might prevent transmission of unwanted oils onto CPU pins.
+Gloves may be preferred, as they might prevent transmission of unwanted oils onto CPU pins.
 
-Using a tool or hand, clutch processor by corners and line up pins with slot on motherboard.
+Using either a specialized tool or hand, clutch processor by corners and line up pins with slot on motherboard.
 
 Avoid forcing into place.
 
-Slide bar and lock CPU with motherboard.
+Once CPU is comfortably in place, slide bar and lock it together with motherboard.
 
 Appending a cooling fan calls for thermal paste.
 
@@ -181,6 +178,6 @@ House power supply box within case.
 
 #### Insert Hard Drives
 
-Disk drive or solid-state, hard drives should be placed and locked into provided bays inside the case.
+Whether disk drive or solid-state, hard drives should be placed and locked into provided bays inside the case.
 
 Photo by <a href="https://unsplash.com/@lazycreekimages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Dziedzic</a> on <a href="https://unsplash.com/s/photos/cpu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

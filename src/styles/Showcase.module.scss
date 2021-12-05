@@ -1,7 +1,31 @@
 .headingTwo {
-  font-size: clamp(2.1em, 8vw, 2.5em);
+  font-size: clamp(2.5em, 4vw, 4em);
+  margin-bottom: 3rem;
 }
 
-.showcase {
-  margin-top: 1rem;
+.cardWrapper {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  width: 100%;
+
+  @media (min-width: 850px) {
+    gap: 2vw;
+    grid-template-columns: repeat(3, calc(33.3% - 1.3vw));
+  }
+}
+
+.cardDescription {
+  margin: 2rem 0 0;
+
+  & > * {
+    border-left: hsl(248, 30%, 44%) solid 2px;
+    line-height: 1.4;
+    list-style: none;
+    padding-left: 0.5rem;
+  }
+
+  & > *:not(:first-child) {
+    margin-top: 1rem;
+  }
 }
