@@ -1,4 +1,3 @@
-import React from 'react';
 import fs from 'fs';
 import matter from 'gray-matter';
 import path from 'path';
@@ -7,6 +6,7 @@ import { sortByDate } from '../../utils';
 import Head from 'next/head';
 
 import About from '../components/About';
+import ConfirmationMessage from '../components/ConfirmationMessage';
 import Contact from '../components/Contact';
 import FeedCard from '../components/FeedCard';
 import Promo from '../components/Promo';
