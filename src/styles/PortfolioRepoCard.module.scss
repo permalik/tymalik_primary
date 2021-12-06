@@ -1,0 +1,20 @@
+.repoCard {
+  border: none;
+  border-radius: 5px;
+  box-shadow: hsla(0, 0%, 0%, 0.1) 0px 1px 2px 0px;
+  list-style: none;
+  padding: 0.25rem 0.5rem;
+}
+
+.repoHeading {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.repoDescription {
+  margin: 0;
+}
+
+.repoLiveLink {
+  margin: 0;
+}

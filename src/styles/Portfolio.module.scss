@@ -1,12 +1,42 @@
 .contentWrapper {
+  align-items: flex-start;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
   width: 100%;
+
+  @media (min-width: 864px) {
+    justify-content: space-between;
+  }
 }
 
+.githubSection {
+  flex-grow: 1;
+
+  @media (min-width: 864px) {
+    max-width: 50%;
+  }
+}
+
+.trialSection {
+  flex-grow: 1;
+
+  @media (min-width: 864px) {
+    flex-grow: 0;
+  }
+}
+
+.githubHeading,
+.trialHeading {
+  text-transform: uppercase;
+}
+
+.repoList,
 .trialList {
-  display: grid;
-  gap: 0.5rem;
-  grid-template-columns: 1fr;
-  margin: 3rem 0 0;
-  width: 30%;
+  margin: 0;
+  width: 100%;
+
+  & > *:not(:first-child) {
+    margin: 1rem 0 0;
+  }
 }
