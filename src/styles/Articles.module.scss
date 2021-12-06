@@ -1,14 +1,7 @@
 .articleList {
-  display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-  // grid-template-rows: repeat(auto-fit, minmax(6rem, 1fr));
   margin: 3rem 0 0;
 
-  @media (min-width: 680px) {
-    grid-template-columns: repeat(2, minmax(12rem, 1fr));
+  & > *:not(:first-child) {
+    margin: 2rem 0 0;
   }
-}
-
-.articleList {
 }

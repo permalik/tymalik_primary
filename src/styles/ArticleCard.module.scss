@@ -3,7 +3,7 @@
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   cursor: pointer;
-  padding: 2rem 1rem 3rem;
+  padding: 1rem;
   position: relative;
   top: 0;
   transition: top ease 0.1s;
@@ -15,6 +15,8 @@
 }
 
 .title {
+  font-size: clamp(1.8em, 4vw, 2.2em);
+  font-weight: 600;
   margin: 0;
 }
 

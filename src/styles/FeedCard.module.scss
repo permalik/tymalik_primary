@@ -2,7 +2,7 @@
   background: hsla(248, 3%, 97%, 0.8);
   // border-left: hsl(248, 30%, 44%) solid 2px;
   border-radius: 5px;
-  box-shadow: hsla(0, 0%, 0%, 0.1) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   font-size: 1.6em;
   list-style: none;
   position: relative;
@@ -17,7 +17,7 @@
 
 .articleImage {
   border-radius: 5px 5px 0 0;
-  // height: 45%;
+  border-bottom: hsl(248, 30%, 44%) solid 5px;
   width: 100%;
 }
 

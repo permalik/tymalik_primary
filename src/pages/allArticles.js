@@ -2,10 +2,7 @@ import fs from 'fs';
 import { sortByDate } from '../../utils';
 import matter from 'gray-matter';
 import path from 'path';
-// import { from, merge, range } from 'rxjs';
-// import { filter, map } from 'rxjs/operators';
 
-import puzzleCardArray from '../../utils/puzzleCardArray';
 import ArticleCard from '../components/ArticleCard';
 import PrimarySection from '../components/PrimarySection';
 
@@ -13,8 +10,10 @@ import ArticlesStyles from '../styles/Articles.module.scss';
 
 export default function AllArticles({ articles }) {
   return (
-    <PrimarySection>
-      <h1 className={ArticlesStyles.headingOne}>All articles</h1>
+    <PrimarySection className={ArticlesStyles.primarySection}>
+      <header className={ArticlesStyles.header}>
+        <h1 className={ArticlesStyles.headingOne}>All articles</h1>
+      </header>
       <ul className={ArticlesStyles.articleList}>
         {articles.map((article, index) => (
           <ArticleCard key={index} article={article} />
