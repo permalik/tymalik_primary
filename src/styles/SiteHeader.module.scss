@@ -46,5 +46,45 @@
 .navLink {
   font-size: clamp(1.35em, 3vw, 1.5em);
   font-weight: 600;
+  position: relative;
   text-transform: uppercase;
+
+  &:before,
+  &:after {
+    background: hsl(15, 74%, 44%);
+    bottom: -3px;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  &:before {
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  }
+
+  &:after {
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  }
+
+  &:hover:before,
+  &:hover:after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &:hover:before {
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+      opacity 0.2s;
+  }
+
+  &:hover:after {
+    transition: tranform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+      opacity 0s 0.2s;
+  }
 }
