@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import useSwr from 'swr';
 import { sortById } from '../../utils';
 
@@ -39,7 +40,11 @@ export default function Portfolio() {
             <div className={PortfolioStyles.viewAll}>
               <a href={`/allTrials`}>
                 <p>View All</p>
-                <div className={PortfolioStyles.viewAllArrow}>&#8250;</div>
+                <img
+                  alt='thin, right-pointing arrow'
+                  className={PortfolioStyles.viewAllArrow}
+                  src={`https://res.cloudinary.com/permalik/image/upload/v1638834651/arrow_right.svg`}
+                />
               </a>
             </div>
           </header>

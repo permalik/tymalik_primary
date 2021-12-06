@@ -49,6 +49,10 @@
     display: flex;
     flex-flow: row nowrap;
 
+    &:hover {
+      opacity: 0.8;
+    }
+
     &:hover .viewAllArrow {
       right: -3px;
     }
@@ -58,10 +62,9 @@
       margin: 0 0.5rem 0 0;
     }
 
-    & > div {
+    & > img {
       position: relative;
       right: 0;
-      transform: scale(2.3);
       transition: right ease-in-out 0.1s;
     }
   }
