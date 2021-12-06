@@ -14,9 +14,9 @@ title: 'JavaScript Color Switch'
 
 Building a color switch requires some form of user input.
 
-I chose to use a math quiz to prompt for such input.
+I chose to implement a math quiz to prompt for such input.
 
-After accurately answering questions, a series of color switches are produced.
+After accurately answering questions a series of color switches are produced.
 
 These switches allow a user to momentarily paint the background of the viewport.
 
@@ -24,17 +24,27 @@ These switches allow a user to momentarily paint the background of the viewport.
 
 The first section houses a div for containing my color switch interface.
 
-Within this interface, math questions are asked and answers are prompted for.
+Within this interface math questions are asked and answers are received.
 
-Additionally, another section is used to insert the switch. This section enables user interactivity, displaying a message when the propmt is answered correctly.
+Additionally, another section is used to insert the actual switch. This section enables user interactivity, displaying a message when the question is answered correctly.
 
 ### Functionality
 
-With each correct answer, the interface needs to be removed while the respective color switch is displayed.
+The interface will be removed with each correct answer with the respective color switch being displayed.
 
-After the interface is removed, an animation will present with a clickable circle.
+After the interface is removed an animation will present with a clickable circle.
 
-When the circle is clicked, the background color should transition to and from the first "color switch".
+When the circle is clicked the background color will transition to and from the first "color switch".
+
+Each round offers a new color for display. In preparation for this next round, the interactive control circle will automatically, randomly position itself.
+
+This random positioning was made possible by utilizing `Math.round(Math.random() * n)`, `window.innerHeight`, `window.innerWidth` and other assistive logic.
+
+### Style
+
+Only a minimal amount of base styles are defined in a main style sheet.
+
+The lion's share of style is enacted with `document.querySelector(arg)`, class selectors or `document.getElementById(arg)`.
 
 ## Final Thoughts
 

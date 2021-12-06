@@ -9,7 +9,7 @@ timestamp: '2021-02-17'
 title: 'Describe Web Functionality'
 ---
 
-## Web Browsers
+## Primary Outlook
 
 Browsers are web interfaces built for purposeful user interaction.
 
@@ -73,6 +73,6 @@ The capabilities and methods by which the web operates can be both subtle and by
 
 The simplest approach to understanding the current state of the web lies in realizing the value of each step.
 
-In short, the web is a process of seeking and presenting data.
+In short, the web is a process of both seeking and presenting data.
 
 Photo by <a href="https://unsplash.com/@alesnesetril?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ales Nesetril</a> on <a href="https://unsplash.com/s/photos/laptop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

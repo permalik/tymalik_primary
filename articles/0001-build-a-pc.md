@@ -158,7 +158,7 @@ Appending a cooling fan calls for thermal paste.
 
 For this, apply a thin layer of paste to CPU shell.
 
-Match and press them together. Secure them with screws.
+Match and press them together, then secure with screws.
 
 #### Insert RAM
 
@@ -179,5 +179,9 @@ House power supply box within case.
 #### Insert Hard Drives
 
 Whether disk drive or solid-state, hard drives should be placed and locked into provided bays inside the case.
+
+## Final Thoughts
+
+This process should be quite straight-forward. And while this project is not terribly complex, a successful build can provide the confidence to continue onto more advanced concepts.
 
 Photo by <a href="https://unsplash.com/@lazycreekimages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Dziedzic</a> on <a href="https://unsplash.com/s/photos/cpu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

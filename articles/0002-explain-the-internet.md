@@ -9,7 +9,7 @@ tags: ['internet', 'technology', 'web']
 title: 'Explain the Internet'
 ---
 
-## A Brief History (as we know it)
+## Primary Outlook
 
 The internet was first envisioned as a globally interconnected network of computers where everybody could access data and programs from any site.
 
@@ -81,7 +81,7 @@ This portion of the computational progression is where we (as humans) take in an
 
 Utilization of such information is also not limited to humans. Instead hardware is also capable of sending data to other hardware by way of automation, programming or artificial intelligence.
 
-### The Future Interweb
+## Final Thoughts
 
 The working concept for the internet was built around the Internet Protocol (IP). Network communication is made possible as data is passed from one destination to the next via packets.
 
