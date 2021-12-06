@@ -3,3 +3,8 @@
   min-width: 235px;
   width: 100%;
 }
+
+.headingTwo {
+  font-size: clamp(2em, 4vw, 4em);
+  margin-bottom: 3rem;
+}

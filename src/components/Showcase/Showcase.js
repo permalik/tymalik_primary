@@ -9,8 +9,7 @@ import ShowcaseStyles from '../../styles/Showcase.module.scss';
 
 export default function Showcase() {
   return (
-    <SectionTwo>
-      <h2 className={ShowcaseStyles.headingTwo}>recent projects</h2>
+    <SectionTwo heading='recent projects'>
       <div className={ShowcaseStyles.cardWrapper}>
         <ShowcaseCard
           className={ShowcaseStyles.cardLink}

@@ -6,8 +6,7 @@ import AboutStyles from '../../styles/About.module.scss';
 
 export default function About() {
   return (
-    <SectionTwo>
-      <h2 className={AboutStyles.aboutHeading}>about Ty</h2>
+    <SectionTwo heading='about Ty'>
       <div className={AboutStyles.contentWrapper}>
         <img
           alt={`profile image of Ty Malik`}

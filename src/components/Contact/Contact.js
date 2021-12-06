@@ -68,11 +68,10 @@ export default function Contact() {
   );
 
   return (
-    <SectionTwo>
-      <h2 className={ContactStyles.contactHeading} id='contact'>
-        say hi
-      </h2>
-      {formVisible ? ContactForm : ConfirmationMessage}
-    </SectionTwo>
+    <div id='contact'>
+      <SectionTwo heading='say hi'>
+        {formVisible ? ContactForm : ConfirmationMessage}
+      </SectionTwo>
+    </div>
   );
 }

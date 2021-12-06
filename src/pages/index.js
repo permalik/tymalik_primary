@@ -6,7 +6,6 @@ import { sortByDate } from '../../utils';
 import Head from 'next/head';
 
 import About from '../components/About';
-import ConfirmationMessage from '../components/ConfirmationMessage';
 import Contact from '../components/Contact';
 import FeedCard from '../components/FeedCard';
 import Promo from '../components/Promo';
@@ -34,8 +33,7 @@ export default function Home({ articles }) {
       <Promo />
       <Skillset />
       <Showcase />
-      <SectionTwo className={styles.articleFeed}>
-        <h2 className={styles.feedHeading}>latest articles</h2>
+      <SectionTwo className={styles.articleFeed} heading='latest articles'>
         <ul className={styles.feedList}>
           {articles.slice(0, 6).map((article, index) => (
             <FeedCard article={article} key={index} />

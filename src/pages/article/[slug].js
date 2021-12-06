@@ -30,11 +30,6 @@ export default function Article({
     <PrimarySection>
       <article className={ArticleStyles.article}>
         <header className={ArticleStyles.headerContent}>
-          <img
-            alt={alt_text}
-            className={ArticleStyles.coverImage}
-            src={cover_image}
-          />
           <h1 className={ArticleStyles.title}>{title}</h1>
           <p className={ArticleStyles.description}>{description}</p>
           <div className={ArticleStyles.creditWrapper}>
@@ -43,6 +38,11 @@ export default function Article({
             </Link>
             <time className={ArticleStyles.timestamp}>{timestamp}</time>
           </div>
+          <img
+            alt={alt_text}
+            className={ArticleStyles.coverImage}
+            src={cover_image}
+          />
           {/* <ul className={ArticleStyles.tagList}>
             {tags.map((tag, index) => (
               <li className={ArticleStyles.tag} key={index}>
@@ -51,7 +51,7 @@ export default function Article({
             ))}
           </ul> */}
         </header>
-        <div
+        <section
           className={ArticleStyles.bodySection}
           dangerouslySetInnerHTML={{ __html: marked(content) }}
         />
