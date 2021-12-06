@@ -8,6 +8,14 @@
   flex-flow: column nowrap;
   justify-content: baseline;
   padding: 0.5rem 1rem;
+  position: relative;
+  top: 0;
+  transition: top ease 0.1s;
+
+  &:hover {
+    cursor: pointer;
+    top: -2px;
+  }
 
   @media (min-width: 750px) {
     flex-flow: row nowrap;
@@ -34,6 +42,7 @@
 }
 
 .timestamp {
+  font-style: italic;
   margin-top: 0.5rem;
   text-align: right;
 }

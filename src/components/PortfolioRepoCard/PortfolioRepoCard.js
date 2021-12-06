@@ -11,14 +11,16 @@ export default function PortfolioRepoCard({ repo }) {
           {repo.description}
         </p>
       </a>
-      {repo.homepage ? (
-        <a
-          className={PortfolioRepoCardStyles.repoLiveLink}
-          href={repo.homepage}
-        >
-          Live Site
-        </a>
-      ) : null}
+      <div className={PortfolioRepoCardStyles.liveLinkWrapper}>
+        {repo.homepage ? (
+          <a
+            className={PortfolioRepoCardStyles.repoLiveLink}
+            href={repo.homepage}
+          >
+            View Site
+          </a>
+        ) : null}
+      </div>
     </li>
   );
 }

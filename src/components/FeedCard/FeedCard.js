@@ -25,7 +25,10 @@ export default function FeedCard({ article }) {
             <p className={FeedCardStyles.articleDescription}>
               {article.frontmatter.description}
             </p>
-            <time dateTime={article.frontmatter.timestamp}>
+            <time
+              dateTime={article.frontmatter.timestamp}
+              className={FeedCardStyles.timestamp}
+            >
               {article.frontmatter.timestamp}
             </time>
             <p className={FeedCardStyles.articleExcerpt}>

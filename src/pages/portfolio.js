@@ -1,4 +1,5 @@
 import useSwr from 'swr';
+import { sortById } from '../../utils';
 
 import PortfolioRepoCard from '../components/PortfolioRepoCard';
 import PortfolioTrialCard from '../components/PortfolioTrialCard';
@@ -24,14 +25,24 @@ export default function Portfolio() {
           <h2 className={PortfolioStyles.githubHeading}>github</h2>
           <ul className={PortfolioStyles.repoList}>
             {data
-              ? data.repos.data.map((repo, index) => (
-                  <PortfolioRepoCard key={index} repo={repo} />
-                ))
+              ? data.repos.data
+                  .sort(sortById)
+                  .map((repo, index) => (
+                    <PortfolioRepoCard key={index} repo={repo} />
+                  ))
               : 'Loading...'}
           </ul>
         </section>
         <section className={PortfolioStyles.trialSection}>
-          <h2 className={PortfolioStyles.trialHeading}>trials</h2>
+          <header className={PortfolioStyles.sectionHeader}>
+            <h2 className={PortfolioStyles.trialHeading}>trials</h2>
+            <div className={PortfolioStyles.viewAll}>
+              <a href={`/allTrials`}>
+                <p>View All</p>
+                <div className={PortfolioStyles.viewAllArrow}>&#8250;</div>
+              </a>
+            </div>
+          </header>
           <ul className={PortfolioStyles.trialList}>
             {puzzleCardArray.map((trial, index) => (
               <PortfolioTrialCard key={index} trial={trial} />
