@@ -15,12 +15,9 @@ const NewEditor = dynamic(
   }
 );
 
-export default function EditorInstance({ editorTitle, value }) {
+export default function EditorInstance({ value }) {
   return (
     <section className='editorSection'>
-      <header>
-        <p className='editorTitle'>{editorTitle}</p>
-      </header>
       <NewEditor
         className='codemirrorWrapper'
         options={{

@@ -99,102 +99,92 @@ function alphabetPosition(string) {
       >
         {randomPhrase}
       </button>
-      <section className={AlphabetPositionStyles.report}>
-        <h2 className={AlphabetPositionStyles.headingTwo}>Description</h2>
-        <p className={AlphabetPositionStyles.description}>
-          <span>Take a string</span>
-          <span>
-            Replace every letter with its position in the alphabet &mdash;
-            return a string of space-delimited integers
-          </span>
-          <span>
-            If a non-letter character is found in the string, ignore it and do
-            not return it
-          </span>
+      <section className={TrialStyles.report}>
+        <h2 className={TrialStyles.headingTwo}>Description</h2>
+        <p className={TrialStyles.reportContent}>Accept a string as input.</p>
+        <p className={TrialStyles.reportContent}>
+          Replace every letter with its proper alphabet position.
         </p>
-        <h2 className={AlphabetPositionStyles.headingTwo}>Strategy</h2>
-        <p className={AlphabetPositionStyles.strategy}>
-          <span>
-            Intial input will be a string of one or more words
-            <span className={AlphabetPositionStyles.step}>
-              Iterate the string, using regex to determine what is and is not a
-              letter
-              <span className={AlphabetPositionStyles.stepSpan}>
-                Convert any letters to lower-case and push onto a new array
-              </span>
-            </span>
-          </span>
-          <span>
-            I have a newly-populated array of lower-case letters. Each item in
-            the array needs be converted to its respective character code
-            <span className={AlphabetPositionStyles.step}>
-              Iterate the lower-case letter array, consecutively converting one
-              letter at a time into character code
-              <span className={AlphabetPositionStyles.stepSpan}>
-                Push each character code onto a new array &mdash; returning the
-                new array
-              </span>
-            </span>
-          </span>
-          <span>
-            Next I should create a new array from my character code array, where
-            each contained item represents a particular position in the alphabet
-            <span className={AlphabetPositionStyles.step}>
-              Iterate the character code array and perform a calculation on each
-              item
-              <span className={AlphabetPositionStyles.stepSpan}>
-                Such calculation should derive an alphabet position by
-                determining the relational difference between unicode value and
-                index value of the current array
-              </span>
-              <span className={AlphabetPositionStyles.stepSpan}>
-                Return the calculations as yet another array
-              </span>
-            </span>
-          </span>
-          <span>
-            The last array contains each appropriate alphabet position relative
-            to the initial string input. All that&rsquo;s left is converting the
-            array back into a string
-            <span className={AlphabetPositionStyles.step}>
-              With the final array, assign the joined array or string value to a
-              new variable &mdash; return the string
-            </span>
-          </span>
+        <p className={TrialStyles.reportContent}>
+          Return a string of space-delimited integers.
         </p>
-        <h2 className={AlphabetPositionStyles.headingTwo}>Improved Tactics</h2>
-        <p className={AlphabetPositionStyles.tactics}>
-          <span>
-            Intial input will be a string of one or more words
-            <span className={AlphabetPositionStyles.step}>
-              Return the passed string &mdash; but first: send each character to
-              uppercase (or lowercase), then use regex to match any letter
-              (case-agnostic)
-              <span className={AlphabetPositionStyles.stepSpan}>
-                .map through each character, converting the unicode value to the
-                corresponding alphabet position
-              </span>
-              <span className={AlphabetPositionStyles.stepSpan}>
-                Join the items from the array into a string
-              </span>
-            </span>
-          </span>
+        <p className={TrialStyles.reportContent}>
+          If a non-letter character is within the string, ignore it. Do not
+          return it.
         </p>
-        <h2 className={AlphabetPositionStyles.headingTwo}>Results</h2>
-        <p className={AlphabetPositionStyles.results}>
-          <span>
-            Three below approaches:
-            <span className={AlphabetPositionStyles.step}>
-              The top Codewars submission
-            </span>
-            <span className={AlphabetPositionStyles.step}>
-              The alternative Codewars submission
-            </span>
-            <span className={AlphabetPositionStyles.step}>
-              My initial Codewars submission
-            </span>
-          </span>
+        <h2 className={TrialStyles.headingTwo}>Initial strategy</h2>
+        <p className={TrialStyles.reportContent}>
+          Intial input will be a string of one or more words.
         </p>
+        <p className={TrialStyles.reportContent}>
+          Iterate the string using regex to determine what which are letters and
+          not.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Convert any letters to lower-case and push onto a new array.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Iterate the lower-case letter array, consecutively converting letters
+          to character codes.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Push each character code onto a new array, returning the new array.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Create a new array from my character code array, where each contained
+          item represents a particular position in the alphabet.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Iterate the character code array, performing calculations on each
+          item.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Such calculations should produce an alphabet position by determining
+          the relational difference between unicode value and index value of the
+          current array item.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Return the calculations as yet another new array.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          This last array contains each appropriate alphabet position relative
+          to the initial string input.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Join the final array into a string, assign that string to a variable
+          and return the string variable.
+        </p>
+        <h2 className={TrialStyles.headingTwo}>Improved tactics</h2>
+        <p className={TrialStyles.reportContent}>
+          Intial input will be a string of one or more words.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Return the passed string after mutating.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Send each character to uppercase or lowercase.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Use regex to identify (case-agnostic) letters.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          .map through each character, converting the unicode value to the
+          corresponding alphabet position.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Join the items from the array into a string, then return the string.
+        </p>
+        <h2 className={TrialStyles.headingTwo}>Results</h2>
+        <p className={TrialStyles.reportContent}>Three below approaches:</p>
+        <ul className={TrialStyles.reportUl}>
+          <li className={TrialStyles.reportli}>The top Codewars submission</li>
+          <li className={TrialStyles.reportli}>
+            The alternative Codewars submission
+          </li>
+          <li className={TrialStyles.reportli}>
+            My initial Codewars submission
+          </li>
+        </ul>
       </section>
       <EditorInstance editorTitle='source' value={code} />
     </TrialLayout>

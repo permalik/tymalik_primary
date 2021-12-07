@@ -7,12 +7,9 @@ import TrialStyles from '../../styles/Trial.module.scss';
 import SpinningWordsStyles from '../../styles/SpinningWords.module.scss';
 
 let spinWords = (words) => {
-  return words
-    .split(' ')
-    .map(function (word) {
-      return word.length > 4 ? word.split('').reverse().join('') : word;
-    })
-    .join(' ');
+  return words.replace(/\w{5,}/g, function (w) {
+    return w.split('').reverse().join('');
+  });
 };
 
 export default function SpinningWords() {
@@ -104,100 +101,95 @@ function spinWords(string) {
       >
         {phraseInput}
       </button>
-      <section className={SpinningWordsStyles.report}>
-        <h2 className={SpinningWordsStyles.headingTwo}>Description</h2>
-        <p className={SpinningWordsStyles.description}>
-          <span>
-            Write a function that takes in a string of one or more words, and
-            returns the same string, but with all five or more letter words
-            reversed.
-          </span>
-          <span>
-            Strings passed in will consist of only letters and spaces.
-          </span>
-          <span>
-            Spaces will be included only when more than one word is present.
-          </span>
+      <section className={TrialStyles.report}>
+        <h2 className={TrialStyles.headingTwo}>Description</h2>
+        <p className={TrialStyles.reportContent}>
+          Write a function that takes in a string of one or more words.
         </p>
-        <h2 className={SpinningWordsStyles.headingTwo}>Strategy</h2>
-        <p className={SpinningWordsStyles.strategy}>
-          <span>
-            Intial input will be a string of one or more words
-            <span className={SpinningWordsStyles.step}>
-              Verify string input is not empty
-            </span>
-          </span>
-          <span>
-            I need to check each word or character in this string. An array
-            should work
-            <span className={SpinningWordsStyles.step}>
-              If string has contents, split individual items by space delimiters
-              &mdash; returning an array wherein each of these items maintains
-              positioning relative to that of the source string
-            </span>
-          </span>
-          <span>
-            If there is a single item within returned array, it can be reversed
-            and returned
-            <span className={SpinningWordsStyles.step}>
-              If that single item maintains a greater character length than
-              four, then: split, reverse and rejoin it &mdash; returning a
-              reversed string
-            </span>
-          </span>
-          <span>
-            Now I need to do the same reversal process for strings with multiple
-            items
-            <span className={SpinningWordsStyles.step}>
-              Iterate the array and perform the prior process on each contained
-              item. Append each item (reversal-agnostic) to a new array
-            </span>
-          </span>
-          <span>
-            In the most recent array, items with length of five or greater have
-            been reversed in place. This array should be reassigned to a string
-            <span className={SpinningWordsStyles.step}>
-              Rejoin the array items into a string
-            </span>
-          </span>
+        <p className={TrialStyles.reportContent}>Return the same string.</p>
+        <p className={TrialStyles.reportContent}>
+          All words with five or more letters within returned string should be
+          reversed.
         </p>
-        <h2 className={SpinningWordsStyles.headingTwo}>Improved Tactics</h2>
-        <p className={SpinningWordsStyles.tactics}>
-          <span>
-            Intial input will be a string of one or more words
-            <span className={SpinningWordsStyles.step}>
-              Return the passed string &mdash; but first: split by space
-              delimiters, check if each item has a length of four or less
-              <span className={SpinningWordsStyles.stepSpan}>
-                If item has length greater than four, split item, reverse
-                characters and rejoin
-              </span>
-              <span className={SpinningWordsStyles.stepSpan}>
-                If item has length of four or less, return item sans
-                modification
-              </span>
-              <span className={SpinningWordsStyles.stepSpan}>
-                Once each item is .map(ped) into a new array, rejoin each
-                modified item to create a single string
-              </span>
-            </span>
-          </span>
+        <p className={TrialStyles.reportContent}>
+          Spaces will be included only when more than one word is present.
         </p>
-        <h2 className={SpinningWordsStyles.headingTwo}>Results</h2>
-        <p className={SpinningWordsStyles.results}>
-          <span>
-            Three below approaches:
-            <span className={SpinningWordsStyles.step}>
-              The top Codewars submission
-            </span>
-            <span className={SpinningWordsStyles.step}>
-              A clever Codewars submission
-            </span>
-            <span className={SpinningWordsStyles.step}>
-              My initial Codewars submission
-            </span>
-          </span>
+        <h2 className={TrialStyles.headingTwo}>Initial strategy</h2>
+        <p className={TrialStyles.reportContent}>
+          Intial input will be a string of one or more words.
         </p>
+        <p className={TrialStyles.reportContent}>
+          Verify string input is not empty.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Check each word or character in this string using an array.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          If string has contents, split individual items by space delimiters.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Return an array wherein each of these items maintains positioning
+          relative to that of the source string.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          If there is a single item within returned array, it can be reversed
+          and returned.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          If that single item maintains a greater character length than four:
+          split, reverse and rejoin.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Returning the single-word reversed string.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          The same reversal process need now be executed for strings with
+          multiple items.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Iterate the array and perform the same process on each contained item.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Append all items to a new array.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          In the newest array, items with character length of five or greater
+          have now been reversed in place.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Rejoin the array items into a string; return the string.
+        </p>
+        <h2 className={TrialStyles.headingTwo}>Improved Tactics</h2>
+        <p className={TrialStyles.reportContent}>
+          Intial input will be a string of one or more words.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Return the passed string after following mutation.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Split by space delimiters and check items has a character length of
+          four or less.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          If item has character length greater than four: split, reverse and
+          rejoin.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          If item has length of four or less, return item sans mutation.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Once each item is .map(ped) into a new array, rejoin each modified
+          item to create a single string.
+        </p>
+        <h2 className={TrialStyles.headingTwo}>Results</h2>
+        <p className={TrialStyles.reportContent}>Three below approaches:</p>
+        <ul className={TrialStyles.reportUl}>
+          <li className={TrialStyles.reportLi}>The top Codewars submission</li>
+          <li className={TrialStyles.reportLi}>A clever Codewars submission</li>
+          <li className={TrialStyles.reportLi}>
+            My initial Codewars submission
+          </li>
+        </ul>
       </section>
       <EditorInstance editorTitle='source' value={code} />
     </TrialLayout>

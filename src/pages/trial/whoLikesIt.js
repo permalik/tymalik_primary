@@ -160,84 +160,83 @@ function likes(names) {
       >
         {resultsRenderer(likes)}
       </button>
-      <section className={WhoLikesItStyles.report}>
-        <h2 className={WhoLikesItStyles.headingTwo}>Description</h2>
-        <p className={WhoLikesItStyles.description}>
-          <span>Begin with an array</span>
-          <span>
-            Contained within the array are the names of people that like an item
-          </span>
-          <span>Return the corresponding interpolated statement:</span>
-          <span className={WhoLikesItStyles.step}>
+      <section className={TrialStyles.report}>
+        <h2 className={TrialStyles.headingTwo}>Description</h2>
+        <p className={TrialStyles.reportContent}>Begin with an array.</p>
+        <p className={TrialStyles.reportContent}>
+          Contained within the array are the names of people that like an item.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Return the corresponding interpolated statement:
+        </p>
+        <ul className={TrialStyles.reportUl}>
+          <li className={TrialStyles.reportLi}>
             &ldquo;No one likes this&rdquo;
-          </span>
-          <span className={WhoLikesItStyles.step}>
+          </li>
+          <li className={TrialStyles.reportListItem}>
             &ldquo;&lt;person&#91;0&#93;&gt; likes this&rdquo;
-          </span>
-          <span className={WhoLikesItStyles.step}>
+          </li>
+          <li className={TrialStyles.reportListItem}>
             &ldquo;&lt;person&#91;0&#93;&gt;, and &lt;person&#91;1&#93;&gt; like
             this&rdquo;
-          </span>
-          <span className={WhoLikesItStyles.step}>
+          </li>
+          <li className={TrialStyles.reportListItem}>
             &ldquo;&lt;person&#91;0&#93;&gt;, &lt;person&#91;1&#93;&gt;, and
             &lt;person&#91;2&#93;&gt; like this&rdquo;
-          </span>
-          <span className={WhoLikesItStyles.step}>
+          </li>
+          <li className={TrialStyles.reportListItem}>
             &ldquo;&lt;person&#91;0&#93;&gt;, &lt;person&#91;1&#93;&gt;, and
             &lt;n&gt; others like this&rdquo;
-          </span>
+          </li>
+        </ul>
+
+        <h2 className={TrialStyles.headingTwo}>Initial strategy</h2>
+
+        <p className={TrialStyles.reportContent}>
+          Intial input will be an array containing the names of people.
         </p>
-        <h2 className={WhoLikesItStyles.headingTwo}>Strategy</h2>
-        <p className={WhoLikesItStyles.strategy}>
-          <span>
-            Intial input will be an array containing the names of people
-            <span className={WhoLikesItStyles.step}>
-              Create a variable to track the &ldquo;n others&ldquo; from the
-              final statement
-            </span>
-          </span>
-          <span>
-            From the array of names I should determine which statement to
-            utilize (via length of array)
-            <span className={WhoLikesItStyles.step}>
-              Write a switch statement which compares the length of the array
-              &#8212; returning the appropriate interpolated statement
-            </span>
-          </span>
+        <p className={TrialStyles.reportContent}>
+          Create a variable to track the &ldquo;n others&ldquo; from the final
+          statement.
         </p>
-        <h2 className={WhoLikesItStyles.headingTwo}>Improved Tactics</h2>
-        <p className={WhoLikesItStyles.tactics}>
-          <span>
-            Intial input will be an array containing the names of people
-          </span>
-          <span>
-            From the array of names I should determine which statement to
-            utilize (via length of array)
-            <span className={WhoLikesItStyles.step}>
-              Write a switch statement which compares the length of the array
-              &#8212; returning the appropriate interpolated statement
-              <span className={WhoLikesItStyles.stepSpan}>
-                Include the final statement in the default case
-              </span>
-            </span>
-          </span>
+        <p className={TrialStyles.reportContent}>
+          From the array of names I should determine which statement to utilize
+          (via length of array.)
         </p>
-        <h2 className={WhoLikesItStyles.headingTwo}>Results</h2>
-        <p className={WhoLikesItStyles.results}>
-          <span>
-            Three below approaches:
-            <span className={WhoLikesItStyles.step}>
-              The top Codewars submission
-            </span>
-            <span className={WhoLikesItStyles.step}>
-              A clever Codewars submission
-            </span>
-            <span className={WhoLikesItStyles.step}>
-              My initial Codewars submission
-            </span>
-          </span>
+        <p className={TrialStyles.reportContent}>
+          Write a switch statement which compares the length of the array
+          &#8212; returning the appropriate interpolated statement.
         </p>
+
+        <h2 className={TrialStyles.headingTwo}>Improved tactics</h2>
+        <p className={TrialStyles.reportContent}>
+          Intial input will be an array containing the names of people.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          From the array of names I should determine which statement to utilize
+          (via length of array.)
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Write a switch statement which compares the length of the array
+          &#8212; returning the appropriate interpolated statement.
+        </p>
+        <p className={TrialStyles.reportContent}>
+          Include the final statement in the default case.
+        </p>
+
+        <h2 className={TrialStyles.headingTwo}>Results</h2>
+        <p className={TrialStyles.reportContent}>Three below approaches:</p>
+        <ul className={TrialStyles.reportUl}>
+          <li className={TrialStyles.reportLi}>The top Codewars submission</li>
+          <li className={TrialStyles.reportListItem}>
+            A clever Codewars submission
+          </li>
+          <li className={TrialStyles.reportListItem}>
+            My initial Codewars submission
+          </li>
+        </ul>
       </section>
+      <h2 className={TrialStyles.editorHeading}>Source</h2>
       <EditorInstance editorTitle='source' value={code} />
     </TrialLayout>
   );
