@@ -12,7 +12,7 @@ export default function AllArticles({ articles }) {
   return (
     <PrimarySection className={ArticlesStyles.primarySection}>
       <header className={ArticlesStyles.header}>
-        <h1 className={ArticlesStyles.headingOne}>All articles</h1>
+        <h1 className={ArticlesStyles.headingOne}>all articles</h1>
       </header>
       <ul className={ArticlesStyles.articleList}>
         {articles.map((article, index) => (

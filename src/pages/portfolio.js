@@ -20,7 +20,7 @@ export default function Portfolio() {
 
   return (
     <PrimarySection>
-      <h1>All projects</h1>
+      <h1>all projects</h1>
       <div className={PortfolioStyles.contentWrapper}>
         <section className={PortfolioStyles.githubSection}>
           <h2 className={PortfolioStyles.githubHeading}>github</h2>
