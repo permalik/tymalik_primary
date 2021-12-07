@@ -27,7 +27,7 @@ export default function SiteFooter() {
       </nav>
       <nav className={SiteFooterStyles.socialNav}>
         <ul>
-          <a href=''>
+          <a href='mailto:tymalik@protonmail.com'>
             <li className={SiteFooterStyles.socialLi}>
               <Image
                 alt='at sign, email icon link'
@@ -38,7 +38,7 @@ export default function SiteFooter() {
               />
             </li>
           </a>
-          <a>
+          <a href='https://github.com/permalik'>
             <li className={SiteFooterStyles.socialLi}>
               <Image
                 alt='github logo, github icon link'
@@ -49,7 +49,7 @@ export default function SiteFooter() {
               />
             </li>
           </a>
-          <a href=''>
+          <a href='https://www.linkedin.com/in/permalik/'>
             <li className={SiteFooterStyles.socialLi}>
               <Image
                 alt='linkedin logo, linkedin icon link'
@@ -60,7 +60,7 @@ export default function SiteFooter() {
               />
             </li>
           </a>
-          <a href=''>
+          <a href='https://twitter.com/resetpermalik'>
             <li className={SiteFooterStyles.socialLi}>
               <Image
                 alt='twitter logo, twitter icon link'

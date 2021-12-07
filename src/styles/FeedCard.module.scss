@@ -34,7 +34,9 @@
 }
 
 .articleDescription {
+  font-family: Ubuntu, Segoe UI, Roboto, Helvetica Neue, sans-serif;
   font-weight: 600;
+  line-height: 1.4;
   margin: 0.25rem 0 0;
 }
 
@@ -44,5 +46,5 @@
 }
 
 .articleExcerpt {
-  margin: 0.5rem 0 0;
+  margin: 1rem 0 0;
 }

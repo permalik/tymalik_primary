@@ -1,3 +1,5 @@
+@import '../styles/variables.scss';
+
 .repoCard {
   border: none;
   border-radius: 5px;
@@ -12,6 +14,13 @@
     cursor: pointer;
     top: -2px;
   }
+
+  @media (min-width: 1200px) {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
 }
 
 .repoHeading {
@@ -25,17 +34,25 @@
 
 .liveLinkWrapper {
   margin: 1rem 0 0;
+
+  @media (min-width: 1200px) {
+    margin: 0;
+  }
 }
 
 .repoLiveLink {
-  border: hsl(248, 30%, 44%) solid 2px;
+  border: $purple-accent-color solid 2px;
   border-radius: 5px;
+  font-family: Ubuntu, Segoe UI, Roboto, Helvetica Neue, sans-serif;
   font-weight: 600;
-  margin: 0.5rem 0 0;
   padding: 0.125rem 0.25rem;
+  transition: background linear 0.4s;
+  transition: color linear 0.1s;
 
   &:hover {
-    background: hsl(248, 30%, 44%);
+    background: $purple-accent-color;
     color: white;
+    transition: background linear 0.4s;
+    transition: color linear 0.1s;
   }
 }

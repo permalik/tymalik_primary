@@ -6,13 +6,19 @@ export default function ArticleCard({ article }) {
   return (
     <Link href={`/article/${article.slug}`} passHref>
       <article className={ArticleCardStyles.article}>
-        <h2 className={ArticleCardStyles.title}>{article.frontmatter.title}</h2>
-        <p className={ArticleCardStyles.description}>
-          {article.frontmatter.description}
-        </p>
-        <time className={ArticleCardStyles.timestamp}>
-          {article.frontmatter.timestamp}
-        </time>
+        <div className={ArticleCardStyles.headerWrapper}>
+          <header className={ArticleCardStyles.header}>
+            <h2 className={ArticleCardStyles.title}>
+              {article.frontmatter.title}
+            </h2>
+            <p className={ArticleCardStyles.description}>
+              {article.frontmatter.description}
+            </p>
+          </header>
+          <time className={ArticleCardStyles.timestamp}>
+            {article.frontmatter.timestamp}
+          </time>
+        </div>
         {/* <ul className={ArticleCardStyles.tagList}>
           {article.frontmatter.tags.map((tag, index) => (
             <li className={ArticleCardStyles.tag} key={index}>

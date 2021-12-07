@@ -20,12 +20,12 @@ export default function About() {
           </span>
           <span>
             While maintaining a full-time job, I am both working toward a
-            computer science degree and following the LaunchSchool programmer
+            computer science degree and following the LaunchSchool programming
             curriculum.
           </span>
           <span>
             The life-long learning process is what initially led me to software
-            engineering and its that which keeps me interested. I&#39;m
+            engineering and it&#39;s that which keeps me interested. I&#39;m
             currently based in Oklahoma City, OK.
           </span>
         </p>

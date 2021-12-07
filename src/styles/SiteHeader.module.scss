@@ -15,8 +15,8 @@
 }
 
 .logo {
-  width: 6em;
-  height: 6em;
+  width: 7em;
+  height: 7em;
 
   &:hover {
     cursor: pointer;
@@ -44,7 +44,8 @@
 }
 
 .navLink {
-  font-size: clamp(1.35em, 3vw, 1.5em);
+  font-family: Ubuntu, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+  font-size: clamp(1.35em, 3vw, 1.6em);
   font-weight: 600;
   position: relative;
   text-transform: uppercase;

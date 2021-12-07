@@ -7,6 +7,10 @@
 }
 
 .promoDescription {
-  font-size: clamp(1.5em, 2vw, 2.5em);
-  margin: 0.25rem 0 0;
+  font-size: clamp(1.6em, 2vw, 2.5em);
+  margin: 0.25rem 0 0 0.125rem;
+
+  @media (min-width: 1200px) {
+    margin-left: 0.25rem;
+  }
 }
