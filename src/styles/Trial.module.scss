@@ -17,10 +17,6 @@
   }
 }
 
-.title {
-  margin: 10vmin 0 1vmin;
-}
-
 .report {
   border: none;
   border-radius: 5px;
@@ -47,9 +43,6 @@
   text-decoration: none;
 }
 
-.reportContent {
-}
-
 .reportUl {
   margin: 2rem 0 0;
 
@@ -63,9 +56,6 @@
   & > *:not(:first-child) {
     margin-top: 2rem;
   }
-}
-
-.reportLi {
 }
 
 .editorHeading {

@@ -79,7 +79,7 @@ export default function WhoLikesit() {
     }
   }
 
-  const code = `//TOP SUBMISSION
+  const code = `// TOP SUBMISSION
 function likes(names) {
   names = names || [];
   switch (names.length) {
