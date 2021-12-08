@@ -71,7 +71,10 @@ export default function LinearSearch() {
             ))}
           </ul>
         </div>
-        <div className={LinearSearchStyles.demoResults}>
+        <div
+          className={LinearSearchStyles.demoResults}
+          suppressHydrationWarning
+        >
           {renderResult ? (
             <ul className={LinearSearchStyles.resultList}>
               {shuffledRange.map((number, index) =>
