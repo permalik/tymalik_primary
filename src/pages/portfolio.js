@@ -59,7 +59,7 @@ export default function Portfolio() {
           </section>
           <section className={PortfolioStyles.foundationSection}>
             <header className={PortfolioStyles.sectionHeader}>
-              <h2 className={PortfolioStyles.foundationHeading}>foundation</h2>
+              <h2 className={PortfolioStyles.foundationHeading}>foundations</h2>
               <div className={PortfolioStyles.viewAll}>
                 <a href={`/allFoundations`}>
                   <p>View All</p>
