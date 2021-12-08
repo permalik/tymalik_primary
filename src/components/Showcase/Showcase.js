@@ -1,6 +1,3 @@
-import React from 'react';
-import Link from 'next/link';
-
 import puzzleCardArray from '../../../utils/puzzleCardArray';
 import SectionTwo from '../SectionTwo';
 import ShowcaseCard from '../ShowcaseCard';
@@ -14,7 +11,7 @@ export default function Showcase() {
         <ShowcaseCard
           className={ShowcaseStyles.cardLink}
           imgUrl={`/images/trials/skillset_trial_image.png`}
-          projectUrl={`http://localhost:3000/trial/whoLikesIt`}
+          projectUrl={`https://tymalik.me/trial/whoLikesIt`}
           timestamp={puzzleCardArray[0].timestamp}
           title={'Who Likes It'}
         >
@@ -42,13 +39,18 @@ export default function Showcase() {
         </ShowcaseCard>
         <ShowcaseCard
           className={ShowcaseStyles.cardLink}
-          imgUrl={`/images/trials/skillset_trial_image.png`}
-          projectUrl={`#`}
-          timestamp={`2021-10-28`}
+          imgUrl={`/images/foundation/linear_search.png`}
+          projectUrl={`https://tymalik.me/foundation/linearSearch`}
+          timestamp={`2021-12-07`}
           title={'Algorithm'}
         >
           <ul className={ShowcaseStyles.cardDescription}>
-            <li>children</li>
+            <li>Iterate selection</li>
+            <li>Check each item</li>
+            <li>Test for certain criteria</li>
+            <li>Utilize result</li>
+            <li>Best Case: O(1)</li>
+            <li>Worst Case: O(n)</li>
           </ul>
         </ShowcaseCard>
       </div>

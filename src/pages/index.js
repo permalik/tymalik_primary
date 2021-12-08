@@ -19,7 +19,7 @@ export default function Home({ articles }) {
   return (
     <section className={styles.indexSection}>
       <Head>
-        <title>Ty Malik</title>
+        <title>Ty Malik | Front-End Engineer</title>
         <meta
           name='description'
           content="Ty Malik's personal site and portfolio"

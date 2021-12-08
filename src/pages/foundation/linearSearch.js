@@ -15,7 +15,7 @@ const shuffledRange = orderedRange.sort(function (a, b) {
 const randomNumber = ~~(Math.random() * 10) + 1;
 
 const summary =
-  'Sequentially iterate through a given selection checking each individual item. Determine if current item meets expectation by measuring against preestablished criteria.';
+  'Sequentially iterate a given selection checking each individual item. Determine if current item meets expectation by measuring against preestablished criteria.';
 
 const code = `// Generate array ranging 1-10
 const orderedRange = Array.apply(0,new Array(10)).map(function(_,i){ return i+1 });
