@@ -1,6 +1,6 @@
+import PrimarySection from '../components/PrimarySection';
 import PuzzleCard from '../components/PuzzleCard';
 import puzzleCardArray from '../../utils/puzzleCardArray';
-import PrimarySection from '../components/PrimarySection';
 
 import AllTrialStyles from '../styles/AllTrials.module.scss';
 
