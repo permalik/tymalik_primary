@@ -1,3 +1,4 @@
+import foundationCardArray from '../../../utils/foundationCardArray';
 import puzzleCardArray from '../../../utils/puzzleCardArray';
 import SectionTwo from '../SectionTwo';
 import ShowcaseCard from '../ShowcaseCard';
@@ -9,11 +10,12 @@ export default function Showcase() {
     <SectionTwo heading='recent projects'>
       <div className={ShowcaseStyles.cardWrapper}>
         <ShowcaseCard
+          alt={puzzleCardArray[0].alt}
           className={ShowcaseStyles.cardLink}
-          imgUrl={`/images/trials/skillset_trial_image.png`}
-          projectUrl={`https://tymalik.me/trial/whoLikesIt`}
+          imgUrl={puzzleCardArray[0].image}
+          projectUrl={`https://tymalik.me${puzzleCardArray[0].link}`}
           timestamp={puzzleCardArray[0].timestamp}
-          title={'Who Likes It'}
+          title={puzzleCardArray[0].title}
         >
           <ul className={ShowcaseStyles.cardDescription}>
             <li>Get data from a given array</li>
@@ -24,6 +26,7 @@ export default function Showcase() {
           </ul>
         </ShowcaseCard>
         <ShowcaseCard
+          alt={`React Todo App (homepage)`}
           className={ShowcaseStyles.cardLink}
           imgUrl={`/images/trials/skillset_image_github.png`}
           projectUrl={`https://reacttaskapplication.netlify.app/`}
@@ -38,11 +41,12 @@ export default function Showcase() {
           </ul>
         </ShowcaseCard>
         <ShowcaseCard
+          alt={foundationCardArray[0].alt}
           className={ShowcaseStyles.cardLink}
-          imgUrl={`/images/foundation/linear_search.png`}
-          projectUrl={`https://tymalik.me/foundation/linearSearch`}
-          timestamp={`2021-12-07`}
-          title={'Algorithm'}
+          imgUrl={foundationCardArray[0].image}
+          projectUrl={`https://tymalik.me${foundationCardArray[0].link}`}
+          timestamp={foundationCardArray[0].timestamp}
+          title={foundationCardArray[0].title}
         >
           <ul className={ShowcaseStyles.cardDescription}>
             <li>Iterate selection</li>

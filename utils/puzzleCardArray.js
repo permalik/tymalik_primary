@@ -1,7 +1,8 @@
 const puzzleCardArray = [];
 
 const whoLikesIt = {
-  caption: '',
+  alt: 'Who Likes it (project page)',
+  image: '/images/trials/skillset_trial_image.png',
   language: 'javascript',
   link: '/trial/whoLikesIt',
   title: 'Who Likes It',
@@ -10,7 +11,6 @@ const whoLikesIt = {
 };
 
 const alphabetPosition = {
-  caption: '',
   language: 'javascript',
   link: '/trial/alphabetPosition',
   title: 'Alphabet Position',
@@ -19,7 +19,6 @@ const alphabetPosition = {
 };
 
 const spinningWords = {
-  caption: '',
   language: 'javascript',
   link: '/trial/spinningWords',
   title: 'Spinning Words',
