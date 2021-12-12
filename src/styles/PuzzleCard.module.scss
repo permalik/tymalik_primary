@@ -1,3 +1,7 @@
+.listItem {
+  list-style: none;
+}
+
 .article {
   align-items: baseline;
   border: none;
@@ -7,6 +11,7 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: baseline;
+  list-style: none;
   padding: 0.5rem 1rem;
   position: relative;
   top: 0;
