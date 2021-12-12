@@ -6,4 +6,6 @@
   package = "@netlify/plugin-nextjs"
 
 [[redirects]]
+  from = "/"
+  to = "https://tymalik.me"
   conditions = {Language = ["en"]}
