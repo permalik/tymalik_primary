@@ -1,13 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
+import Head from 'next/head';
 import useSwr from 'swr';
 import { sortById } from '../../utils';
 
 import PortfolioFoundationCard from '../components/PortfolioFoundationCard';
 import PortfolioRepoCard from '../components/PortfolioRepoCard';
 import PortfolioTrialCard from '../components/PortfolioTrialCard';
+import PrimarySection from '../components/PrimarySection';
 import foundationCardArray from '../../utils/foundationCardArray';
 import puzzleCardArray from '../../utils/puzzleCardArray';
-import PrimarySection from '../components/PrimarySection';
 
 import PortfolioStyles from '../styles/Portfolio.module.scss';
 
@@ -22,6 +23,15 @@ export default function Portfolio() {
 
   return (
     <PrimarySection>
+      <Head>
+        <title>Ty Malik | Portfolio Archive</title>
+        <meta name='description' content="Ty Malik's portfolio archive" />
+        <meta
+          name='keywords'
+          content='software development, html, css, javascript, react, nextjs'
+        />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <h1>all projects</h1>
       <div className={PortfolioStyles.contentWrapper}>
         <section className={PortfolioStyles.githubSection}>
