@@ -13,7 +13,7 @@ export default function AllArticles({ articles }) {
   return (
     <PrimarySection className={ArticlesStyles.primarySection}>
       <Head>
-        <title>Ty Malik | Articles</title>
+        <title>Ty Malik | Article Archive</title>
         <meta name='description' content="Ty Malik's article archive" />
         <meta
           name='keywords'
