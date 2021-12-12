@@ -1,5 +1,5 @@
 ---
-altText: 'network of interwoven, multi-colored yarn; a single spool of orange yarn; white background'
+alt_text: 'network of interwoven, multi-colored yarn; a single spool of orange yarn; white background'
 author: 'Ty Malik'
 cover_image: 'https://res.cloudinary.com/permalik/image/upload/v1638646374/article_0002_explain_the_internet.png'
 timestamp: '2021-02-05'

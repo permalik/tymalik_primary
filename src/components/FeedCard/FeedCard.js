@@ -1,12 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
 import Link from 'next/link';
 
 import FeedCardStyles from '../../styles/FeedCard.module.scss';
 
 export default function FeedCard({ article }) {
   return (
-    <article className={FeedCardStyles.articleCard}>
+    <li className={FeedCardStyles.articleCard}>
       <Link
         className={FeedCardStyles.articleLink}
         href={`/article/${article.slug}`}
@@ -37,6 +36,6 @@ export default function FeedCard({ article }) {
           </div>
         </a>
       </Link>
-    </article>
+    </li>
   );
 }
