@@ -1,7 +1,7 @@
-import foundationCardArray from '../../../utils/foundationCardArray';
-import puzzleCardArray from '../../../utils/puzzleCardArray';
 import SectionTwo from '../SectionTwo';
 import ShowcaseCard from '../ShowcaseCard';
+import foundationCardArray from '../../../utils/foundationCardArray';
+import puzzleCardArray from '../../../utils/puzzleCardArray';
 
 import ShowcaseStyles from '../../styles/Showcase.module.scss';
 

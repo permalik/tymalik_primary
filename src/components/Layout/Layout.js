@@ -1,4 +1,3 @@
-import React from 'react';
 import SiteFooter from '../SiteFooter';
 import SiteHeader from '../SiteHeader';
 

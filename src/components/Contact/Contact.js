@@ -62,7 +62,9 @@ export default function Contact() {
       </p>
 
       <Link href={`/`} passHref>
-        <button className={ContactStyles.resetForm}>Reset Form</button>
+        <a>
+          <button className={ContactStyles.resetForm}>Reset Form</button>
+        </a>
       </Link>
     </section>
   );

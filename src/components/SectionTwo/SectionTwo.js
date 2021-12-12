@@ -1,4 +1,3 @@
-import React from 'react';
 import SectionTwoStyles from '../../styles/SectionTwo.module.scss';
 
 export default function SectionTwo({ children, heading }) {

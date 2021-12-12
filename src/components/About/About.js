@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
 import SectionTwo from '../SectionTwo';
 
 import AboutStyles from '../../styles/About.module.scss';

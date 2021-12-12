@@ -1,7 +1,8 @@
 import fs from 'fs';
-import { sortByDate } from '../../utils';
 import matter from 'gray-matter';
+import Head from 'next/head';
 import path from 'path';
+import { sortByDate } from '../../utils';
 
 import ArticleCard from '../components/ArticleCard';
 import PrimarySection from '../components/PrimarySection';
@@ -11,6 +12,15 @@ import ArticlesStyles from '../styles/Articles.module.scss';
 export default function AllArticles({ articles }) {
   return (
     <PrimarySection className={ArticlesStyles.primarySection}>
+      <Head>
+        <title>Ty Malik | Articles</title>
+        <meta name='description' content="Ty Malik's articles" />
+        <meta
+          name='keywords'
+          content='software development, blog article, html, css, javascript'
+        />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <header className={ArticlesStyles.header}>
         <h1 className={ArticlesStyles.headingOne}>all articles</h1>
       </header>

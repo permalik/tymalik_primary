@@ -1,9 +1,8 @@
 import fs from 'fs';
 import matter from 'gray-matter';
+import Head from 'next/head';
 import path from 'path';
 import { sortByDate } from '../../utils';
-
-import Head from 'next/head';
 
 import About from '../components/About';
 import Contact from '../components/Contact';
@@ -71,7 +70,7 @@ export async function getStaticProps() {
   };
 }
 
-// Page font size adjuster hook
+// Future accessibility implementation: Page font size adjuster hook
 // import { useEffect, useState } from 'react';
 
 // const [fontZoom, setFontZoom] = useState(false);
