@@ -5,7 +5,11 @@ import SiteHeaderStyles from '../../styles/SiteHeader.module.scss';
 
 export default function SiteHeader() {
   return (
-    <header className={SiteHeaderStyles.siteHeader}>
+    <header
+      aria-label='page header'
+      className={SiteHeaderStyles.siteHeader}
+      role='banner'
+    >
       <div className={SiteHeaderStyles.contentWrapper}>
         <Link href={`/`}>
           <a className={SiteHeaderStyles.logo}>
@@ -17,15 +21,29 @@ export default function SiteHeader() {
             />
           </a>
         </Link>
-        <nav className={SiteHeaderStyles.nav}>
+        <nav
+          aria-label='site navigation'
+          className={SiteHeaderStyles.nav}
+          role='navigation'
+        >
           <Link href={`/allArticles`}>
-            <a className={SiteHeaderStyles.navLink}>articles</a>
+            <a
+              aria-label='articles'
+              className={SiteHeaderStyles.navLink}
+              title='articles'
+            >
+              articles
+            </a>
           </Link>
           <Link href={`/#contact`}>
-            <a className={SiteHeaderStyles.navLink}>contact</a>
+            <a aria-label='contact' className={SiteHeaderStyles.navLink}>
+              contact
+            </a>
           </Link>
           <Link href={`/portfolio`}>
-            <a className={SiteHeaderStyles.navLink}>portfolio</a>
+            <a aria-label='portfolio' className={SiteHeaderStyles.navLink}>
+              portfolio
+            </a>
           </Link>
         </nav>
       </div>

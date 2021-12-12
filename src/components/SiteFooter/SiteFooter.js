@@ -5,14 +5,22 @@ import SiteFooterStyles from '../../styles/SiteFooter.module.scss';
 
 export default function SiteFooter() {
   return (
-    <footer className={SiteFooterStyles.siteFooter}>
+    <footer
+      aria-label='page footer'
+      className={SiteFooterStyles.siteFooter}
+      role='contentinfo'
+    >
       <section className={SiteFooterStyles.credentialSection}>
         <p>
           <span>2021</span>
           <span>Ty Malik</span>
         </p>
       </section>
-      <nav className={SiteFooterStyles.buildNav}>
+      <nav
+        aria-label='build navigation'
+        className={SiteFooterStyles.buildNav}
+        role='navigation'
+      >
         <ul>
           <li>
             <a href='https://netlify.com/'>netlify</a>
@@ -25,10 +33,14 @@ export default function SiteFooter() {
           </li>
         </ul>
       </nav>
-      <nav className={SiteFooterStyles.socialNav}>
+      <nav
+        aria-label='social link navigation'
+        className={SiteFooterStyles.socialNav}
+        role='navigation'
+      >
         <ul>
-          <a href='mailto:tymalik@protonmail.com'>
-            <li className={SiteFooterStyles.socialLi}>
+          <li className={SiteFooterStyles.socialLi}>
+            <a href='mailto:tymalik@protonmail.com'>
               <Image
                 alt='at sign, email icon link'
                 className={SiteFooterStyles.socialLinkIcon}
@@ -36,10 +48,10 @@ export default function SiteFooter() {
                 src='https://res.cloudinary.com/permalik/image/upload/v1630653022/email_svg.svg'
                 width='50px'
               />
-            </li>
-          </a>
-          <a href='https://github.com/permalik'>
-            <li className={SiteFooterStyles.socialLi}>
+            </a>
+          </li>
+          <li className={SiteFooterStyles.socialLi}>
+            <a href='https://github.com/permalik'>
               <Image
                 alt='github logo, github icon link'
                 className={SiteFooterStyles.socialLinkIcon}
@@ -47,10 +59,10 @@ export default function SiteFooter() {
                 src='https://res.cloudinary.com/permalik/image/upload/v1630652678/github_svg.svg'
                 width='50px'
               />
-            </li>
-          </a>
-          <a href='https://www.linkedin.com/in/permalik/'>
-            <li className={SiteFooterStyles.socialLi}>
+            </a>
+          </li>
+          <li className={SiteFooterStyles.socialLi}>
+            <a href='https://www.linkedin.com/in/permalik/'>
               <Image
                 alt='linkedin logo, linkedin icon link'
                 className={SiteFooterStyles.socialLinkIcon}
@@ -58,10 +70,10 @@ export default function SiteFooter() {
                 src='https://res.cloudinary.com/permalik/image/upload/v1630652818/linkedin_svg.svg'
                 width='50px'
               />
-            </li>
-          </a>
-          <a href='https://twitter.com/resetpermalik'>
-            <li className={SiteFooterStyles.socialLi}>
+            </a>
+          </li>
+          <li className={SiteFooterStyles.socialLi}>
+            <a href='https://twitter.com/resetpermalik'>
               <Image
                 alt='twitter logo, twitter icon link'
                 className={SiteFooterStyles.socialLinkIcon}
@@ -69,8 +81,8 @@ export default function SiteFooter() {
                 src='https://res.cloudinary.com/permalik/image/upload/v1630652927/twitter_svg.svg'
                 width='50px'
               />
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </nav>
     </footer>
