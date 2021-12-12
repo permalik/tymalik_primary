@@ -6,6 +6,13 @@
   package = "@netlify/plugin-nextjs"
 
 [[redirects]]
-  from = "/"
-  to = "https://tymalik.me"
   conditions = {Language = ["en"]}
+  from = "/"
+  status = 200
+  to = "https://tymalik.me"
+
+  [[redirects]]
+    conditions = {Language = ["en"]}
+    from = "/allArticles"
+    status = 200
+    to = "https://tymalik.me/allArticles"
