@@ -2,6 +2,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import { marked } from 'marked';
+import Head from 'next/head';
 import Link from 'next/link';
 import path from 'path';
 
@@ -28,6 +29,18 @@ export default function Article({
 }) {
   return (
     <PrimarySection>
+      <Head>
+        <title>Ty Malik | {title}</title>
+        <meta
+          name='description'
+          content="Ty Malik's personal site and portfolio"
+        />
+        <meta
+          name='keywords'
+          content='software development, blog article, html, css, javascript'
+        />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <article className={ArticleStyles.article}>
         <header className={ArticleStyles.headerContent}>
           <h1 className={ArticleStyles.title}>{title}</h1>
@@ -43,13 +56,6 @@ export default function Article({
             className={ArticleStyles.coverImage}
             src={cover_image}
           />
-          {/* <ul className={ArticleStyles.tagList}>
-            {tags.map((tag, index) => (
-              <li className={ArticleStyles.tag} key={index}>
-                #{tag}
-              </li>
-            ))}
-          </ul> */}
         </header>
         <section
           className={ArticleStyles.bodySection}
@@ -85,4 +91,15 @@ export async function getStaticProps({ params: { slug } }) {
       slug
     }
   };
+}
+
+// Future tagging implementation
+{
+  /* <ul className={ArticleStyles.tagList}>
+            {tags.map((tag, index) => (
+              <li className={ArticleStyles.tag} key={index}>
+                #{tag}
+              </li>
+            ))}
+          </ul> */
 }
