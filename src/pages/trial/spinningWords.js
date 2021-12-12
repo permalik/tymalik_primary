@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useState } from 'react';
 
 import EditorInstance from '../../components/EditorInstance';
@@ -86,6 +87,12 @@ function spinWords(string) {
       puzzleTitle='Spinning Words'
       puzzleType='codewars'
     >
+      <Head>
+        <title>Codewars Trial | Spinning Words</title>
+        <meta name='description' content='Codewars trial; Spinning Words' />
+        <meta name='keywords' content='software development, javascript' />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <p className={SpinningWordsStyles.demoParameters}>
         Some of these words are spun!
       </p>

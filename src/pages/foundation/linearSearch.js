@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useState } from 'react';
 
 import FoundationLayout from '../../components/FoundationLayout';
@@ -62,6 +63,18 @@ export default function LinearSearch() {
       foundationTitle='Linear Search'
       worstCase='O(n)'
     >
+      <Head>
+        <title>Foundation | Linear Search</title>
+        <meta
+          name='description'
+          content='Algorithm Foundation; Linear Search'
+        />
+        <meta
+          name='keywords'
+          content='software development, foundation, algorithm, search, linear search'
+        />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <section>
         <h2 className={LinearSearchStyles.headingTwo}>Find {randomNumber}</h2>
         <div className={LinearSearchStyles.demoParameters}>

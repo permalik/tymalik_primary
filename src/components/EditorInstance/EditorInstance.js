@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
   require('codemirror/lib/codemirror.css');
-  require('codemirror/theme/blackboard.css');
+  require('codemirror/theme/panda-syntax.css');
   require('codemirror/mode/javascript/javascript.js');
 }
 
@@ -21,11 +21,12 @@ export default function EditorInstance({ value }) {
       <NewEditor
         className='codemirrorWrapper'
         options={{
-          lineNumbers: true,
+          lineNumbers: false,
           lineWrapping: true,
           lint: true,
           mode: 'javascript',
-          theme: 'blackboard'
+          tabindex: '-1',
+          theme: 'panda-syntax'
         }}
         value={value}
       />

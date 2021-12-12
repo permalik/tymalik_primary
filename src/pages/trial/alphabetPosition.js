@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useState } from 'react';
 
 import EditorInstance from '../../components/EditorInstance';
@@ -85,6 +86,12 @@ function alphabetPosition(string) {
       puzzleTitle='Alphabet Position'
       puzzleType='codewars'
     >
+      <Head>
+        <title>Codewars Trial | Alphabet Position</title>
+        <meta name='description' content='Codewars trial; Alphabet Position' />
+        <meta name='keywords' content='software development, javascript' />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <p className={AlphabetPositionStyles.demoParameters}>rassa collapse</p>
       <button
         className={AlphabetPositionStyles.demoButton}

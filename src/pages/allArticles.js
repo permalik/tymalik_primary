@@ -14,7 +14,7 @@ export default function AllArticles({ articles }) {
     <PrimarySection className={ArticlesStyles.primarySection}>
       <Head>
         <title>Ty Malik | Articles</title>
-        <meta name='description' content="Ty Malik's articles" />
+        <meta name='description' content="Ty Malik's article archive" />
         <meta
           name='keywords'
           content='software development, blog article, html, css, javascript'

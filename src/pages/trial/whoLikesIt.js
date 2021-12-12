@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useState } from 'react';
 
 import EditorInstance from '../../components/EditorInstance';
@@ -149,6 +150,12 @@ function likes(names) {
       puzzleTitle='Who Likes It'
       puzzleType='codewars'
     >
+      <Head>
+        <title>Codewars Trial | Who Likes It</title>
+        <meta name='description' content='Codewars trial; Who Likes It' />
+        <meta name='keywords' content='software development, javascript' />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <p className={WhoLikesItStyles.demoParameters}>
         [&lsquo;Luana&rsquo;, &lsquo;Giovanni&rsquo;, &lsquo;Tuyet&rsquo;]
       </p>
@@ -237,7 +244,7 @@ function likes(names) {
         </ul>
       </section>
       <h2 className={TrialStyles.editorHeading}>Source</h2>
-      <EditorInstance editorTitle='source' value={code} />
+      <EditorInstance editorTitle='source' tabIndex='-1' value={code} />
     </TrialLayout>
   );
 }
