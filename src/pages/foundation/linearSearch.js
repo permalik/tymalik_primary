@@ -32,9 +32,9 @@ const randomNumber = ~~(Math.random() * 10) + 1;
 // Create variable for target value
 let targetValue = 0;
 
-// Create function to iterate array
+// Create function to iterate selection
 // Assign targetValue the proper numeric value
-const findRandomNumber = function (array) {
+const linearSearch = function (array) {
   array.forEach((number) => {
     if (number === randomNumber) {
       targetValue = number;
@@ -45,7 +45,7 @@ const findRandomNumber = function (array) {
 };)
 
 // Call function
-findRandomNumber(shuffledRange);
+linearSearch(shuffledRange);
 `;
 
 export default function LinearSearch() {
