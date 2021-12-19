@@ -9,16 +9,16 @@ const iterativeBinarySearch = {
   type: 'Algorithm'
 };
 
-const linearSearch = {
+const iterativeLinearSearch = {
   alt: 'Linear Search (project page)',
   image: '/images/foundation/linear_search.png',
-  link: '/foundation/linearSearch',
+  link: '/foundation/iterativeLinearSearch',
   timestamp: '2021-12-07',
-  title: 'Linear Search',
+  title: 'Iterative Linear Search',
   type: 'Algorithm'
 };
 
 foundationCardArray.push(iterativeBinarySearch);
-foundationCardArray.push(linearSearch);
+foundationCardArray.push(iterativeLinearSearch);
 
 export default foundationCardArray;

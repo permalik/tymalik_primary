@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import FoundationLayout from '../../components/FoundationLayout';
 
-import LinearSearchStyles from '../../styles/LinearSearch.module.scss';
+import IterativeLinearSearchStyles from '../../styles/IterativeLinearSearch.module.scss';
 
 const orderedRange = Array.apply(0, new Array(10)).map(function (_, i) {
   return i + 1;
@@ -34,7 +34,7 @@ let targetValue = 0;
 
 // Create function to iterate selection
 // Assign targetValue the proper numeric value
-const linearSearch = function (array) {
+const iterativeLinearSearch = function (array) {
   array.forEach((number) => {
     if (number === randomNumber) {
       targetValue = number;
@@ -45,7 +45,7 @@ const linearSearch = function (array) {
 };)
 
 // Call function
-linearSearch(shuffledRange);
+iterativeLinearSearch(shuffledRange);
 `;
 
 export default function LinearSearch() {
@@ -60,56 +60,64 @@ export default function LinearSearch() {
       bestCase='O(1)'
       editorCode={code}
       description={summary}
-      foundationTitle='Linear Search'
+      foundationTitle='Iterative Linear Search'
       worstCase='O(n)'
     >
       <Head>
         <title>Foundation | Linear Search</title>
         <meta
           name='description'
-          content='Algorithm Foundation; Linear Search'
+          content='Algorithm Foundation; Iterative Linear Search'
         />
         <meta
           name='keywords'
-          content='software development, foundation, algorithm, search, linear search'
+          content='software development, foundation, algorithm, search, iterative linear search'
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <section>
-        <h2 className={LinearSearchStyles.headingTwo}>Find {randomNumber}</h2>
-        <div className={LinearSearchStyles.demoParameters}>
-          <ul className={LinearSearchStyles.parameterList}>
+        <h2 className={IterativeLinearSearchStyles.headingTwo}>
+          Find {randomNumber}
+        </h2>
+        <div className={IterativeLinearSearchStyles.demoParameters}>
+          <ul className={IterativeLinearSearchStyles.parameterList}>
             {shuffledRange.map((number, index) => (
               <li key={index}>{number}</li>
             ))}
           </ul>
         </div>
         <div
-          className={LinearSearchStyles.demoResults}
+          className={IterativeLinearSearchStyles.demoResults}
           suppressHydrationWarning
         >
           {renderResult ? (
-            <ul className={LinearSearchStyles.resultList}>
+            <ul className={IterativeLinearSearchStyles.resultList}>
               {shuffledRange.map((number, index) =>
                 number === randomNumber ? (
-                  <li className={LinearSearchStyles.solutionLi} key={index}>
+                  <li
+                    className={IterativeLinearSearchStyles.solutionLi}
+                    key={index}
+                  >
                     {number}
                   </li>
                 ) : (
-                  <li className={LinearSearchStyles.standardLi} key={index}>
+                  <li
+                    className={IterativeLinearSearchStyles.standardLi}
+                    key={index}
+                  >
                     {number}
                   </li>
                 )
               )}
             </ul>
           ) : (
-            <p className={LinearSearchStyles.resultPlaceholder}>
+            <p className={IterativeLinearSearchStyles.resultPlaceholder}>
               👇 click to solve
             </p>
           )}
         </div>
         <button
-          className={LinearSearchStyles.solveButton}
+          className={IterativeLinearSearchStyles.solveButton}
           onClick={() => toggleState()}
         >
           solve
