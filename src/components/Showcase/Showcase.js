@@ -26,18 +26,18 @@ export default function Showcase() {
           </ul>
         </ShowcaseCard>
         <ShowcaseCard
-          alt={`React Todo App (homepage)`}
+          alt={`C# Caeser Cipher (code and command line program)`}
           className={ShowcaseStyles.cardLink}
-          imgUrl={`/images/trials/skillset_image_github.png`}
-          projectUrl={`https://reacttaskapplication.netlify.app/`}
-          timestamp={`2021-07-08`}
-          title={'React Todo App'}
+          imgUrl={`/images/trials/caeser_cipher.png`}
+          projectUrl={`https://github.com/permalik/csharp_caeser_cipher`}
+          timestamp={`2021-12-16`}
+          title={'C# Caeser Cipher'}
         >
           <ul className={ShowcaseStyles.cardDescription}>
-            <li>Create and display tasks in the DOM</li>
-            <li>Toggle task priority</li>
-            <li>Save tasks to local storage</li>
-            <li>Built with React and CSS</li>
+            <li>Encrypt and Decrypt textual information</li>
+            <li>Leverage the Caeser Cipher technique</li>
+            <li>Accept user message and alphabet shift value</li>
+            <li>Return modified text</li>
           </ul>
         </ShowcaseCard>
         <ShowcaseCard
