@@ -57,14 +57,14 @@ export default function LinearSearch() {
 
   return (
     <FoundationLayout
-      bestCase='O(1)'
+      bestCase='&#937;(1)'
       editorCode={code}
       description={summary}
       foundationTitle='Iterative Linear Search'
       worstCase='O(n)'
     >
       <Head>
-        <title>Foundation | Linear Search</title>
+        <title>Foundation | Iterative Linear Search</title>
         <meta
           name='description'
           content='Algorithm Foundation; Iterative Linear Search'

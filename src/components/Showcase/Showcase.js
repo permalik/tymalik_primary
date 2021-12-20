@@ -54,7 +54,7 @@ export default function Showcase() {
             <li>Test each side of selection</li>
             <li>Return target value if contained</li>
             <li>Return -1 if target value is absent</li>
-            <li>Best Case: O(1)</li>
+            <li>Best Case: &#937;(1)</li>
             <li>Worst Case: O(log n)</li>
           </ul>
         </ShowcaseCard>

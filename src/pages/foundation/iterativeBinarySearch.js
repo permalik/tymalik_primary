@@ -77,7 +77,7 @@ export default function IterativeBinarySearch() {
 
   return (
     <FoundationLayout
-      bestCase='O(1)'
+      bestCase='&#937;(1)'
       editorCode={code}
       description={summary}
       foundationTitle='Iterative Binary Search'
