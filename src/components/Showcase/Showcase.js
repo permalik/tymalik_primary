@@ -49,13 +49,13 @@ export default function Showcase() {
           title={foundationCardArray[0].title}
         >
           <ul className={ShowcaseStyles.cardDescription}>
-            <li>Traverse sorted selection</li>
-            <li>Continually check center item</li>
-            <li>Test each side of selection</li>
-            <li>Return target value if contained</li>
-            <li>Return -1 if target value is absent</li>
-            <li>Best Case: &#937;(1)</li>
-            <li>Worst Case: O(log n)</li>
+            <li>Traverse selection</li>
+            <li>Retain given value while shifting items</li>
+            <li>Insert sorted item into proper position</li>
+            <li>Continue until all items are sorted</li>
+            <li>Return sorted selection</li>
+            <li>Best Case: &#937;(n)</li>
+            <li>Worst Case: O(n&#178;)</li>
           </ul>
         </ShowcaseCard>
       </div>
