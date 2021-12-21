@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+.demoParameters {
+  color: $orange-accent-color;
+  font-family: Ubuntu, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+  font-size: clamp(1.2em, 4.5vw, 2em);
+  font-weight: 600;
+}
+
+.demoButton {
+  background: transparent;
+  border: 2px solid $purple-accent-color;
+  border-radius: 5px;
+  color: $purple-accent-color;
+  font-size: clamp(1.2em, 4.5vw, 2em);
+  margin: 3rem 0 0;
+  padding: 0.25rem 0.5rem;
+  transition: background linear 0.75s;
+  transition: color linear 0.9s;
+
+  &:hover {
+    background: $purple-accent-color;
+    color: white;
+    cursor: pointer;
+    transition: background linear 0.75s;
+    transition: color linear 0.9s;
+  }
+}

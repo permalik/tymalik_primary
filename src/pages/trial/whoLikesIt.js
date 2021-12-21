@@ -17,16 +17,12 @@ export default function WhoLikesit() {
     switch (names.length) {
       case 0:
         return 'no one likes this';
-        break;
       case 1:
         return names[0] + ' likes this';
-        break;
       case 2:
         return names[0] + ' and ' + names[1] + ' like this';
-        break;
       case 3:
         return names[0] + ', ' + names[1] + ' and ' + names[2] + ' like this';
-        break;
       default:
         return null;
     }
@@ -61,10 +57,8 @@ export default function WhoLikesit() {
           likes[2] +
           "']"
         );
-        break;
       case 'Luana, Giovanni and Tuyet like this':
         return 'Luana, Giovanni and Tuyet like this';
-        break;
       default:
         return (
           "['" +
