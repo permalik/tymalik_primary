@@ -1,5 +1,15 @@
 const puzzleCardArray = [];
 
+const characterCounter = {
+  alt: 'Character Counter (project page)',
+  image: '/images/trials/character_counter.png',
+  language: 'javascript',
+  link: '/trial/characterCounter',
+  title: 'Character Counter',
+  timestamp: '2021-12-21',
+  type: 'codewars'
+};
+
 const whoLikesIt = {
   alt: 'Who Likes it (project page)',
   image: '/images/trials/skillset_trial_image.png',
@@ -26,6 +36,7 @@ const spinningWords = {
   type: 'codewars'
 };
 
+puzzleCardArray.push(characterCounter);
 puzzleCardArray.push(whoLikesIt);
 puzzleCardArray.push(alphabetPosition);
 puzzleCardArray.push(spinningWords);

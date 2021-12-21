@@ -18,10 +18,8 @@ export default function Showcase() {
           title={puzzleCardArray[0].title}
         >
           <ul className={ShowcaseStyles.cardDescription}>
-            <li>Get data from a given array</li>
-            <li>
-              Return an interpolated string about &ldquo;liked posts&rdquo;
-            </li>
+            <li>Parse a given string</li>
+            <li>Return the frequency of individual character occurrance</li>
             <li>A Codewars challenge written in JavaScript</li>
           </ul>
         </ShowcaseCard>
