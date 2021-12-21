@@ -1,5 +1,14 @@
 const foundationCardArray = [];
 
+const bubbleSort = {
+  alt: 'Bubble Sort (project page)',
+  image: '/images/foundation/bubble_sort.png',
+  link: '/foundation/bubbleSort',
+  timestamp: '2021-12-20',
+  title: 'Bubble Sort',
+  type: 'Algorithm'
+};
+
 const insertionSort = {
   alt: 'Insertion Sort (project page)',
   image: '/images/foundation/insertion_sort.png',
@@ -36,6 +45,7 @@ const iterativeLinearSearch = {
   type: 'Algorithm'
 };
 
+foundationCardArray.push(bubbleSort);
 foundationCardArray.push(insertionSort);
 foundationCardArray.push(selectionSort);
 foundationCardArray.push(iterativeBinarySearch);
