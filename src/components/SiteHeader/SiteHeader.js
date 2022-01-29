@@ -17,7 +17,7 @@ export default function SiteHeader() {
               alt='Ty Malik logo'
               height='200px'
               src='/logo.svg'
-              width='200px'
+              width='400px'
             />
           </a>
         </Link>
