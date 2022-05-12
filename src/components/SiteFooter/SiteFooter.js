@@ -11,7 +11,7 @@ export default function SiteFooter() {
     >
       <section className={SiteFooterStyles.credentialSection}>
         <p>
-          <span>2021</span>
+          <span>2022</span>
           <span>Ty Malik</span>
         </p>
       </section>
