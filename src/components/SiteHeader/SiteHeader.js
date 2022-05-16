@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import SiteHeaderStyles from '../../styles/SiteHeader.module.scss';
 
-export default function SiteHeader() {
+export default function SiteHeader({ toggle }) {
   return (
     <header
       aria-label='page header'
@@ -46,6 +46,7 @@ export default function SiteHeader() {
             </a>
           </Link>
         </nav>
+        <button onClick={toggle}>SwitchTheme</button>
       </div>
     </header>
   );

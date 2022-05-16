@@ -1,6 +1,4 @@
 import {appWithTranslation} from 'next-i18next';
-import {useState} from 'react';
-import {darkTheme, lightTheme, GlobalStyles} from '../theme/ThemeConfig';
 
 import Layout from '../components/Layout';
 

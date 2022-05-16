@@ -18,9 +18,8 @@ export default function Layout({children}) {
         <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
             <GlobalStyles/>
             <>
-                <SiteHeader/>
+                <SiteHeader toggle={toggleTheme}/>
                 <main className={styles.main}>{children}</main>
-                <button onClick={toggleTheme}>SwitchTheme</button>
                 <SiteFooter/>
             </>
         </ThemeProvider>
