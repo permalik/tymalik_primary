@@ -20,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({theme}) => theme.text};
   }
   
-  li {
+  article, li {
     background: ${({theme}) => theme.skillsetCardBackground};
     color: ${({theme}) => theme.skillsetCardColor};
   }
