@@ -11,16 +11,6 @@ export default function SiteHeader({toggle}) {
             role="banner"
         >
             <div className={SiteHeaderStyles.contentWrapper}>
-                <Link href={`/`}>
-                    <a className={SiteHeaderStyles.logo}>
-                        <Image
-                            alt="Ty Malik logo"
-                            height="62px"
-                            src="/logo.png"
-                            width="125px"
-                        />
-                    </a>
-                </Link>
                 <nav
                     aria-label="site navigation"
                     className={SiteHeaderStyles.nav}

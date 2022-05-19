@@ -8,20 +8,14 @@
   align-items: center;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   max-width: 1200px;
   margin: 0 auto;
   padding: 4vmin clamp(0.8rem, 8vw, 3rem);
 }
 
-.logo {
-  &:hover {
-    cursor: pointer;
-  }
-}
-
 .nav {
-  align-items: flex-end;
+  align-items: flex-start;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -31,7 +25,8 @@
   }
 
   @media (min-width: 750px) {
-    flex-flow: row nowrap;
+      align-items: center;
+      flex-flow: row nowrap;
 
     & > *:not(:last-child) {
       margin: 0 6vw 0 0;
@@ -78,12 +73,12 @@
 
   &:hover:before {
     transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-      opacity 0.2s;
+    opacity 0.2s;
   }
 
   &:hover:after {
     transition: tranform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-      opacity 0s 0.2s;
+    opacity 0s 0.2s;
   }
 }
 
