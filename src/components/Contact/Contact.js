@@ -71,7 +71,7 @@ export default function Contact() {
 
   return (
     <div id='contact'>
-      <SectionTwo heading='say hi'>
+      <SectionTwo heading='say hi :)'>
         {formVisible ? ContactForm : ConfirmationMessage}
       </SectionTwo>
     </div>

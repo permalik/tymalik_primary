@@ -23,7 +23,7 @@ export default function About() {
             I&#39;m currently learning to implement animations in web applications and sites.
           </span>
           <span>
-            cheers.
+            Cheers.
           </span>
         </p>
       </div>
