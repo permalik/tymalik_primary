@@ -15,7 +15,7 @@ export const darkTheme = {
 };
 
 export const GlobalStyles = createGlobalStyle`
-  body, a {
+  body, a, button {
     background: ${({theme}) => theme.body};
     color: ${({theme}) => theme.text};
   }
