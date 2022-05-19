@@ -47,13 +47,13 @@ export default function SiteHeader({toggle}) {
                             portfolio
                         </a>
                     </Link>
+                    <button
+                        className={SiteHeaderStyles.themeButton}
+                        onClick={toggle}
+                    >
+                        Toggle Theme
+                    </button>
                 </nav>
-                <button
-                    className={SiteHeaderStyles.themeButton}
-                    onClick={toggle}
-                >
-                    Toggle Theme
-                </button>
             </div>
         </header>
     );
