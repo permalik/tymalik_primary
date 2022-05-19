@@ -15,9 +15,9 @@ export default function SiteHeader({ toggle }) {
           <a className={SiteHeaderStyles.logo}>
             <Image
               alt='Ty Malik logo'
-              height='1000px'
+              height='62px'
               src='/logo.png'
-              width='2000px'
+              width='125px'
             />
           </a>
         </Link>
