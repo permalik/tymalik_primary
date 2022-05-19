@@ -51,11 +51,8 @@
       list-style: none;
     }
 
-    & > li:not(:last-child)::after {
-      background: black;
-      content: '';
-      margin: 0 1em;
-      padding: 1px;
+    & > li:not(:last-child) {
+      margin-right: 1em;
     }
   }
 }
@@ -80,7 +77,12 @@
 }
 
 .socialLi {
+  border-radius: 50%;
   display: block;
   cursor: pointer;
   width: 3em;
+}
+
+.socialLinkIcon {
+  filter: invert(47%) sepia(93%) saturate(3095%) hue-rotate(347deg) brightness(100%) contrast(102%);
 }
