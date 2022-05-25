@@ -1,6 +1,6 @@
 import PrimarySection from '../PrimarySection';
 
-import TrialStyles from '../../styles/Trial.module.scss';
+import TrialStyles from '../../pages/trial/Trial.module.scss';
 
 export default function TrialLayout({
   children,

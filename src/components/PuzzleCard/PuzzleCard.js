@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import PuzzleCardStyles from '../../styles/PuzzleCard.module.scss';
+import PuzzleCardStyles from './PuzzleCard.module.scss';
 
 export default function PuzzleCard({ trial }) {
   return (

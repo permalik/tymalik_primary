@@ -1,7 +1,7 @@
 import EditorInstance from '../EditorInstance';
 import PrimarySection from '../PrimarySection';
 
-import FoundationLayoutStyles from '../../styles/FoundationLayout.module.scss';
+import FoundationLayoutStyles from './FoundationLayout.module.scss';
 
 export default function FoundationLayout({
   bestCase,

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import PortfolioTrialCardStyles from '../../styles/PortfolioTrialCard.module.scss';
+import PortfolioTrialCardStyles from './PortfolioTrialCard.module.scss';
 
 export default function PortfolioTrialCard({ trial }) {
   return (

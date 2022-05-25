@@ -3,7 +3,7 @@ import ShowcaseCard from '../ShowcaseCard';
 import foundationCardArray from '../../../utils/foundationCardArray';
 import puzzleCardArray from '../../../utils/puzzleCardArray';
 
-import ShowcaseStyles from '../../styles/Showcase.module.scss';
+import ShowcaseStyles from './Showcase.module.scss';
 
 export default function Showcase() {
   return (

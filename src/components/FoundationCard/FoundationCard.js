@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import FoundationCardStyles from '../../styles/FoundationCard.module.scss';
+import FoundationCardStyles from './FoundationCard.module.scss';
 
 export default function FoundationCard({ foundation }) {
   return (

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 
-import FeedCardStyles from '../../styles/FeedCard.module.scss';
+import FeedCardStyles from './FeedCard.module.scss';
 
 export default function FeedCard({ article }) {
   return (

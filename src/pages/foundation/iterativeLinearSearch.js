@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import FoundationLayout from '../../components/FoundationLayout';
 
-import IterativeLinearSearchStyles from '../../styles/IterativeLinearSearch.module.scss';
+import IterativeLinearSearchStyles from './IterativeLinearSearch.module.scss';
 
 const orderedRange = Array.apply(0, new Array(10)).map(function (_, i) {
   return i + 1;

@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import FoundationLayout from '../../components/FoundationLayout';
 
-import BubbleSortStyles from '../../styles/BubbleSort.module.scss';
+import BubbleSortStyles from './BubbleSort.module.scss';
 
 const orderedParameterRange = Array.apply(0, new Array(10)).map(function (
   _,

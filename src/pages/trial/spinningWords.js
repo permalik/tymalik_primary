@@ -4,8 +4,8 @@ import { useState } from 'react';
 import EditorInstance from '../../components/EditorInstance';
 import TrialLayout from '../../components/TrialLayout';
 
-import TrialStyles from '../../styles/Trial.module.scss';
-import SpinningWordsStyles from '../../styles/SpinningWords.module.scss';
+import TrialStyles from './Trial.module.scss';
+import SpinningWordsStyles from './SpinningWords.module.scss';
 
 let spinWords = (words) => {
   return words.replace(/\w{5,}/g, function (w) {

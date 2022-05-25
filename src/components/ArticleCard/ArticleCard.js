@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import ArticleCardStyles from '../../styles/ArticleCard.module.scss';
+import ArticleCardStyles from './ArticleCard.module.scss';
 
 export default function ArticleCard({ article }) {
   return (

@@ -7,7 +7,7 @@ import { sortByDate } from '../../utils';
 import ArticleCard from '../components/ArticleCard';
 import PrimarySection from '../components/PrimarySection';
 
-import ArticlesStyles from '../styles/Articles.module.scss';
+import ArticlesStyles from './Articles.module.scss';
 
 export default function AllArticles({ articles }) {
   return (

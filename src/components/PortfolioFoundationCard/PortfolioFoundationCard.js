@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import PortfolioFoundationCardStyles from '../../styles/PortfolioFoundationCard.module.scss';
+import PortfolioFoundationCardStyles from './PortfolioFoundationCard.module.scss';
 
 export default function PortfolioFoundationCard({ foundation }) {
   return (

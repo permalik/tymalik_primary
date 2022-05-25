@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import SiteFooterStyles from '../../styles/SiteFooter.module.scss';
+import SiteFooterStyles from './SiteFooter.module.scss';
 
 export default function SiteFooter() {
   return (

@@ -4,7 +4,7 @@ import FoundationCard from '../components/FoundationCard';
 import PrimarySection from '../components/PrimarySection';
 import foundationCardArray from '../../utils/foundationCardArray';
 
-import AllFoundationStyles from '../styles/AllFoundations.module.scss';
+import AllFoundationStyles from './AllFoundations.module.scss';
 
 export default function allFoundations() {
   return (

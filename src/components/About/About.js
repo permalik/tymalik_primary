@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import SectionTwo from '../SectionTwo';
 
-import AboutStyles from '../../styles/About.module.scss';
+import AboutStyles from './About.module.scss';
 
 export default function About() {
   return (

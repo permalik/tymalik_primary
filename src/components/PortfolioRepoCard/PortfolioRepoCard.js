@@ -1,4 +1,4 @@
-import PortfolioRepoCardStyles from '../../styles/PortfolioRepoCard.module.scss';
+import PortfolioRepoCardStyles from './PortfolioRepoCard.module.scss';
 
 export default function PortfolioRepoCard({ repo }) {
   return (

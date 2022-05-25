@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import SiteHeaderStyles from '../../styles/SiteHeader.module.scss';
+import SiteHeaderStyles from './SiteHeader.module.scss';
 
 export default function SiteHeader({toggle}) {
     return (

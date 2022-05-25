@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import ShowcaseCardStyles from '../../styles/ShowcaseCard.module.scss';
+import ShowcaseCardStyles from './ShowcaseCard.module.scss';
 
 export default function ShowcaseCard(props) {
   const { alt, children, imgUrl, projectUrl, timestamp, title } = props;

@@ -8,7 +8,7 @@ import path from 'path';
 
 import PrimarySection from '../../components/PrimarySection';
 
-import ArticleStyles from '../../styles/Article.module.scss';
+import ArticleStyles from './Article.module.scss';
 
 marked.setOptions({
   breaks: true

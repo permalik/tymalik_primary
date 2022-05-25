@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import FoundationLayout from '../../components/FoundationLayout';
 
-import SelectionSortStyles from '../../styles/SelectionSort.module.scss';
+import SelectionSortStyles from './SelectionSort.module.scss';
 
 const orderedParameterRange = Array.apply(0, new Array(10)).map(function (
   _,

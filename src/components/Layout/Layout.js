@@ -5,7 +5,7 @@ import {darkTheme, GlobalStyles, lightTheme} from '../../theme/ThemeConfig';
 import SiteFooter from '../SiteFooter';
 import SiteHeader from '../SiteHeader';
 
-import styles from '../../styles/Layout.module.scss';
+import styles from './Layout.module.scss';
 
 export default function Layout({children}) {
     const [theme, setTheme] = useState('light');

@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import FoundationLayout from '../../components/FoundationLayout';
 
-import InsertionSortStyles from '../../styles/InsertionSort.module.scss';
+import InsertionSortStyles from './InsertionSort.module.scss';
 
 const orderedParameterRange = Array.apply(0, new Array(10)).map(function (
   _,

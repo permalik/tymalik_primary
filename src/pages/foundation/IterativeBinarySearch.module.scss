@@ -1,4 +1,4 @@
-@import '../styles/variables.scss';
+@import '../../styles/variables';
 
 .headingTwo {
   font-size: clamp(1.6em, 4vw, 2em);
@@ -40,6 +40,10 @@
 }
 
 .resultList {
+  align-items: baseline;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
   & > li {
     list-style: none;
   }

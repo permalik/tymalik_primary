@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
 import SectionTwo from '../SectionTwo';
 
-import ContactStyles from '../../styles/Contact.module.scss';
+import ContactStyles from './Contact.module.scss';
 
 export default function Contact() {
   const router = useRouter();

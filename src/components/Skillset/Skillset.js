@@ -1,6 +1,6 @@
 import SectionTwo from '../SectionTwo';
 
-import SkillsetStyles from '../../styles/Skillset.module.scss';
+import SkillsetStyles from './Skillset.module.scss';
 
 export default function Skillset() {
   return (

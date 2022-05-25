@@ -1,4 +1,4 @@
-import SectionTwoStyles from '../../styles/SectionTwo.module.scss';
+import SectionTwoStyles from './SectionTwo.module.scss';
 
 export default function SectionTwo({ children, heading }) {
   return (

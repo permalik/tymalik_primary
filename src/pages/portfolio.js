@@ -10,7 +10,7 @@ import PrimarySection from '../components/PrimarySection';
 import foundationCardArray from '../../utils/foundationCardArray';
 import puzzleCardArray from '../../utils/puzzleCardArray';
 
-import PortfolioStyles from '../styles/Portfolio.module.scss';
+import PortfolioStyles from './Portfolio.module.scss';
 
 async function fetchData(...arg) {
   const res = await fetch(...arg);

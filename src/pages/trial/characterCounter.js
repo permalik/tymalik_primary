@@ -4,8 +4,8 @@ import { useState } from 'react';
 import EditorInstance from '../../components/EditorInstance';
 import TrialLayout from '../../components/TrialLayout';
 
-import TrialStyles from '../../styles/Trial.module.scss';
-import CharacterCounterStyles from '../../styles/CharacterCounter.module.scss';
+import TrialStyles from './Trial.module.scss';
+import CharacterCounterStyles from './CharacterCounter.module.scss';
 
 export default function WhoLikesit() {
   let defaultState = 'Sammamish';

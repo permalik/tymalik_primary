@@ -1,4 +1,4 @@
-import PrimarySectionStyles from '../../styles/PrimarySection.module.scss';
+import PrimarySectionStyles from './PrimarySection.module.scss';
 
 export default function PrimarySection({ children }) {
   return (

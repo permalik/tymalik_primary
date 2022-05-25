@@ -4,7 +4,7 @@ import PrimarySection from '../components/PrimarySection';
 import PuzzleCard from '../components/PuzzleCard';
 import puzzleCardArray from '../../utils/puzzleCardArray';
 
-import AllTrialStyles from '../styles/AllTrials.module.scss';
+import AllTrialStyles from './AllTrials.module.scss';
 
 export default function AllArticles() {
   return (

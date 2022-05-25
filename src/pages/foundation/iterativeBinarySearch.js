@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import FoundationLayout from '../../components/FoundationLayout';
 
-import IterativeBinarySearchStyles from '../../styles/IterativeBinarySearch.module.scss';
+import IterativeBinarySearchStyles from './IterativeBinarySearch.module.scss';
 
 const orderedRange = Array.apply(0, new Array(10)).map(function (_, i) {
   return i + 1;
