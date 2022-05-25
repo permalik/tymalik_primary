@@ -1,12 +1,12 @@
 import Head from 'next/head';
 
-import FoundationCard from '../components/FoundationCard';
-import PrimarySection from '../components/PrimarySection';
-import foundationCardArray from '../../utils/foundationCardArray';
+import FoundationCard from '../../components/FoundationCard';
+import PrimarySection from '../../components/PrimarySection';
+import foundationCardArray from '../../../utils/foundationCardArray';
 
-import AllFoundationStyles from './AllFoundations.module.scss';
+import styles from './Foundations.module.scss';
 
-export default function allFoundations() {
+export default function Foundations() {
   return (
     <PrimarySection>
       <Head>
@@ -16,10 +16,10 @@ export default function allFoundations() {
           name='keywords'
           content='software development, algorithm, data structure, javascript'
         />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/public/favicon.ico' />
       </Head>
       <h1>all foundations</h1>
-      <ul className={AllFoundationStyles.foundationList}>
+      <ul className={styles.foundationList}>
         {foundationCardArray.map((foundation, index) => (
           <FoundationCard key={index} foundation={foundation} />
         ))}

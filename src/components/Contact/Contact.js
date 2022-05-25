@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
 import SectionTwo from '../SectionTwo';
 
-import ContactStyles from './Contact.module.scss';
+import styles from './Contact.module.scss';
 
 export default function Contact() {
   const router = useRouter();
@@ -14,42 +14,42 @@ export default function Contact() {
   const ContactForm = (
     <form
       action='/?success=true'
-      className={ContactStyles.contactForm}
+      className={styles.contactForm}
       data-netlify='true'
       method='POST'
       name='contact_form'
     >
       <input name='form_name' type='hidden' value='contact_form' />
-      <label className={ContactStyles.contactLabel} htmlFor='name'>
+      <label className={styles.contactLabel} htmlFor='name'>
         Name
       </label>
       <input
-        className={ContactStyles.contactInput}
+        className={styles.contactInput}
         id='name'
         name='name'
         required
         type='text'
       />
-      <label className={ContactStyles.contactLabel} htmlFor='email'>
+      <label className={styles.contactLabel} htmlFor='email'>
         Email{' '}
       </label>
       <input
-        className={ContactStyles.contactInput}
+        className={styles.contactInput}
         id='email'
         name='email'
         required
         type='email'
       />
-      <label className={ContactStyles.contactLabel} htmlFor='message'>
+      <label className={styles.contactLabel} htmlFor='message'>
         Message{' '}
       </label>
       <textarea
-        className={ContactStyles.contactTextArea}
+        className={styles.contactTextArea}
         id='message'
         name='message'
         required
       ></textarea>
-      <button className={ContactStyles.contactSubmit} type='submit'>
+      <button className={styles.contactSubmit} type='submit'>
         Submit
       </button>
     </form>
@@ -57,13 +57,13 @@ export default function Contact() {
 
   const ConfirmationMessage = (
     <section>
-      <p className={ContactStyles.confirmationMessage}>
+      <p className={styles.confirmationMessage}>
         Thanks for reaching out. I should respond within 24-48 hours.
       </p>
 
       <Link href={`/`} passHref>
         <a>
-          <button className={ContactStyles.resetForm}>Reset Form</button>
+          <button className={styles.resetForm}>Reset Form</button>
         </a>
       </Link>
     </section>

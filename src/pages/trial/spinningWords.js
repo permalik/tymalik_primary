@@ -4,7 +4,7 @@ import { useState } from 'react';
 import EditorInstance from '../../components/EditorInstance';
 import TrialLayout from '../../components/TrialLayout';
 
-import TrialStyles from './Trial.module.scss';
+import TrialStyles from '../../components/TrialLayout/Trial.module.scss';
 import SpinningWordsStyles from './SpinningWords.module.scss';
 
 let spinWords = (words) => {

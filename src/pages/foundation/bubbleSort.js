@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import FoundationLayout from '../../components/FoundationLayout';
 
-import BubbleSortStyles from './BubbleSort.module.scss';
+import styles from './BubbleSort.module.scss';
 
 const orderedParameterRange = Array.apply(0, new Array(10)).map(function (
   _,
@@ -107,9 +107,9 @@ export default function BubbleSort() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <section>
-        <h2 className={BubbleSortStyles.headingTwo}>Sort the Array</h2>
-        <div className={BubbleSortStyles.demoParameters}>
-          <ul className={BubbleSortStyles.parameterList}>
+        <h2 className={styles.headingTwo}>Sort the Array</h2>
+        <div className={styles.demoParameters}>
+          <ul className={styles.parameterList}>
             {shuffledParameterRange.map((number, index) => (
               <li key={index} suppressHydrationWarning>
                 {number}
@@ -117,23 +117,23 @@ export default function BubbleSort() {
             ))}
           </ul>
         </div>
-        <div className={BubbleSortStyles.demoResults}>
+        <div className={styles.demoResults}>
           {renderResult ? (
-            <ul className={BubbleSortStyles.resultList}>
+            <ul className={styles.resultList}>
               {sortedArray.map((number, index) => (
-                <li className={BubbleSortStyles.solutionLi} key={index}>
+                <li className={styles.solutionLi} key={index}>
                   {number}
                 </li>
               ))}
             </ul>
           ) : (
-            <p className={BubbleSortStyles.resultPlaceholder}>
+            <p className={styles.resultPlaceholder}>
               👇 click to solve
             </p>
           )}
         </div>
         <button
-          className={BubbleSortStyles.solveButton}
+          className={styles.solveButton}
           onClick={() => toggleState()}
         >
           solve

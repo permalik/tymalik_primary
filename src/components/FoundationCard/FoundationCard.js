@@ -1,21 +1,21 @@
 import Link from 'next/link';
 
-import FoundationCardStyles from './FoundationCard.module.scss';
+import styles from './FoundationCard.module.scss';
 
 export default function FoundationCard({ foundation }) {
   return (
-    <li className={FoundationCardStyles.listItem}>
+    <li className={styles.listItem}>
       <Link href={`${foundation.link}`} passHref>
         <a>
-          <div className={FoundationCardStyles.article}>
-            <header className={FoundationCardStyles.header}>
-              <h2 className={FoundationCardStyles.title}>{foundation.title}</h2>
-              <p className={FoundationCardStyles.description}>
+          <div className={styles.article}>
+            <header className={styles.header}>
+              <h2 className={styles.title}>{foundation.title}</h2>
+              <p className={styles.description}>
                 {foundation.type}
               </p>
             </header>
             <time
-              className={FoundationCardStyles.timestamp}
+              className={styles.timestamp}
               dateTime={foundation.timestamp}
             >
               {foundation.timestamp}

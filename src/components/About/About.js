@@ -1,18 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 import SectionTwo from '../SectionTwo';
 
-import AboutStyles from './About.module.scss';
+import styles from './About.module.scss';
 
 export default function About() {
   return (
     <SectionTwo heading='about Ty'>
-      <div className={AboutStyles.contentWrapper}>
+      <div className={styles.contentWrapper}>
         <img
           alt={`profile image of Ty Malik`}
-          className={AboutStyles.profileImage}
+          className={styles.profileImage}
           src={`https://res.cloudinary.com/permalik/image/upload/v1630389505/profile.jpg`}
         />
-        <p className={AboutStyles.aboutDescription}>
+        <p className={styles.aboutDescription}>
           <span>
             I&#39;m a designer and front-end engineer.
           </span>

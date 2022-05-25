@@ -1,36 +1,36 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 
-import FeedCardStyles from './FeedCard.module.scss';
+import styles from './FeedCard.module.scss';
 
 export default function FeedCard({ article }) {
   return (
-    <li className={FeedCardStyles.articleCard}>
+    <li className={styles.articleCard}>
       <Link
-        className={FeedCardStyles.articleLink}
+        className={styles.articleLink}
         href={`/article/${article.slug}`}
         passHref
       >
         <a>
           <img
             alt={article.frontmatter.alt_text}
-            className={FeedCardStyles.articleImage}
+            className={styles.articleImage}
             src={article.frontmatter.cover_image}
           />
-          <div className={FeedCardStyles.contentWrapper}>
-            <h3 className={FeedCardStyles.articleHeading}>
+          <div className={styles.contentWrapper}>
+            <h3 className={styles.articleHeading}>
               {article.frontmatter.title}
             </h3>
-            <p className={FeedCardStyles.articleDescription}>
+            <p className={styles.articleDescription}>
               {article.frontmatter.description}
             </p>
             <time
               dateTime={article.frontmatter.timestamp}
-              className={FeedCardStyles.timestamp}
+              className={styles.timestamp}
             >
               {article.frontmatter.timestamp}
             </time>
-            <p className={FeedCardStyles.articleExcerpt}>
+            <p className={styles.articleExcerpt}>
               {article.frontmatter.excerpt}
             </p>
           </div>

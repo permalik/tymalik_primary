@@ -8,7 +8,7 @@ import path from 'path';
 
 import PrimarySection from '../../components/PrimarySection';
 
-import ArticleStyles from './Article.module.scss';
+import styles from './Article.module.scss';
 
 marked.setOptions({
   breaks: true
@@ -41,24 +41,24 @@ export default function Article({
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <article className={ArticleStyles.article}>
-        <header className={ArticleStyles.headerContent}>
-          <h1 className={ArticleStyles.title}>{title}</h1>
-          <p className={ArticleStyles.description}>{description}</p>
-          <div className={ArticleStyles.creditWrapper}>
+      <article className={styles.article}>
+        <header className={styles.headerContent}>
+          <h1 className={styles.title}>{title}</h1>
+          <p className={styles.description}>{description}</p>
+          <div className={styles.creditWrapper}>
             <Link href={`/malik`} passHref>
-              <span className={ArticleStyles.credit}>Written by {author}</span>
+              <span className={styles.credit}>Written by {author}</span>
             </Link>
-            <time className={ArticleStyles.timestamp}>{timestamp}</time>
+            <time className={styles.timestamp}>{timestamp}</time>
           </div>
           <img
             alt={alt_text}
-            className={ArticleStyles.coverImage}
+            className={styles.coverImage}
             src={cover_image}
           />
         </header>
         <section
-          className={ArticleStyles.bodySection}
+          className={styles.bodySection}
           dangerouslySetInnerHTML={{ __html: marked(content) }}
         />
       </article>
@@ -95,9 +95,9 @@ export async function getStaticProps({ params: { slug } }) {
 
 // Future tagging implementation
 {
-  /* <ul className={ArticleStyles.tagList}>
+  /* <ul className={styles.tagList}>
             {tags.map((tag, index) => (
-              <li className={ArticleStyles.tag} key={index}>
+              <li className={styles.tag} key={index}>
                 #{tag}
               </li>
             ))}

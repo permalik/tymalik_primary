@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import FoundationLayout from '../../components/FoundationLayout';
 
-import SelectionSortStyles from './SelectionSort.module.scss';
+import styles from './SelectionSort.module.scss';
 
 const orderedParameterRange = Array.apply(0, new Array(10)).map(function (
   _,
@@ -107,9 +107,9 @@ export default function SelectionSort() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <section>
-        <h2 className={SelectionSortStyles.headingTwo}>Sort the Array</h2>
-        <div className={SelectionSortStyles.demoParameters}>
-          <ul className={SelectionSortStyles.parameterList}>
+        <h2 className={styles.headingTwo}>Sort the Array</h2>
+        <div className={styles.demoParameters}>
+          <ul className={styles.parameterList}>
             {shuffledParameterRange.map((number, index) => (
               <li key={index} suppressHydrationWarning>
                 {number}
@@ -117,23 +117,23 @@ export default function SelectionSort() {
             ))}
           </ul>
         </div>
-        <div className={SelectionSortStyles.demoResults}>
+        <div className={styles.demoResults}>
           {renderResult ? (
-            <ul className={SelectionSortStyles.resultList}>
+            <ul className={styles.resultList}>
               {sortedArray.map((number, index) => (
-                <li className={SelectionSortStyles.solutionLi} key={index}>
+                <li className={styles.solutionLi} key={index}>
                   {number}
                 </li>
               ))}
             </ul>
           ) : (
-            <p className={SelectionSortStyles.resultPlaceholder}>
+            <p className={styles.resultPlaceholder}>
               👇 click to solve
             </p>
           )}
         </div>
         <button
-          className={SelectionSortStyles.solveButton}
+          className={styles.solveButton}
           onClick={() => toggleState()}
         >
           solve

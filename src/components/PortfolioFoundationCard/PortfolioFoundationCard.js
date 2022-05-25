@@ -1,24 +1,24 @@
 import Link from 'next/link';
 
-import PortfolioFoundationCardStyles from './PortfolioFoundationCard.module.scss';
+import styles from './PortfolioFoundationCard.module.scss';
 
 export default function PortfolioFoundationCard({ foundation }) {
   return (
-    <li className={PortfolioFoundationCardStyles.foundationCard}>
+    <li className={styles.foundationCard}>
       <Link href={`${foundation.link}`} passHref>
         <a>
-          <header className={PortfolioFoundationCardStyles.foundationHeader}>
-            <h3 className={PortfolioFoundationCardStyles.foundationHeading}>
+          <header className={styles.foundationHeader}>
+            <h3 className={styles.foundationHeading}>
               {foundation.title}
             </h3>
             <time
               dateTime={foundation.timestamp}
-              className={PortfolioFoundationCardStyles.foundationTimestamp}
+              className={styles.foundationTimestamp}
             >
               {foundation.timestamp}
             </time>
           </header>
-          <p className={PortfolioFoundationCardStyles.foundationDescription}>
+          <p className={styles.foundationDescription}>
             {foundation.type}
           </p>
         </a>

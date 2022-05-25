@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import FoundationLayout from '../../components/FoundationLayout';
 
-import InsertionSortStyles from './InsertionSort.module.scss';
+import styles from './InsertionSort.module.scss';
 
 const orderedParameterRange = Array.apply(0, new Array(10)).map(function (
   _,
@@ -98,9 +98,9 @@ export default function InsertionSort() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <section>
-        <h2 className={InsertionSortStyles.headingTwo}>Sort the Array</h2>
-        <div className={InsertionSortStyles.demoParameters}>
-          <ul className={InsertionSortStyles.parameterList}>
+        <h2 className={styles.headingTwo}>Sort the Array</h2>
+        <div className={styles.demoParameters}>
+          <ul className={styles.parameterList}>
             {shuffledParameterRange.map((number, index) => (
               <li key={index} suppressHydrationWarning>
                 {number}
@@ -108,23 +108,23 @@ export default function InsertionSort() {
             ))}
           </ul>
         </div>
-        <div className={InsertionSortStyles.demoResults}>
+        <div className={styles.demoResults}>
           {renderResult ? (
-            <ul className={InsertionSortStyles.resultList}>
+            <ul className={styles.resultList}>
               {sortedArray.map((number, index) => (
-                <li className={InsertionSortStyles.solutionLi} key={index}>
+                <li className={styles.solutionLi} key={index}>
                   {number}
                 </li>
               ))}
             </ul>
           ) : (
-            <p className={InsertionSortStyles.resultPlaceholder}>
+            <p className={styles.resultPlaceholder}>
               👇 click to solve
             </p>
           )}
         </div>
         <button
-          className={InsertionSortStyles.solveButton}
+          className={styles.solveButton}
           onClick={() => toggleState()}
         >
           solve

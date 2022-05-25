@@ -4,7 +4,7 @@ import { useState } from 'react';
 import EditorInstance from '../../components/EditorInstance';
 import TrialLayout from '../../components/TrialLayout';
 
-import TrialStyles from './Trial.module.scss';
+import TrialStyles from '../../components/TrialLayout/Trial.module.scss';
 import AlphabetPositionStyles from './AlphabetPosition.module.scss';
 
 function alphabetPosition(text) {

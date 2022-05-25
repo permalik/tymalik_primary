@@ -1,15 +1,15 @@
 import Image from 'next/image';
 
-import SiteFooterStyles from './SiteFooter.module.scss';
+import styles from './SiteFooter.module.scss';
 
 export default function SiteFooter() {
   return (
     <footer
       aria-label='page footer'
-      className={SiteFooterStyles.siteFooter}
+      className={styles.siteFooter}
       role='contentinfo'
     >
-      <section className={SiteFooterStyles.credentialSection}>
+      <section className={styles.credentialSection}>
         <p>
           <span>2022</span>
           <span>Ty Malik</span>
@@ -17,7 +17,7 @@ export default function SiteFooter() {
       </section>
       <nav
         aria-label='build navigation'
-        className={SiteFooterStyles.buildNav}
+        className={styles.buildNav}
         role='navigation'
       >
         <ul>
@@ -34,48 +34,48 @@ export default function SiteFooter() {
       </nav>
       <nav
         aria-label='social link navigation'
-        className={SiteFooterStyles.socialNav}
+        className={styles.socialNav}
         role='navigation'
       >
         <ul>
-          <li className={SiteFooterStyles.socialLi}>
+          <li className={styles.socialLi}>
             <a href='mailto:tymalik@protonmail.com'>
               <Image
                 alt='at sign, email icon link'
-                className={SiteFooterStyles.socialLinkIcon}
+                className={styles.socialLinkIcon}
                 height='50px'
                 src='https://res.cloudinary.com/permalik/image/upload/v1630653022/email_svg.svg'
                 width='50px'
               />
             </a>
           </li>
-          <li className={SiteFooterStyles.socialLi}>
+          <li className={styles.socialLi}>
             <a href='https://github.com/permalik'>
               <Image
                 alt='github logo, github icon link'
-                className={SiteFooterStyles.socialLinkIcon}
+                className={styles.socialLinkIcon}
                 height='50px'
                 src='https://res.cloudinary.com/permalik/image/upload/v1630652678/github_svg.svg'
                 width='50px'
               />
             </a>
           </li>
-          <li className={SiteFooterStyles.socialLi}>
+          <li className={styles.socialLi}>
             <a href='https://www.linkedin.com/in/permalik/'>
               <Image
                 alt='linkedin logo, linkedin icon link'
-                className={SiteFooterStyles.socialLinkIcon}
+                className={styles.socialLinkIcon}
                 height='50px'
                 src='https://res.cloudinary.com/permalik/image/upload/v1630652818/linkedin_svg.svg'
                 width='50px'
               />
             </a>
           </li>
-          <li className={SiteFooterStyles.socialLi}>
+          <li className={styles.socialLi}>
             <a href='https://twitter.com/resetpermalik'>
               <Image
                 alt='twitter logo, twitter icon link'
-                className={SiteFooterStyles.socialLinkIcon}
+                className={styles.socialLinkIcon}
                 height='50px'
                 src='https://res.cloudinary.com/permalik/image/upload/v1630652927/twitter_svg.svg'
                 width='50px'

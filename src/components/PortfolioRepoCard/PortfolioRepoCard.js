@@ -1,20 +1,20 @@
-import PortfolioRepoCardStyles from './PortfolioRepoCard.module.scss';
+import styles from './PortfolioRepoCard.module.scss';
 
 export default function PortfolioRepoCard({ repo }) {
   return (
-    <li className={PortfolioRepoCardStyles.repoCard}>
+    <li className={styles.repoCard}>
       <a href={repo.html_url}>
-        <h3 className={PortfolioRepoCardStyles.repoHeading}>
+        <h3 className={styles.repoHeading}>
           {repo.name.replace(/_/g, ' ')}
         </h3>
-        <p className={PortfolioRepoCardStyles.repoDescription}>
+        <p className={styles.repoDescription}>
           {repo.description}
         </p>
       </a>
-      <div className={PortfolioRepoCardStyles.liveLinkWrapper}>
+      <div className={styles.liveLinkWrapper}>
         {repo.homepage ? (
           <a
-            className={PortfolioRepoCardStyles.repoLiveLink}
+            className={styles.repoLiveLink}
             href={repo.homepage}
           >
             View Site

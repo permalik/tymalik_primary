@@ -1,6 +1,6 @@
 import PrimarySection from '../PrimarySection';
 
-import TrialStyles from '../../pages/trial/Trial.module.scss';
+import styles from './Trial.module.scss';
 
 export default function TrialLayout({
   children,
@@ -10,10 +10,10 @@ export default function TrialLayout({
 }) {
   return (
     <PrimarySection>
-      <header className={TrialStyles.header}>
-        <h1 className={TrialStyles.headingOne}>{puzzleTitle}</h1>
+      <header className={styles.header}>
+        <h1 className={styles.headingOne}>{puzzleTitle}</h1>
         <a
-          className={TrialStyles.type}
+          className={styles.type}
           href={puzzleSourceHref}
           rel='noreferrer'
           target='_blank'

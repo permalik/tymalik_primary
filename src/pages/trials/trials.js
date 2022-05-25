@@ -1,10 +1,10 @@
 import Head from 'next/head';
 
-import PrimarySection from '../components/PrimarySection';
-import PuzzleCard from '../components/PuzzleCard';
-import puzzleCardArray from '../../utils/puzzleCardArray';
+import PrimarySection from '../../components/PrimarySection';
+import PuzzleCard from '../../components/PuzzleCard';
+import puzzleCardArray from '../../../utils/puzzleCardArray';
 
-import AllTrialStyles from './AllTrials.module.scss';
+import styles from './Trials.module.scss';
 
 export default function AllArticles() {
   return (
@@ -16,10 +16,10 @@ export default function AllArticles() {
           name='keywords'
           content='software development, html, css, javascript, codewars'
         />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/public/favicon.ico' />
       </Head>
-      <h1 className={AllTrialStyles.headingOne}>all trials</h1>
-      <ul className={AllTrialStyles.puzzleList}>
+      <h1 className={styles.headingOne}>all trials</h1>
+      <ul className={styles.puzzleList}>
         {puzzleCardArray.map((trial, index) => (
           <PuzzleCard key={index} trial={trial} />
         ))}

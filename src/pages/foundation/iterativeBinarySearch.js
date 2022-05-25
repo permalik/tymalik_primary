@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import FoundationLayout from '../../components/FoundationLayout';
 
-import IterativeBinarySearchStyles from './IterativeBinarySearch.module.scss';
+import styles from './IterativeBinarySearch.module.scss';
 
 const orderedRange = Array.apply(0, new Array(10)).map(function (_, i) {
   return i + 1;
@@ -23,7 +23,7 @@ const iterativeBinarySearch = function (array, targetValue) {
 
     if (array[centerItem] === targetValue) {
       return (
-        <li className={IterativeBinarySearchStyles.solutionLi} key={centerItem}>
+        <li className={styles.solutionLi} key={centerItem}>
           {centerItem + 1}
         </li>
       );
@@ -31,7 +31,7 @@ const iterativeBinarySearch = function (array, targetValue) {
     else leftMostItem = centerItem + 1;
   }
   return (
-    <li className={IterativeBinarySearchStyles.solutionLi} key={-1}>
+    <li className={styles.solutionLi} key={-1}>
       -1
     </li>
   );
@@ -97,45 +97,45 @@ export default function IterativeBinarySearch() {
       </Head>
       <section>
         <h2
-          className={IterativeBinarySearchStyles.headingTwo}
+          className={styles.headingTwo}
           suppressHydrationWarning
         >
           Find {randomNumber}
         </h2>
-        <div className={IterativeBinarySearchStyles.demoParameters}>
-          <ul className={IterativeBinarySearchStyles.parameterList}>
+        <div className={styles.demoParameters}>
+          <ul className={styles.parameterList}>
             {orderedRange.map((number, index) => (
               <li key={index}>{number}</li>
             ))}
           </ul>
         </div>
         <div
-          className={IterativeBinarySearchStyles.demoResults}
+          className={styles.demoResults}
           suppressHydrationWarning
         >
           {renderResult ? (
-            <ul className={IterativeBinarySearchStyles.resultList}>
+            <ul className={styles.resultList}>
               {iterativeBinarySearch(orderedRange, randomNumber)}
               {/* {orderedRange.map((number, index) =>
                 number === targetValue ? (
-                  <li className={IterativeBinarySearchStyles.solutionLi} key={index}>
+                  <li className={styles.solutionLi} key={index}>
                     {number}
                   </li>
                 ) : (
-                  <li className={IterativeBinarySearchStyles.standardLi} key={index}>
+                  <li className={styles.standardLi} key={index}>
                     {number}
                   </li>
                 )
               )} */}
             </ul>
           ) : (
-            <p className={IterativeBinarySearchStyles.resultPlaceholder}>
+            <p className={styles.resultPlaceholder}>
               👇 click to solve
             </p>
           )}
         </div>
         <button
-          className={IterativeBinarySearchStyles.solveButton}
+          className={styles.solveButton}
           onClick={() => toggleState()}
         >
           solve

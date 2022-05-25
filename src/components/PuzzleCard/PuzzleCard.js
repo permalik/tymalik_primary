@@ -1,20 +1,20 @@
 import Link from 'next/link';
 
-import PuzzleCardStyles from './PuzzleCard.module.scss';
+import styles from './PuzzleCard.module.scss';
 
 export default function PuzzleCard({ trial }) {
   return (
-    <li className={PuzzleCardStyles.listItem}>
+    <li className={styles.listItem}>
       <Link href={`${trial.link}`} passHref>
         <a>
-          <div className={PuzzleCardStyles.article}>
-            <header className={PuzzleCardStyles.header}>
-              <h2 className={PuzzleCardStyles.title}>{trial.title}</h2>
-              <p className={PuzzleCardStyles.description}>
+          <div className={styles.article}>
+            <header className={styles.header}>
+              <h2 className={styles.title}>{trial.title}</h2>
+              <p className={styles.description}>
                 <span>{trial.language}</span> | <span>{trial.type}</span>
               </p>
             </header>
-            <time className={PuzzleCardStyles.timestamp}>
+            <time className={styles.timestamp}>
               {trial.timestamp}
             </time>
           </div>

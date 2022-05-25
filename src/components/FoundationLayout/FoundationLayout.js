@@ -1,7 +1,7 @@
 import EditorInstance from '../EditorInstance';
 import PrimarySection from '../PrimarySection';
 
-import FoundationLayoutStyles from './FoundationLayout.module.scss';
+import styles from './FoundationLayout.module.scss';
 
 export default function FoundationLayout({
   bestCase,
@@ -13,18 +13,18 @@ export default function FoundationLayout({
 }) {
   return (
     <PrimarySection>
-      <header className={FoundationLayoutStyles.header}>
-        <h1 className={FoundationLayoutStyles.headingOne}>{foundationTitle}</h1>
+      <header className={styles.header}>
+        <h1 className={styles.headingOne}>{foundationTitle}</h1>
       </header>
       {children}
-      <section className={FoundationLayoutStyles.descriptionSection}>
-        <h2 className={FoundationLayoutStyles.headingTwo}>Description</h2>
+      <section className={styles.descriptionSection}>
+        <h2 className={styles.headingTwo}>Description</h2>
         <p>{description}</p>
-        <p className={FoundationLayoutStyles.timeComplexity}>Time Complexity</p>
-        <p className={FoundationLayoutStyles.worstCase}>
+        <p className={styles.timeComplexity}>Time Complexity</p>
+        <p className={styles.worstCase}>
           Worst Case: <span>{worstCase}</span>
         </p>
-        <p className={FoundationLayoutStyles.bestCase}>
+        <p className={styles.bestCase}>
           Best Case: <span>{bestCase}</span>
         </p>
       </section>

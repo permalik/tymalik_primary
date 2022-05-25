@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import FoundationLayout from '../../components/FoundationLayout';
 
-import IterativeLinearSearchStyles from './IterativeLinearSearch.module.scss';
+import styles from './IterativeLinearSearch.module.scss';
 
 const orderedRange = Array.apply(0, new Array(10)).map(function (_, i) {
   return i + 1;
@@ -76,33 +76,33 @@ export default function LinearSearch() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <section>
-        <h2 className={IterativeLinearSearchStyles.headingTwo}>
+        <h2 className={styles.headingTwo}>
           Find {randomNumber}
         </h2>
-        <div className={IterativeLinearSearchStyles.demoParameters}>
-          <ul className={IterativeLinearSearchStyles.parameterList}>
+        <div className={styles.demoParameters}>
+          <ul className={styles.parameterList}>
             {shuffledRange.map((number, index) => (
               <li key={index}>{number}</li>
             ))}
           </ul>
         </div>
         <div
-          className={IterativeLinearSearchStyles.demoResults}
+          className={styles.demoResults}
           suppressHydrationWarning
         >
           {renderResult ? (
-            <ul className={IterativeLinearSearchStyles.resultList}>
+            <ul className={styles.resultList}>
               {shuffledRange.map((number, index) =>
                 number === randomNumber ? (
                   <li
-                    className={IterativeLinearSearchStyles.solutionLi}
+                    className={styles.solutionLi}
                     key={index}
                   >
                     {number}
                   </li>
                 ) : (
                   <li
-                    className={IterativeLinearSearchStyles.standardLi}
+                    className={styles.standardLi}
                     key={index}
                   >
                     {number}
@@ -111,13 +111,13 @@ export default function LinearSearch() {
               )}
             </ul>
           ) : (
-            <p className={IterativeLinearSearchStyles.resultPlaceholder}>
+            <p className={styles.resultPlaceholder}>
               👇 click to solve
             </p>
           )}
         </div>
         <button
-          className={IterativeLinearSearchStyles.solveButton}
+          className={styles.solveButton}
           onClick={() => toggleState()}
         >
           solve

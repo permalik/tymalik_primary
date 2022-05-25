@@ -1,15 +1,15 @@
 import SectionTwo from '../SectionTwo';
 
-import SkillsetStyles from './Skillset.module.scss';
+import styles from './Skillset.module.scss';
 
 export default function Skillset() {
   return (
-    <SectionTwo className={SkillsetStyles.skillsetSection} heading='skillset'>
-      <ul className={SkillsetStyles.skillsetList}>
-        <li className={SkillsetStyles.skillsetCard}>html</li>
-        <li className={SkillsetStyles.skillsetCard}>css</li>
-        <li className={SkillsetStyles.skillsetCard}>javascript</li>
-        <li className={SkillsetStyles.skillsetCard}>react</li>
+    <SectionTwo className={styles.skillsetSection} heading='skillset'>
+      <ul className={styles.skillsetList}>
+        <li className={styles.skillsetCard}>html</li>
+        <li className={styles.skillsetCard}>css</li>
+        <li className={styles.skillsetCard}>javascript</li>
+        <li className={styles.skillsetCard}>react</li>
       </ul>
     </SectionTwo>
   );

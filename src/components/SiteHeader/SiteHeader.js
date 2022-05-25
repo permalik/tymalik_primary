@@ -1,25 +1,24 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
-import SiteHeaderStyles from './SiteHeader.module.scss';
+import styles from './SiteHeader.module.scss';
 
 export default function SiteHeader({toggle}) {
     return (
         <header
             aria-label="page header"
-            className={SiteHeaderStyles.siteHeader}
+            className={styles.siteHeader}
             role="banner"
         >
-            <div className={SiteHeaderStyles.contentWrapper}>
+            <div className={styles.contentWrapper}>
                 <nav
                     aria-label="site navigation"
-                    className={SiteHeaderStyles.nav}
+                    className={styles.nav}
                     role="navigation"
                 >
-                    <Link href={`/allArticles`}>
+                    <Link href={`/articles/articles`}>
                         <a
                             aria-label="articles"
-                            className={SiteHeaderStyles.navLink}
+                            className={styles.navLink}
                             title="articles"
                         >
                             articles
@@ -27,18 +26,18 @@ export default function SiteHeader({toggle}) {
                     </Link>
                     <Link href={`/#contact`}>
                         <a aria-label="contact"
-                           className={SiteHeaderStyles.navLink}>
+                           className={styles.navLink}>
                             contact
                         </a>
                     </Link>
-                    <Link href={`/portfolio`}>
+                    <Link href={`/portfolio/portfolio`}>
                         <a aria-label="portfolio"
-                           className={SiteHeaderStyles.navLink}>
+                           className={styles.navLink}>
                             portfolio
                         </a>
                     </Link>
                     <button
-                        className={SiteHeaderStyles.themeButton}
+                        className={styles.themeButton}
                         onClick={toggle}
                     >
                         Toggle Theme

@@ -1,26 +1,26 @@
 import Link from 'next/link';
 
-import ArticleCardStyles from './ArticleCard.module.scss';
+import styles from './ArticleCard.module.scss';
 
 export default function ArticleCard({ article }) {
   return (
-    <li className={ArticleCardStyles.article}>
+    <li className={styles.article}>
       <Link href={`/article/${article.slug}`} passHref>
         <a>
-          <div className={ArticleCardStyles.headerWrapper}>
-            <header className={ArticleCardStyles.header}>
-              <h2 className={ArticleCardStyles.title}>
+          <div className={styles.headerWrapper}>
+            <header className={styles.header}>
+              <h2 className={styles.title}>
                 {article.frontmatter.title}
               </h2>
-              <p className={ArticleCardStyles.description}>
+              <p className={styles.description}>
                 {article.frontmatter.description}
               </p>
             </header>
-            <time className={ArticleCardStyles.timestamp}>
+            <time className={styles.timestamp}>
               {article.frontmatter.timestamp}
             </time>
           </div>
-          <p className={ArticleCardStyles.excerpt}>
+          <p className={styles.excerpt}>
             {article.frontmatter.excerpt} [...]
           </p>
         </a>
