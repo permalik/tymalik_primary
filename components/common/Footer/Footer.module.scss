@@ -1,0 +1,88 @@
+.siteFooter {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 2vh;
+  width: 100%;
+
+  & > section {
+    margin-bottom: 2vh;
+  }
+
+  & > nav:not(:last-child) {
+    margin-bottom: 2vh;
+  }
+}
+
+.credentialSection {
+  & > p {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: Ubuntu, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+
+    & > span:first-child {
+      margin-right: 0.25em;
+    }
+  }
+}
+
+.buildNav {
+  & > ul {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 1.65em;
+    justify-content: center;
+    margin-left: 0;
+
+    & > li {
+      font-family: Ubuntu, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      list-style: none;
+    }
+
+    & > li:not(:last-child) {
+      margin-right: 1em;
+    }
+  }
+}
+
+.socialNav {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  & > ul {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-left: 0;
+
+    & > li:not(:last-child) {
+      margin-right: 2em;
+    }
+  }
+}
+
+.socialLi {
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+  width: 3em;
+}
+
+.socialLinkIcon {
+  filter: invert(47%) sepia(93%) saturate(3095%) hue-rotate(347deg) brightness(100%) contrast(102%);
+}

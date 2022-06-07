@@ -1,8 +1,16 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import {appWithTranslation} from 'next-i18next';
+import {AppProps} from "next/app";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+import Layout from '../components/common/Layout';
 
-export default MyApp
+import '../styles/globals.scss';
+
+const MyApp = ({Component, pageProps}: AppProps) => {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
+};
+
+export default appWithTranslation(MyApp);
