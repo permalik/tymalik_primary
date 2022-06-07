@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer
       aria-label="page footer"
-      className={styles.siteFooter}
+      className={styles.footer}
       role="contentinfo"
     >
       <section className={styles.credentialSection}>
@@ -17,7 +17,7 @@ const Footer = () => {
       </section>
       <nav
         aria-label="build navigation"
-        className={styles.buildNav}
+        className={styles.sourceNav}
         role="navigation"
       >
         <ul>

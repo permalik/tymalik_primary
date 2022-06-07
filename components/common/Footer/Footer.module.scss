@@ -1,4 +1,4 @@
-.siteFooter {
+.footer {
   align-items: center;
   bottom: 0;
   display: flex;
@@ -7,17 +7,11 @@
   position: relative;
   padding-bottom: 2vh;
   width: 100%;
-
-  & > section {
-    margin-bottom: 2vh;
-  }
-
-  & > nav:not(:last-child) {
-    margin-bottom: 2vh;
-  }
 }
 
 .credentialSection {
+  margin-bottom: 2vh;
+
   & > p {
     align-items: center;
     display: flex;
@@ -35,7 +29,9 @@
   }
 }
 
-.buildNav {
+.sourceNav {
+  margin-bottom: 2vh;
+
   & > ul {
     align-items: center;
     display: flex;
