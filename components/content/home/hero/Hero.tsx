@@ -1,6 +1,7 @@
+import React from "react";
 import styles from "./Hero.module.scss";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <section className={styles.container}>
       <div className={styles.innerContainer}>

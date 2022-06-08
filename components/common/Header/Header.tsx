@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import React from "react";
 
 import styles from './Header.module.scss';
 
-const Header = ({toggle}: any) => {
+const Header: React.FC = ({toggle}: any) => {
   return (
     <header
       aria-label="page header"

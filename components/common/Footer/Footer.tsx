@@ -1,8 +1,9 @@
 import Image from "next/image";
+import React from "react";
 
 import styles from "./Footer.module.scss";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer
       aria-label="page footer"

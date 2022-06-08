@@ -11,13 +11,14 @@
 // import Showcase from '../components/Showcase';
 // import Skillset from '../components/Skillset';
 
+import React from "react";
 import Hero from '../components/content/home/hero';
 
 import Head from "next/head";
 import styles from '../styles/Index.module.scss';
 
 // export default function Home({articles}) {
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <section className={styles.indexSection}>
       <Head>
@@ -87,3 +88,5 @@ export default function Home() {
 // <button onClick={() => setFontZoom(!fontZoom)}>
 //   {fontZoom ? '50px' : '4px'}
 // </button>;
+
+export default Home;
