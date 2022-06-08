@@ -7,10 +7,11 @@
 // import About from '../components/About';
 // import Contact from '../components/Contact';
 // import FeedCard from '../components/FeedCard';
-// import Promo from '../components/Promo';
 // import SectionTwo from '../components/SectionTwo';
 // import Showcase from '../components/Showcase';
 // import Skillset from '../components/Skillset';
+
+import Hero from '../components/content/home/hero';
 
 import Head from "next/head";
 import styles from '../styles/Index.module.scss';
@@ -31,7 +32,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-      {/*<Promo/>*/}
+      <Hero/>
       {/*<Skillset/>*/}
       {/*<Showcase/>*/}
       {/*<SectionTwo className={styles.articleFeed}*/}
