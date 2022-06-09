@@ -3,7 +3,7 @@ import React from "react";
 
 import styles from './Header.module.scss';
 
-const Header: React.FC = ({toggle}: any) => {
+const Header = ({toggle}: any) => {
   return (
     <header
       aria-label="page header"
