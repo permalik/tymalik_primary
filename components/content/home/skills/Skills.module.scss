@@ -1,0 +1,17 @@
+.list {
+  display: grid;
+  gap: 2vw;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 1rem 0 0 0;
+  width: 100%;
+
+  & li {
+    border-left: #FF5A1E solid 2px;
+    border-radius: 5px;
+    box-shadow: hsla(0, 0%, 0%, 0.1) 0px 1px 2px 0px;
+    font-size: clamp(2em, 3vw, 2.2em);
+    list-style: none;
+    opacity: 0.8;
+    padding: 1rem 1.5rem;
+  }
+}

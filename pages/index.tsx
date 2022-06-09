@@ -9,15 +9,16 @@
 // import FeedCard from '../components/FeedCard';
 // import SectionTwo from '../components/SectionTwo';
 // import Showcase from '../components/Showcase';
-// import Skillset from '../components/Skillset';
 
 import React from "react";
 import Hero from '../components/content/home/hero';
 
 import Head from "next/head";
+import Skills from "../components/content/home/skills/Skills";
+
 import styles from '../styles/Index.module.scss';
 
-// export default function Home({articles}) {
+// export default function Home({articles}) {git
 const Home: React.FC = () => {
   return (
     <section className={styles.indexSection}>
@@ -34,7 +35,7 @@ const Home: React.FC = () => {
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <Hero/>
-      {/*<Skillset/>*/}
+      <Skills/>
       {/*<Showcase/>*/}
       {/*<SectionTwo className={styles.articleFeed}*/}
       {/*            heading="latest articles">*/}

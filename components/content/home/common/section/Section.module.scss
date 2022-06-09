@@ -1,0 +1,9 @@
+.section {
+  margin-bottom: 20vh;
+  min-width: 235px;
+  width: 100%;
+
+  & h2 {
+    margin-bottom: 3rem;
+  }
+}
