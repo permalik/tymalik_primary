@@ -1,7 +1,7 @@
 import Card from "./card";
 import Section from "../common/section";
-import foundationData from "../../../../utils/portfolioData/foundationData";
-import puzzleData from "../../../../utils/portfolioData/puzzleData";
+import foundationData from "../../../../data/portfolio/foundationData";
+import puzzleData from "../../../../data/portfolio/puzzleData";
 
 import styles from "./Portfolio.module.scss";
 

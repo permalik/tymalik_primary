@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="fb3bf6c1-698b-4705-8409-16839026793e" name="Changes" comment="z">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/portfolio/Portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/home/portfolio/Portfolio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/portfolioData/foundationData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/portfolio/foundationData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/portfolioData/puzzleData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/portfolio/puzzleData.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +62,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/utils" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/articles/blog" />
       <recent name="C:\code\tymalik_primary\src" />
       <recent name="C:\code\tymalik_primary\src\routes" />
     </key>
@@ -73,7 +80,7 @@
       <workItem from="1653772747419" duration="13901000" />
       <workItem from="1654103341216" duration="5790000" />
       <workItem from="1654605683593" duration="5144000" />
-      <workItem from="1654655957126" duration="14940000" />
+      <workItem from="1654655957126" duration="25769000" />
     </task>
     <servers />
   </component>

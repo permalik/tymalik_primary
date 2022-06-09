@@ -1,25 +1,21 @@
-// import fs from 'fs';
-// import matter from 'gray-matter';
-// import Head from 'next/head';
-// import path from 'path';
-// import {sortByDate} from '../../utils';
-//
+import Head from "next/head";
+import React from "react";
+import {BlogProps} from "../types/blog";
+import { getPostsWithFrontMatter } from '../lib/utils/utils'
+
+import Blog from "../components/content/home/blog";
+import Section from "../components/content/home/common/section";
+import Hero from '../components/content/home/hero';
+import Portfolio from "../components/content/home/portfolio/Portfolio";
+import Skills from "../components/content/home/skills/Skills";
 // import About from '../components/About';
 // import Contact from '../components/Contact';
 // import FeedCard from '../components/FeedCard';
-// import SectionTwo from '../components/SectionTwo';
-
-import React from "react";
-import Hero from '../components/content/home/hero';
-
-import Head from "next/head";
-import Portfolio from "../components/content/home/portfolio/Portfolio";
-import Skills from "../components/content/home/skills/Skills";
 
 import styles from '../styles/Index.module.scss';
 
-// export default function Home({articles}) {
-const Home: React.FC = () => {
+// export default function Home({data}) {
+const Home = ({posts}: BlogProps) => {
   return (
     <section className={styles.indexSection}>
       <Head>
@@ -37,27 +33,34 @@ const Home: React.FC = () => {
       <Hero/>
       <Skills/>
       <Portfolio/>
-      {/*<SectionTwo className={styles.articleFeed}*/}
-      {/*            heading="latest articles">*/}
-      {/*  <ul className={styles.feedList}>*/}
-      {/*    {articles.slice(0, 6).map((article, index) => (*/}
-      {/*      <FeedCard article={article} key={index}/>*/}
-      {/*    ))}*/}
-      {/*  </ul>*/}
-      {/*</SectionTwo>*/}
+      <Section heading="latest articles">
+        <Blog posts={posts}/>
+      </Section>
       {/*<About/>*/}
       {/*<Contact/>*/}
     </section>
   );
 }
 
+export async function getStaticProps() {
+  const posts = await getPostsWithFrontMatter('blog')
+
+  return {
+    props: {
+      posts,
+      title: 'Blog',
+      description: 'Posts on software engineering',
+    },
+  }
+}
+
 // export async function getStaticProps() {
-//   const files = fs.readdirSync(path.join('articles'));
-//   const articles = files.map((filename) => {
+//   const files = fs.readdirSync(path.join('data'));
+//   const data = files.map((filename) => {
 //     const slug = filename.replace('.md', '');
 //
 //     const markdownWithMeta = fs.readFileSync(
-//       path.join('articles', filename),
+//       path.join('data', filename),
 //       'utf-8'
 //     );
 //
@@ -71,7 +74,7 @@ const Home: React.FC = () => {
 //
 //   return {
 //     props: {
-//       articles: articles.sort(sortByDate)
+//       data: data.sort(sortByDate)
 //     }
 //   };
 // }

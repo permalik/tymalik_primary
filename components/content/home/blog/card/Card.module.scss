@@ -1,0 +1,49 @@
+.post {
+  // border-left: hsl(248, 30%, 44%) solid 2px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  font-size: 1.6em;
+  list-style: none;
+  position: relative;
+  top: 0;
+  transition: top ease 0.1s;
+
+  &:hover {
+    cursor: pointer;
+    top: -2px;
+  }
+}
+
+.image {
+  border-radius: 5px 5px 0 0;
+  border-bottom: #FF5A1E solid 5px;
+  width: 100%;
+}
+
+.container {
+  padding: 2rem 1rem 3rem;
+
+  & > * {
+    line-height: initial;
+  }
+}
+
+.heading {
+  margin: 0;
+}
+
+.description {
+  font-family: Ubuntu, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0.25rem 0 0;
+}
+
+.timestamp {
+  display: block;
+  font-style: italic;
+}
+
+.excerpt {
+  margin: 1rem 0 0;
+}
