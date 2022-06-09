@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  width: 100%;
+
+  @media (min-width: 850px) {
+    gap: 2vw;
+    grid-template-columns: repeat(3, calc(33.3% - 1.3vw));
+  }
+}
+
+.list {
+  margin: 2rem 0 0;
+
+  & li {
+    border-left: #FF5A1E solid 2px;
+    line-height: 1.4;
+    list-style: none;
+    padding-left: 0.5rem;
+  }
+
+  & > *:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
