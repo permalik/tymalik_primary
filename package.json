@@ -12,6 +12,7 @@
     "@octokit/rest": "^18.12.0",
     "codemirror": "^6.0.0",
     "gray-matter": "^4.0.3",
+    "module-alias": "^2.2.2",
     "next": "12.1.6",
     "next-i18next": "^11.0.0",
     "react": "18.1.0",
@@ -21,7 +22,8 @@
     "react-markdown": "^8.0.3",
     "react-syntax-highlighter": "^15.5.0",
     "sass": "^1.52.2",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "swc-loader": "^0.2.3"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.8.0",
