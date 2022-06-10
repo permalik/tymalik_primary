@@ -4,12 +4,12 @@ import React from "react";
 import {BlogProps} from "../types/blog";
 
 
+import About from "@components/content/home/about";
 import Blog from "@components/content/home/blog";
 import Section from "@components/content/home/common/section";
 import Hero from "@components/content/home/hero";
 import Portfolio from "@components/content/home/portfolio";
 import Skills from "@components/content/home/skills";
-// import About from '../components/About';
 // import Contact from '../components/Contact';
 // import FeedCard from '../components/FeedCard';
 
@@ -37,7 +37,7 @@ const Home = ({posts}: BlogProps) => {
       <Section heading="latest articles">
         <Blog posts={posts}/>
       </Section>
-      {/*<About/>*/}
+      <About/>
       {/*<Contact/>*/}
     </section>
   );

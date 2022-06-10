@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+
+  @media (min-width: 850px) {
+    flex-flow: row nowrap;
+  }
+
+  & img {
+    border-radius: 5px;
+    width: 235px;
+  }
+
+  & p {
+    font-size: 1.8em;
+    line-height: 1.4;
+    margin: 2rem 0;
+
+    & span {
+      display: table;
+    }
+
+    & span:not(:first-child) {
+      margin: 1rem 0 0;
+    }
+
+    @media (min-width: 850px) {
+      margin: 0 0 0 2rem;
+    }
+  }
+}
