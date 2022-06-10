@@ -1,0 +1,68 @@
+.card {
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem;
+  position: relative;
+  top: 0;
+  transition: top ease 0.1s;
+
+  &:hover {
+    cursor: pointer;
+    top: -2px;
+  }
+}
+
+.container {
+  @media (min-width: 864px) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  & header {
+    & h2 {
+      font-size: clamp(1.6em, 4vw, 1.8em);
+      font-weight: 600;
+      margin: 0;
+    }
+
+    & p {
+      font-family: Ubuntu, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      font-weight: 600;
+      margin: 0.25rem 0 0;
+    }
+  }
+
+  & time {
+    display: inline-block;
+    font-style: italic;
+    margin-top: 0.25rem;
+
+    @media (min-width: 864px) {
+      margin: 0;
+    }
+  }
+}
+
+.excerpt {
+  font-size: 1.2em;
+  margin: 1rem 0 0;
+}
+
+// Future styles for tagging implementation
+// .tagList {
+//   display: grid;
+//   gap: 2vw;
+//   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+//   margin: 1rem 0;
+//   width: 100%;
+// }
+
+// .tag {
+//   border: black solid 1px;
+//   border-radius: 5px;
+//   text-align: center;
+// }

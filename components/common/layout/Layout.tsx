@@ -2,8 +2,8 @@ import React, {useState} from "react";
 import {ThemeProvider} from "styled-components";
 import {darkTheme, GlobalStyles, lightTheme} from "../../../theme/themeConfig";
 
-import Header from "../Header";
-import Footer from "../Footer";
+import Header from "../header";
+import Footer from "../footer";
 
 import styles from "./Layout.module.scss";
 

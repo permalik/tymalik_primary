@@ -6,6 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="fb3bf6c1-698b-4705-8409-16839026793e" name="Changes" comment="z">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/footer/Footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/Footer/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/footer/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/header/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/Header/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/header/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/Layout/Layout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/layout/Layout.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/Layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/layout/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/Layout/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/layout/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/blog/card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/home/blog/card/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,9 +29,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Articles" />
-        <option value="TypeScript JSX File" />
         <option value="SCSS File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -52,18 +64,18 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.appearance",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "ts.external.directory.path": "/Users/malik/Documents/code/tymalik_primary/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/styles" />
       <recent name="$PROJECT_DIR$/lib/utils" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/articles/blog" />
       <recent name="C:\code\tymalik_primary\src" />
-      <recent name="C:\code\tymalik_primary\src\routes" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -77,7 +89,7 @@
       <workItem from="1653772747419" duration="13901000" />
       <workItem from="1654103341216" duration="5790000" />
       <workItem from="1654605683593" duration="5144000" />
-      <workItem from="1654655957126" duration="37342000" />
+      <workItem from="1654655957126" duration="50768000" />
     </task>
     <servers />
   </component>

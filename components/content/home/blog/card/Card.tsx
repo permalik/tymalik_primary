@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link';
+import Link from "next/link";
 import React from "react";
 
-import styles from './Card.module.scss';
+import styles from "./Card.module.scss";
 
 // <article key={post.slug} className="post-title">
 //   <Link href={{pathname: `/blog/${post.slug}`}}>
@@ -12,7 +12,7 @@ import styles from './Card.module.scss';
 //   <p>[ {post.frontMatter.tags.join(", ")} ]</p>
 // </article>
 
-export default function Card({ post }: any) {
+export default function Card({post}: any) {
   return (
     <li className={styles.post}>
       <Link

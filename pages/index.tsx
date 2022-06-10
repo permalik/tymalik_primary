@@ -1,12 +1,10 @@
 import {getPostsWithFrontMatter} from "@lib/utils/utils";
 import Head from "next/head";
-import React from "react";
 import {BlogProps} from "../types/blog";
-
 
 import About from "@components/content/home/about";
 import Blog from "@components/content/home/blog";
-import Contact from "@components/content/home/contact/Contact";
+import Contact from "@components/content/home/contact";
 import Section from "@components/content/home/common/section";
 import Hero from "@components/content/home/hero";
 import Portfolio from "@components/content/home/portfolio";
