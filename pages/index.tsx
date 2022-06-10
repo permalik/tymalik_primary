@@ -15,7 +15,6 @@ import Skills from "@components/content/home/skills";
 
 import styles from "../styles/Index.module.scss";
 
-// export default function Home({data}) {
 const Home = ({posts}: BlogProps) => {
   return (
     <section className={styles.indexSection}>
@@ -48,37 +47,10 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts,
-      title: "Blog",
-      description: "Posts on software engineering",
+      posts
     },
   };
 }
-
-// export async function getStaticProps() {
-//   const files = fs.readdirSync(path.join('data'));
-//   const data = files.map((filename) => {
-//     const slug = filename.replace('.md', '');
-//
-//     const markdownWithMeta = fs.readFileSync(
-//       path.join('data', filename),
-//       'utf-8'
-//     );
-//
-//     const {data: frontmatter} = matter(markdownWithMeta);
-//
-//     return {
-//       slug,
-//       frontmatter
-//     };
-//   });
-//
-//   return {
-//     props: {
-//       data: data.sort(sortByDate)
-//     }
-//   };
-// }
 
 // Future accessibility implementation: Page font size adjuster hook
 // import { useEffect, useState } from 'react';
