@@ -6,12 +6,12 @@ import {BlogProps} from "../types/blog";
 
 import About from "@components/content/home/about";
 import Blog from "@components/content/home/blog";
+import Contact from "@components/content/home/contact/Contact";
 import Section from "@components/content/home/common/section";
 import Hero from "@components/content/home/hero";
 import Portfolio from "@components/content/home/portfolio";
 import Skills from "@components/content/home/skills";
-// import Contact from '../components/Contact';
-// import FeedCard from '../components/FeedCard';
+
 
 import styles from "../styles/Index.module.scss";
 
@@ -38,7 +38,7 @@ const Home = ({posts}: BlogProps) => {
         <Blog posts={posts}/>
       </Section>
       <About/>
-      {/*<Contact/>*/}
+      <Contact/>
     </section>
   );
 };
