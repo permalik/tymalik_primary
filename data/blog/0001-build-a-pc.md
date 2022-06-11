@@ -8,7 +8,6 @@ tags: ['hardware', 'pc', 'technology']
 timestamp: '2021-01-26'
 title: 'Build a PC'
 ---
-
 ## Primary Outlook
 
 Putting together a computer is really no trouble.

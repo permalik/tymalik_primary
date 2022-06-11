@@ -1,0 +1,144 @@
+.article {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+
+  & header {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+
+    & h1 {
+      font-size: clamp(3em, 4.5vw, 5em);
+      margin-top: 3rem;
+    }
+
+    & p {
+      font-family: Ubuntu, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      font-size: 1.2em;
+      font-weight: 600;
+      margin: 0.5rem 0 0;
+    }
+
+    & div {
+      align-items: flex-start;
+      display: flex;
+      flex-flow: column nowrap;
+      font-style: italic;
+      justify-content: center;
+      margin-top: 2rem;
+      position: relative;
+
+      &::before {
+        background: black;
+        content: '';
+        padding: 1px;
+        position: absolute;
+        top: -0.5rem;
+        width: 50%;
+      }
+    }
+
+    & img {
+      border-radius: 5px;
+      height: 50vmin;
+      margin: 5rem 0;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+
+.tagList {
+  display: grid;
+  gap: 2vw;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.tag {
+  border: black solid 1px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.headerContentContainer {
+  background: hsla(255, 100%, 100%, 0.6);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  @media (min-width: 460px) {
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    padding: 1rem 1.5rem;
+  }
+}
+
+.body {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 1rem;
+  }
+
+  h2 {
+    font-size: clamp(2em, 4.5vw, 3em);
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: clamp(1.8em, 4.5vw, 2.6em);
+    margin: 2rem 0 1rem;
+  }
+
+  h4 {
+    font-size: clamp(1.8em, 4.5vw, 2.4em);
+    margin: 2rem 0 1rem;
+  }
+
+  h5 {
+    font-size: clamp(1.5em, 4.5vw, 2.2em);
+    margin: 2rem 0 1rem;
+  }
+
+  h6 {
+    font-size: clamp(1.2em, 4.5vw, 2em);
+    margin: 2rem 0 1rem;
+  }
+
+  p {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  ol,
+  ul {
+    margin-left: 2rem;
+  }
+
+  code {
+    color: hsl(248, 30%, 44%);
+    font-weight: 600;
+  }
+}

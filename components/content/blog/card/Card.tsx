@@ -5,7 +5,7 @@ import styles from "./Card.module.scss";
 export default function Card({post}: any) {
   return (
     <li className={styles.card}>
-      <Link href={`/blog/${post.frontMatter.slug}`} passHref>
+      <Link href={`/post/${post.slug}`} passHref>
         <a>
           <div className={styles.container}>
             <header>

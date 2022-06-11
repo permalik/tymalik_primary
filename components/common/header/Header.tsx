@@ -16,7 +16,7 @@ const Header = ({toggle}: any) => {
           className={styles.nav}
           role="navigation"
         >
-          <Link href={`/Blog`}>
+          <Link href={`/blog`}>
             <a
               aria-label="articles"
               className={styles.navLink}
