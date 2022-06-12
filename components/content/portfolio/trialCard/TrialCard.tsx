@@ -1,8 +1,8 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import styles from './TrialCard.module.scss';
+import styles from "./TrialCard.module.scss";
 
-const TrialCard = ({ trial }: any) => {
+const TrialCard = ({trial}: any) => {
   return (
     <li className={styles.card}>
       <Link href={`${trial.link}`} passHref>
@@ -11,9 +11,7 @@ const TrialCard = ({ trial }: any) => {
             <h3>
               {trial.title}
             </h3>
-            <time
-              dateTime={trial.timestamp}
-            >
+            <time dateTime={trial.timestamp}>
               {trial.timestamp}
             </time>
           </header>
@@ -24,6 +22,6 @@ const TrialCard = ({ trial }: any) => {
       </Link>
     </li>
   );
-}
+};
 
-export default TrialCard
+export default TrialCard;

@@ -11,14 +11,6 @@
   }
 }
 
-.repoSection {
-  flex-grow: 1;
-
-  @media (min-width: 864px) {
-    max-width: 50%;
-  }
-}
-
 .secondaryContainer {
   flex-grow: 1;
   margin: 3rem 0 0;
@@ -29,19 +21,36 @@
   }
 }
 
+.primarySection {
+  & header {
+    align-items: baseline;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  & ul {
+    margin: 2rem 0 0;
+    width: 100%;
+
+    & > *:not(:first-child) {
+      margin: 1rem 0 0;
+    }
+  }
+}
+
+.repoSection {
+  flex-grow: 1;
+
+  @media (min-width: 864px) {
+    max-width: 50%;
+  }
+}
+
 .foundationSection {
   margin-top: 3rem;
 }
 
-.sectionHeader {
-  align-items: baseline;
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.githubHeading,
-.trialHeading,
-.foundationHeading {
+.sectionHeading {
   font-size: clamp(1.6em, 4vw, 2em);
   font-weight: 600;
   margin: 0 2rem 0 0;
@@ -73,17 +82,6 @@
       right: 0;
       transition: right ease-in-out 0.1s;
     }
-  }
-}
-
-.repoList,
-.trialList,
-.foundationList {
-  margin: 2rem 0 0;
-  width: 100%;
-
-  & > *:not(:first-child) {
-    margin: 1rem 0 0;
   }
 }
 

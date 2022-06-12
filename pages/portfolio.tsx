@@ -38,7 +38,7 @@ export default function Portfolio() {
       <h1>all projects</h1>
       <div className={styles.primaryContainer}>
         <section className={`${styles.primarySection} ${styles.repoSection}`}>
-          <h2 className={styles.githubHeading}>github</h2>
+          <h2 className={styles.sectionHeading}>github</h2>
           <ul className={styles.repoList}>
             {data
               ? data.repos.data
@@ -51,8 +51,8 @@ export default function Portfolio() {
         </section>
         <div className={styles.secondaryContainer}>
           <section className={`${styles.primarySection} ${styles.trialSection}`}>
-            <header className={styles.sectionHeader}>
-              <h2 className={styles.trialHeading}>trials</h2>
+            <header>
+              <h2 className={styles.sectionHeading}>trials</h2>
               <div className={styles.viewAll}>
                 <a href={`/allTrials`}>
                   <p>View All</p>
@@ -71,8 +71,8 @@ export default function Portfolio() {
             </ul>
           </section>
           <section className={`${styles.primarySection} ${styles.foundationSection}`}>
-            <header className={styles.sectionHeader}>
-              <h2 className={styles.foundationHeading}>foundations</h2>
+            <header>
+              <h2 className={styles.sectionHeading}>foundations</h2>
               <div className={styles.viewAll}>
                 <a href={`/allFoundations`}>
                   <p>View All</p>

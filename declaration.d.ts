@@ -1,1 +1,3 @@
-declare module '*.scss';
+declare module "*.scss";
+declare module "next/head"
+declare module "next/link";
