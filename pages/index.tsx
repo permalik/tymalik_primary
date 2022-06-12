@@ -1,4 +1,4 @@
-import {getPostsWithFrontMatter} from "@lib/utils/utils";
+import {getPostsWithFrontMatter} from "@lib/utils/data";
 import Head from "next/head";
 import {BlogProps} from "../types/blog";
 

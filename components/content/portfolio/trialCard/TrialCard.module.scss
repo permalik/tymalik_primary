@@ -1,0 +1,42 @@
+.card {
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  list-style: none;
+  padding: 1rem;
+  position: relative;
+  top: 0;
+  transition: top ease 0.1s;
+
+  &:hover {
+    cursor: pointer;
+    top: -2px;
+  }
+}
+
+.header {
+  @media (min-width: 864px) {
+    align-items: baseline;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  & h3 {
+    margin: 0;
+  }
+
+  & time {
+    display: block;
+    font-style: italic;
+    margin-top: 0.5rem;
+
+    @media (min-width: 864px) {
+      margin: 0;
+    }
+  }
+
+  .description {
+    margin: 1rem 0 0;
+  }
+}

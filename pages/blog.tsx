@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import {BlogProps} from "../types/blog";
-import {getPostsWithFrontMatter} from "@lib/utils/utils";
+import {getPostsWithFrontMatter} from "@lib/utils/data";
 
 import MainSection from "@components/common/mainSection";
 import List from "@components/content/blog/list";

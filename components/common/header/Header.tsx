@@ -31,7 +31,7 @@ const Header = ({toggle}: any) => {
               contact
             </a>
           </Link>
-          <Link href={`/portfolio/portfolio`}>
+          <Link href={`/portfolio`}>
             <a aria-label="portfolio"
                className={styles.navLink}>
               portfolio

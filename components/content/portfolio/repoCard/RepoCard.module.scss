@@ -1,0 +1,60 @@
+@import "../../../../styles/variables.scss";
+
+.card {
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  list-style: none;
+  padding: 1rem;
+  position: relative;
+  top: 0;
+  transition: top ease 0.1s;
+
+  &:hover {
+    cursor: pointer;
+    top: -2px;
+  }
+
+  @media (min-width: 1200px) {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  & a {
+    & h3 {
+      margin: 0;
+      text-transform: capitalize;
+    }
+
+    & p {
+      margin: 1rem 0 0;
+    }
+  }
+
+  .container {
+    margin: 1rem 0 0;
+
+    @media (min-width: 1200px) {
+      margin: 0;
+    }
+
+    & a {
+      border: $purple-accent-color solid 2px;
+      border-radius: 5px;
+      font-family: Ubuntu, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      font-weight: 600;
+      padding: 0.125rem 0.25rem;
+      transition: background linear 0.4s;
+      transition: color linear 0.1s;
+
+      &:hover {
+        background: $purple-accent-color;
+        color: white;
+        transition: background linear 0.4s;
+        transition: color linear 0.1s;
+      }
+    }
+  }
+}

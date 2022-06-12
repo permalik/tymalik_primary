@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-children-prop */
-import {getFiles, getPostBySlug} from "@lib/utils/utils";
+import {getFiles, getPostBySlug} from "@lib/utils/data";
 import {Params} from "next/dist/server/router";
 import Head from "next/head";
 import Link from "next/link";

@@ -1,0 +1,98 @@
+.primaryContainer {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 3rem 0 0;
+  width: 100%;
+
+  @media (min-width: 864px) {
+    justify-content: space-between;
+  }
+}
+
+.repoSection {
+  flex-grow: 1;
+
+  @media (min-width: 864px) {
+    max-width: 50%;
+  }
+}
+
+.secondaryContainer {
+  flex-grow: 1;
+  margin: 3rem 0 0;
+
+  @media (min-width: 864px) {
+    flex-grow: 0;
+    margin: 0;
+  }
+}
+
+.foundationSection {
+  margin-top: 3rem;
+}
+
+.sectionHeader {
+  align-items: baseline;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.githubHeading,
+.trialHeading,
+.foundationHeading {
+  font-size: clamp(1.6em, 4vw, 2em);
+  font-weight: 600;
+  margin: 0 2rem 0 0;
+  text-transform: uppercase;
+}
+
+.viewAll {
+  & > a {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:hover .viewAllArrow {
+      right: -3px;
+    }
+
+    & > p {
+      font-family: Ubuntu, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      font-size: 1.15em;
+      margin: 0 0.5rem 0 0;
+    }
+
+    & > img {
+      position: relative;
+      right: 0;
+      transition: right ease-in-out 0.1s;
+    }
+  }
+}
+
+.repoList,
+.trialList,
+.foundationList {
+  margin: 2rem 0 0;
+  width: 100%;
+
+  & > *:not(:first-child) {
+    margin: 1rem 0 0;
+  }
+}
+
+// .trialSection {
+//   flex-grow: 1;
+//   margin: 3rem 0 0;
+
+//   @media (min-width: 864px) {
+//     flex-grow: 0;
+//     margin: 0;
+//   }
+// }
