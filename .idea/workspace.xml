@@ -7,12 +7,10 @@
     <list default="true" id="fb3bf6c1-698b-4705-8409-16839026793e" name="Changes" comment="z">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/content/portfolio/foundationCard/FoundationCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/portfolio/foundationCard/FoundationCard.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/content/portfolio/trialCard/TrialCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/portfolio/trialCard/TrialCard.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/content/portfolio/trialCard/TrialCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/portfolio/trialCard/TrialCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/contact/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/home/contact/Contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/portfolio/repoCard/RepoCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/portfolio/repoCard/RepoCard.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/declaration.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/declaration.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/portfolio.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Portfolio.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Portfolio.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +83,7 @@
       <workItem from="1654605683593" duration="5144000" />
       <workItem from="1654655957126" duration="66427000" />
       <workItem from="1654934690361" duration="10535000" />
-      <workItem from="1655008240160" duration="5934000" />
+      <workItem from="1655008240160" duration="7290000" />
     </task>
     <servers />
   </component>

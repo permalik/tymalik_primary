@@ -22,7 +22,6 @@ async function fetchData(...arg) {
 
 export default function Portfolio() {
   const {data} = useSwr("./api/github", fetchData);
-  console.log(data)
 
   return (
     <MainSection>
