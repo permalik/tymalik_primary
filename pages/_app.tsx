@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 import {appWithTranslation} from "next-i18next";
 import {AppProps} from "next/app";
 
