@@ -3,9 +3,8 @@
 .card {
   border: none;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
   list-style: none;
-  padding: 1rem;
   position: relative;
   top: 0;
   transition: top ease 0.1s;
@@ -15,15 +14,27 @@
     top: -2px;
   }
 
-  @media (min-width: 1200px) {
-    align-items: flex-start;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-  }
+  //@media (min-width: 1200px) {
+  //  align-items: flex-start;
+  //  display: flex;
+  //  flex-flow: row nowrap;
+  //  justify-content: space-between;
+  //}
 
   & a {
-      background: transparent;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    padding: 1rem;
+    width: 100%;
+
+    @media (min-width: 1200px) {
+      align-items: flex-start;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+
     & h3 {
       margin: 0;
       text-transform: capitalize;
@@ -35,6 +46,7 @@
   }
 
   .container {
+    display: inline-block;
     margin: 1rem 0 0;
 
     @media (min-width: 1200px) {

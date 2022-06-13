@@ -22,6 +22,7 @@ async function fetchData(...arg) {
 
 export default function Portfolio() {
   const {data} = useSwr("./api/github", fetchData);
+  console.log(data);
 
   return (
     <MainSection>
@@ -49,7 +50,8 @@ export default function Portfolio() {
           </ul>
         </section>
         <div className={styles.secondaryContainer}>
-          <section className={`${styles.primarySection} ${styles.trialSection}`}>
+          <section
+            className={`${styles.primarySection} ${styles.trialSection}`}>
             <header>
               <h2 className={styles.sectionHeading}>trials</h2>
               <div className={styles.viewAll}>
@@ -69,7 +71,8 @@ export default function Portfolio() {
               ))}
             </ul>
           </section>
-          <section className={`${styles.primarySection} ${styles.foundationSection}`}>
+          <section
+            className={`${styles.primarySection} ${styles.foundationSection}`}>
             <header>
               <h2 className={styles.sectionHeading}>foundations</h2>
               <div className={styles.viewAll}>
