@@ -15,12 +15,10 @@
 }
 
 .header {
-  @media (min-width: 864px) {
-    align-items: baseline;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-  }
+  align-items: baseline;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 
   & h3 {
     margin: 0;
