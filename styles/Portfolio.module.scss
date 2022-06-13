@@ -1,23 +1,25 @@
 .primaryContainer {
   align-items: flex-start;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   justify-content: flex-start;
   margin: 3rem 0 0;
-  width: 100%;
 
-  @media (min-width: 864px) {
+  @media (min-width: 1200px) {
+    flex-flow: row nowrap;
     justify-content: space-between;
   }
 }
 
 .secondaryContainer {
-  flex-grow: 1;
+  //flex-grow: 1;
   margin: 3rem 0 0;
+  width: 100%;
 
-  @media (min-width: 864px) {
+  @media (min-width: 1200px) {
     flex-grow: 0;
     margin: 0;
+    width: 40%;
   }
 }
 
@@ -39,15 +41,21 @@
 }
 
 .repoSection {
-  flex-grow: 1;
+  //flex-grow: 1;
+  width: 100%;
 
-  @media (min-width: 864px) {
+  @media (min-width: 1200px) {
     max-width: 50%;
   }
 }
 
+ .trialSection {
+   width: 100%;
+ }
+
 .foundationSection {
   margin-top: 3rem;
+  width: 100%;
 }
 
 .sectionHeading {
@@ -84,13 +92,3 @@
     }
   }
 }
-
-// .trialSection {
-//   flex-grow: 1;
-//   margin: 3rem 0 0;
-
-//   @media (min-width: 864px) {
-//     flex-grow: 0;
-//     margin: 0;
-//   }
-// }
