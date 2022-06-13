@@ -23,7 +23,7 @@ export default async function GithubApi(req: any, res: any) {
   await runMiddleware(req, res, cors);
 
   const octokit = new Octokit({
-    auth: process.env.GITHUB_AUTH_TOKEN
+    auth: "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"
   });
 
   const repos = await octokit.request("/users/permalik/repos");
