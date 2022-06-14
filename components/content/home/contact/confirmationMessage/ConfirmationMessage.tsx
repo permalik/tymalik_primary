@@ -5,7 +5,7 @@ export default function ConfirmationMessage() {
     <section>
       <p>Thanks for reaching out. I should respond within 24-48 hours.</p>
 
-      <button onClick={() => router.replace("/contact")}></button>
+      <button onClick={() => router.replace("/")}></button>
     </section>
   );
 }
