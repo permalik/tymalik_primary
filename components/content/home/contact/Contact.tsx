@@ -1,132 +1,108 @@
-import Link from "next/link";
-import {useRouter} from "next/router";
+import {useFormik} from "formik";
+import {useState} from "react";
+import * as yup from "yup";
 
 import Section from "@components/content/home/common/section";
-import {useEffect, useState} from "react";
 
 import styles from "./Contact.module.scss";
 
-interface FormProps {
-  name?: string;
-  email?: string;
-  message?: string;
-}
-
 const Contact = () => {
-  // const router = useRouter();
-  // const confirmationScreenVisible =
-  //   router.query?.success && router.query.success === "true";
-  // const formVisible = !confirmationScreenVisible;
 
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
+  const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      message: ""
+    },
+    onSubmit: () => {
+      setMessage("Form submitted");
+      setSubmitted(true);
+    },
+    validationSchema: yup.object({
+      name: yup.string().trim().required("Name is required"),
+      email: yup
+        .string()
+        .email("Must be a valid email")
+        .required("Email is required"),
+      message: yup.string().trim().required("Message is required")
+    })
   });
 
-  const handleChange = (e: any) => {
-    const {name, value} = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
-
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleSubmit = (e: any) => {
-    setIsSubmitted(true);
-    e.preventDefault();
-  };
-
-  const encode = (data: any) => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  };
-
-  useEffect(() => {
-    if (isSubmitted) {
-      fetch("/", {
-        method: "POST",
-        headers: {"Content-Type": "application/x-www-form-urlencoded"},
-        body: encode({"form_name": "contact_form", ...formData})
-      })
-        .then(() => alert("Success!"))
-        .then(() => setIsSubmitted(false))
-        .then(() => setFormData({name: "", email: "", message: ""}))
-        .catch(error => alert(error));
-    }
-  }, [formData, isSubmitted]);
-
-  const ContactForm = (
-    <form
-      className={styles.form}
-      data-netlify="true"
-      name="contact_form"
-      onSubmit={handleSubmit}
-    >
-      <input name="form_name" type="hidden" value="contact_form"/>
-      <label className={styles.contactLabel} htmlFor="name">
-        Name
-      </label>
-      <input
-        className={styles.contactInput}
-        id="name"
-        name="name"
-        onChange={handleChange}
-        required
-        type="text"
-        value={formData.name}
-      />
-      <label className={styles.contactLabel} htmlFor="email">
-        Email{" "}
-      </label>
-      <input
-        className={styles.contactInput}
-        id="email"
-        name="email"
-        onChange={handleChange}
-        required
-        type="email"
-        value={formData.email}
-      />
-      <label className={styles.contactLabel} htmlFor="message">
-        Message{" "}
-      </label>
-      <textarea
-        className={styles.contactTextArea}
-        id="message"
-        name="message"
-        onChange={handleChange}
-        required
-        value={formData.message}>
-      </textarea>
-      <button className={styles.contactSubmit} type="submit">
-        Submit
-      </button>
-    </form>
-  );
-
-  // const ConfirmationMessage = (
-  //   <section>
-  //     <p className={styles.confirmationMessage}>
-  //       Thanks for reaching out. I should respond within 24-48 hours.
-  //     </p>
-  //
-  //     <Link href={`/`} passHref>
-  //       <a>
-  //         <button className={styles.resetForm}>Reset Form</button>
-  //       </a>
-  //     </Link>
-  //   </section>
-  // );
-
   return (
-    <div id="contact">
-      <Section heading="say hi :)">
-        {ContactForm}
-        {/*{formVisible ? ContactForm : ConfirmationMessage}*/}
+    <div id={"contact"}>
+      <Section heading={"say hi :)"}>
+        <p hidden={!submitted}>{message}</p>
+        <form
+          className={styles.form}
+          onSubmit={formik.handleSubmit}
+        >
+          <label
+            className={styles.contactLabel}
+            htmlFor="name"
+          >
+            Name
+          </label>
+          <input
+            className={styles.contactInput}
+            id="name"
+            name="name"
+            onChange={formik.handleChange}
+            required
+            type="text"
+            value={formik.values.name}
+          />
+          {formik.errors.name && (
+            <p className={styles.errorMessage}>
+              {formik.errors.name}
+            </p>
+          )}
+          <label
+            className={styles.contactLabel}
+            htmlFor="email"
+          >
+            Email
+          </label>
+          <input
+            className={styles.contactInput}
+            name="email"
+            onChange={formik.handleChange}
+            required
+            type="email"
+            value={formik.values.email}
+          />
+          {formik.errors.email && (
+            <p className={styles.errorMessage}>
+              {formik.errors.email}
+            </p>
+          )}
+          <label
+            className={styles.contactLabel}
+            htmlFor="message"
+          >
+            Message
+          </label>
+          <textarea
+            className={styles.contactTextArea}
+            name="message"
+            onBlur={formik.handleBlur}
+            onChange={formik.handleChange}
+            required
+            value={formik.values.message}/>
+          {formik.errors.message && (
+            <p className={styles.errorMessage}>
+              {formik.errors.message}
+            </p>
+          )}
+          <button
+            className={styles.contactSubmit}
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
       </Section>
     </div>
   );

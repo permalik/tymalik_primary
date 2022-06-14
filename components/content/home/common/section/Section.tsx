@@ -1,7 +1,7 @@
 import styles from "./Section.module.scss";
 
 interface SectionProps {
-  children?: JSX.Element;
+  children?: JSX.Element | JSX.Element[];
   heading: string;
 }
 

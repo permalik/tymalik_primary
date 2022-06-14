@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb3bf6c1-698b-4705-8409-16839026793e" name="Changes" comment="z">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/common/section/Section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/home/common/section/Section.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/contact/Contact.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/home/contact/Contact.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/content/home/contact/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/home/contact/Contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/contact/confirmationMessage/ConfirmationMessage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/contact/confirmationMessage/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +86,7 @@
       <workItem from="1654655957126" duration="66427000" />
       <workItem from="1654934690361" duration="10535000" />
       <workItem from="1655008240160" duration="10429000" />
-      <workItem from="1655093021300" duration="18133000" />
+      <workItem from="1655093021300" duration="22952000" />
     </task>
     <servers />
   </component>
