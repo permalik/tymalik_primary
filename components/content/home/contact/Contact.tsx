@@ -67,7 +67,6 @@ const Contact = () => {
 
   const ContactForm = (
     <form
-      action={"/ConfirmationMessage"}
       className={styles.form}
       data-netlify="true"
       name="contact_form"
