@@ -32,12 +32,6 @@ const Contact = () => {
     });
   };
 
-  const [errors, setErrors] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e: any) => {
@@ -63,7 +57,7 @@ const Contact = () => {
         .then(() => setFormData({name: "", email: "", message: ""}))
         .catch(error => alert(error));
     }
-  }, [errors, formData, isSubmitted]);
+  }, [formData, isSubmitted]);
 
   const ContactForm = (
     <form
