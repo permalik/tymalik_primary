@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fb3bf6c1-698b-4705-8409-16839026793e" name="Changes" comment="z">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/content/home/contact/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/home/contact/Contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/portfolio.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +17,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Articles" />
-        <option value="SCSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -59,11 +59,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/lib/utils" />
       <recent name="$PROJECT_DIR$/styles" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/articles/blog" />
-      <recent name="C:\code\tymalik_primary\src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -80,7 +80,7 @@
       <workItem from="1654655957126" duration="66427000" />
       <workItem from="1654934690361" duration="10535000" />
       <workItem from="1655008240160" duration="10429000" />
-      <workItem from="1655093021300" duration="46236000" />
+      <workItem from="1655093021300" duration="47042000" />
     </task>
     <servers />
   </component>

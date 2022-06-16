@@ -55,7 +55,7 @@ export default function Portfolio() {
             <header>
               <h2 className={styles.sectionHeading}>trials</h2>
               <div className={styles.viewAll}>
-                <a href={`/allTrials`}>
+                <a href={`/trials`}>
                   <p>View All</p>
                   <img
                     alt="thin, right-pointing arrow"
