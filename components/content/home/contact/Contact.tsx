@@ -1,5 +1,5 @@
 import emailjs from "@emailjs/browser";
-import {useRef} from "react";
+import {useEffect, useRef} from "react";
 import {useForm} from "react-hook-form";
 
 import Section from "@components/content/home/common/section";
@@ -10,33 +10,20 @@ interface IFormInputs {
   name: string;
   email: string;
   message: string;
-};
-
-// const schema = Yup.object({
-//   name: Yup
-//     .string()
-//     .required("Name is required"),
-//   email: Yup
-//     .string()
-//     .email()
-//     .required("Email is required"),
-//   message: Yup
-//     .string()
-//     .required("Message is required")
-// });
+}
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
-  const textArea = useRef<HTMLTextAreaElement>(null);
+  // const register = useRef<HTMLTextAreaElement>(null);
 
   const {
-    formState: {errors},
+    formState: {errors, isSubmitSuccessful},
     handleSubmit,
     register,
     reset
   } = useForm<IFormInputs>();
 
-  const sendEmail = (e: any) => {
+  const sendEmail = () => {
     emailjs.sendForm("service_tymalik", "template_tymalik", form.current!, "DqrRy_3JD7E59rcF9")
       .then((result) => {
         alert(result.text);
@@ -44,6 +31,16 @@ const Contact = () => {
         alert(error.text);
       });
   };
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      reset({
+        name: "",
+        email: "",
+        message: ""
+      });
+    }
+  }, [isSubmitSuccessful, reset]);
 
   return (
     <div id={"contact"}>
@@ -115,9 +112,8 @@ const Contact = () => {
             Message
           </label>
           <textarea
+            {...register("message")}
             className={styles.contactTextArea}
-            name="message"
-            ref={textArea}
           />
           <button
             className={styles.contactSubmit}
