@@ -1,0 +1,73 @@
+@import '../../styles/variables';
+
+.headingTwo {
+  font-size: clamp(1.6em, 4vw, 2em);
+  font-weight: 600;
+}
+
+.demoParameters,
+.demoResults {
+  background: transparent;
+  border-radius: 5px;
+  font-size: clamp(1.2em, 4.5vw, 2em);
+  padding: 0.25rem 0.5rem;
+  margin: 3rem 0;
+  max-width: 500px;
+}
+
+.demoParameters {
+  border: $orange-accent-color solid 2px;
+  color: $orange-accent-color;
+}
+
+.demoResults {
+  border: $purple-accent-color solid 2px;
+  color: $purple-accent-color;
+}
+
+.parameterList,
+.resultList {
+  align-items: baseline;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.parameterList {
+  & > li {
+    list-style: none;
+  }
+}
+
+.resultList {
+  & > li {
+    list-style: none;
+  }
+}
+
+.solutionLi {
+  color: $orange-accent-color;
+}
+
+.resultPlaceholder {
+  margin: auto 0;
+  text-align: center;
+}
+
+.solveButton {
+  background: transparent;
+  border: $purple-900 solid 2px;
+  border-radius: 5px;
+  color: $purple-900;
+  font-size: clamp(1.2em, 4.5vw, 2em);
+  padding: 0.25rem 0.5rem;
+  transition: background linear 0.75s;
+  transition: color linear 0.3s;
+  &:hover {
+    background: $purple-900;
+    color: white;
+    cursor: pointer;
+    transition: background linear 0.75s;
+    transition: color linear 0.3s;
+  }
+}
