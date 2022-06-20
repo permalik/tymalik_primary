@@ -6,8 +6,88 @@
   <component name="ChangeListManager">
     <list default="true" id="fb3bf6c1-698b-4705-8409-16839026793e" name="Changes" comment="z">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/foundation/selectionSort.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/foundation/selectionSort.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/foundation/SelectionSort.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/foundation/SelectionSort.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/editorInstance/EditorInstance.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/editorInstance/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/footer/Footer.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/footer/Footer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/footer/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/header/Header.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/header/Header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/header/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/layout/Layout.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/layout/Layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/layout/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/mainSection/MainSection.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/mainSection/MainSection.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/mainSection/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/blog/card/Card.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/blog/card/Card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/blog/card/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/blog/list/List.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/blog/list/List.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/blog/list/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/foundation/foundationLayout/FoundationLayout.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/foundation/foundationLayout/FoundationLayout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/foundation/foundationLayout/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/about/About.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/about/About.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/about/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/blog/Blog.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/blog/Blog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/blog/card/Card.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/blog/card/Card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/blog/card/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/blog/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/common/section/Section.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/common/section/Section.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/common/section/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/contact/Contact.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/contact/Contact.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/contact/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/hero/Hero.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/hero/Hero.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/hero/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/portfolio/Portfolio.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/portfolio/Portfolio.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/portfolio/card/Card.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/portfolio/card/Card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/portfolio/card/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/portfolio/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/skills/Skills.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/skills/Skills.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/home/skills/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/portfolio/foundationCard/FoundationCard.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/portfolio/foundationCard/FoundationCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/portfolio/foundationCard/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/portfolio/repoCard/RepoCard.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/portfolio/repoCard/RepoCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/portfolio/repoCard/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/portfolio/trialCard/TrialCard.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/portfolio/trialCard/TrialCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/portfolio/trialCard/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/trial/trialLayout/TrialLayout.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/trial/trialLayout/TrialLayout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/trial/trialLayout/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/foundation/bubbleSort.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/foundation/insertionSort.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/foundation/iterativeBinarySearch.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/foundation/iterativeLinearSearch.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/foundation/selectionSort.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/foundations.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/portfolio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/trial/characterCounter.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/trial/whoLikesIt.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/trials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/trials.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Foundations.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/foundation/BubbleSort.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/foundation/InsertionSort.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/foundation/IterativeBinarySearch.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/foundation/IterativeLinearSearch.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/foundation/SelectionSort.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/trial/CharacterCounter.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/trial/WhoLikesIt.module.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,26 +118,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/malik/Documents/code/tymalik_primary&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/malik/Documents/code/tymalik_primary/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "/Users/malik/Documents/code/tymalik_primary",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "/Users/malik/Documents/code/tymalik_primary/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pages" />
@@ -81,7 +161,7 @@
       <workItem from="1654655957126" duration="66427000" />
       <workItem from="1654934690361" duration="10535000" />
       <workItem from="1655008240160" duration="10429000" />
-      <workItem from="1655093021300" duration="71730000" />
+      <workItem from="1655093021300" duration="73936000" />
     </task>
     <servers />
   </component>

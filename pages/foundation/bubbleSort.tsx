@@ -18,8 +18,8 @@ const orderedRange = Array.apply(0, new Array(10)).map(function (_, i) {
 });
 
 // @ts-ignore
-const shuffledParameterRange = orderedParameterRange.sort(function (a, b) {
-  return Math.random() > 0.5;
+const shuffledParameterRange = orderedParameterRange.slice().sort(function (a, b) {
+  return Math.random() - 0.5;
 });
 
 // @ts-ignore

@@ -3,6 +3,7 @@ import foundationData from "@data/portfolio/foundationData";
 import puzzleData from "@data/portfolio/puzzleData";
 import {sortById} from "@lib/utils/sort";
 import Head from "next/head";
+import Link from "next/link";
 import useSwr from "swr";
 
 import MainSection from "@components/common/mainSection";
@@ -55,14 +56,16 @@ export default function Portfolio() {
             <header>
               <h2 className={styles.sectionHeading}>trials</h2>
               <div className={styles.viewAll}>
-                <a href={`/trials`}>
-                  <p>View All</p>
-                  <img
-                    alt="thin, right-pointing arrow"
-                    className={styles.viewAllArrow}
-                    src={`https://res.cloudinary.com/permalik/image/upload/v1638834651/arrow_right.svg`}
-                  />
-                </a>
+                <Link href={`/trials`}>
+                  <a>
+                    <p>View All</p>
+                    <img
+                      alt="thin, right-pointing arrow"
+                      className={styles.viewAllArrow}
+                      src={`https://res.cloudinary.com/permalik/image/upload/v1638834651/arrow_right.svg`}
+                    />
+                  </a>
+                </Link>
               </div>
             </header>
             <ul className={styles.trialList}>
@@ -76,14 +79,16 @@ export default function Portfolio() {
             <header>
               <h2 className={styles.sectionHeading}>foundations</h2>
               <div className={styles.viewAll}>
-                <a href={`/foundations`}>
-                  <p>View All</p>
-                  <img
-                    alt="thin, right-pointing arrow"
-                    className={styles.viewAllArrow}
-                    src={`https://res.cloudinary.com/permalik/image/upload/v1638834651/arrow_right.svg`}
-                  />
-                </a>
+                <Link href={`/foundations`}>
+                  <a>
+                    <p>View All</p>
+                    <img
+                      alt="thin, right-pointing arrow"
+                      className={styles.viewAllArrow}
+                      src={`https://res.cloudinary.com/permalik/image/upload/v1638834651/arrow_right.svg`}
+                    />
+                  </a>
+                </Link>
               </div>
             </header>
             <ul className={styles.foundationList}>

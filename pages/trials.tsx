@@ -7,7 +7,7 @@ import TrialCard from "@components/content/portfolio/trialCard";
 
 import styles from "../styles/Trials.module.scss";
 
-const AllArticles = () => {
+const Trials = () => {
   return (
     <MainSection>
       <Head>
@@ -29,4 +29,4 @@ const AllArticles = () => {
   );
 };
 
-export default AllArticles;
+export default Trials;
