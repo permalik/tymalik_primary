@@ -15,12 +15,12 @@ export const darkTheme: DefaultTheme = {
 };
 
 export const GlobalStyles = createGlobalStyle`
-  body, a, button {
+  body, button {
     background: ${({theme}) => theme.bodyColor};
     color: ${({theme}) => theme.textColor};
   }
   
-  article, li {
+  article, li, a {
     background: ${({theme}) => theme.backgroundColor};
     color: ${({theme}) => theme.cardColor};
   }

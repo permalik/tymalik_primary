@@ -68,6 +68,7 @@
 .viewAll {
   & > a {
     align-items: flex-start;
+    background: transparent;
     display: flex;
     flex-flow: row nowrap;
 
@@ -86,6 +87,7 @@
     }
 
     & > img {
+      filter: invert(47%) sepia(93%) saturate(3095%) hue-rotate(347deg) brightness(100%) contrast(102%);
       position: relative;
       right: 0;
       transition: right ease-in-out 0.1s;
