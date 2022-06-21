@@ -1,11 +1,18 @@
 import Link from "next/link";
+import styled from "styled-components";
+
 import styles from "./RepoCard.module.scss";
+
+const StyledLink = styled.a`
+  background: #1C182F;
+  color: #FFF;
+`;
 
 const RepoCard = ({data}: any) => {
   return (
     <li className={styles.card}>
       <Link href={data.html_url}>
-        <a>
+        <StyledLink>
           <div>
             <h3>
               {data.name.replace(/_/g, " ")}
@@ -21,7 +28,7 @@ const RepoCard = ({data}: any) => {
               </Link>
             ) : null}
           </div>
-        </a>
+        </StyledLink>
       </Link>
     </li>
   );

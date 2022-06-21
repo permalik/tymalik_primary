@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
       >
         <ul>
           <li className={styles.socialLi}>
-            <a href="mailto:tymalik@protonmail.com">
+            <Link href="mailto:tymalik@protonmail.com">
               <Image
                 alt="at sign, email icon link"
                 className={styles.socialLinkIcon}
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
                 src="https://res.cloudinary.com/permalik/image/upload/v1630653022/email_svg.svg"
                 width="50px"
               />
-            </a>
+            </Link>
           </li>
           <li className={styles.socialLi}>
             <a href="https://github.com/permalik">

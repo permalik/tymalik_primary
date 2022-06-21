@@ -41,6 +41,7 @@
     margin-left: 0;
 
     & > li {
+      background: transparent;
       font-family: Ubuntu, Segoe UI, Roboto, Helvetica Neue, sans-serif;
       font-weight: 600;
       letter-spacing: 0.5px;
@@ -66,14 +67,6 @@
     justify-content: center;
     margin-left: 0;
 
-    & li {
-      background: transparent;
-    }
-
-    & a {
-      background: transparent;
-    }
-
     & > li:not(:last-child) {
       margin-right: 2em;
     }
@@ -81,6 +74,7 @@
 }
 
 .socialLi {
+  background: transparent;
   border-radius: 50%;
   display: block;
   cursor: pointer;
