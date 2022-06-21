@@ -59,12 +59,20 @@
   flex-flow: row nowrap;
   justify-content: center;
 
-  & > ul {
+  & ul {
     align-items: center;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     margin-left: 0;
+
+    & li {
+      background: transparent;
+    }
+
+    & a {
+      background: transparent;
+    }
 
     & > li:not(:last-child) {
       margin-right: 2em;

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import styles from "./Footer.module.scss";
@@ -23,7 +24,7 @@ const Footer: React.FC = () => {
       >
         <ul>
           <li>
-            <a href="https://netlify.com/">netlify</a>
+            <Link href={"https://netlify.com/"}>netlify</Link>
           </li>
           <li>
             <a href="https://github.com/permalik/tymalik_primary.git">source</a>
