@@ -1,12 +1,18 @@
 import Link from "next/link";
+import styled from "styled-components";
 
 import styles from "./FoundationCard.module.scss";
+
+const StyledLink = styled.a`
+  background: #1C182F;
+  color: #FFF;
+`
 
 const FoundationCard = ({foundation}: any) => {
   return (
     <li className={styles.card}>
       <Link href={`${foundation.link}`} passHref>
-        <a>
+        <StyledLink>
           <header className={styles.header}>
             <h3>
               {foundation.title}
@@ -18,7 +24,7 @@ const FoundationCard = ({foundation}: any) => {
           <p className={styles.description}>
             {foundation.type}
           </p>
-        </a>
+        </StyledLink>
       </Link>
     </li>
   );
