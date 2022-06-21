@@ -1,12 +1,18 @@
 import Link from "next/link";
+import styled from "styled-components";
 
 import styles from "./Card.module.scss";
+
+const StyledLink = styled.a`
+  background: #1C182F;
+  color: #FFF;
+`
 
 export default function Card({post}: any) {
   return (
     <li className={styles.card}>
       <Link href={`/post/${post.slug}`} passHref>
-        <a>
+        <StyledLink>
           <div className={styles.container}>
             <header>
               <h2>
@@ -23,7 +29,7 @@ export default function Card({post}: any) {
           <p className={styles.excerpt}>
             {post.frontMatter.excerpt} [...]
           </p>
-        </a>
+        </StyledLink>
       </Link>
     </li>
   );
